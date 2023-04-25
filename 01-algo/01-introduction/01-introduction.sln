@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_1_2 Hello_You", "Exo_1_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_1_3Calcul_de_la_moyenne_de_2_numbers", "Exo_1_3Calcul_de_la_moyenne_de_2_numbers\Exo_1_3Calcul_de_la_moyenne_de_2_numbers.csproj", "{F47D416C-2290-49A4-B445-9F904C0D4707}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_1_4_Calcul_de_l_aire_et_du_volum_d_une_sphere", "Exo_1_4_Calcul_de_l_aire_et_du_volum_d_une_sphere\Exo_1_4_Calcul_de_l_aire_et_du_volum_d_une_sphere.csproj", "{20479056-3E49-439C-AC70-41D1D55D27B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F47D416C-2290-49A4-B445-9F904C0D4707}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F47D416C-2290-49A4-B445-9F904C0D4707}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F47D416C-2290-49A4-B445-9F904C0D4707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20479056-3E49-439C-AC70-41D1D55D27B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20479056-3E49-439C-AC70-41D1D55D27B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20479056-3E49-439C-AC70-41D1D55D27B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20479056-3E49-439C-AC70-41D1D55D27B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

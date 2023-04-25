@@ -1,0 +1,30 @@
+﻿Lire le rayon R d’une sphère puis calculer et afficher :
+
+Son aire = 4 π R²
+Son volume = 4/3 π R³
+
+VARIABLES
+
+	R est un entier
+	dAire est un reel
+	dVolume est un reel
+
+DEBUT PROGRAMME
+
+TRAITEMENT
+
+	ECRIRE "Veuillez écrire la valeur du rayon R"
+
+	LIRE R
+
+	Aire <-- 4 π R²
+
+	Volume <--  4/3 π R³
+
+	ECRIRE "L’aire de la sphere est " + , Aire , "."
+
+	ECRIRE "Le volume de la sphere est " + , Volume , "."
+
+FIN TRAITEMENT
+
+FIN PROGRAMME
