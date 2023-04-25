@@ -1,0 +1,31 @@
+﻿Lire le rayon R d’un cercle et un angle A (en degré(s)).
+
+Calculer et afficher :
+
+L’ aire du secteur circulaire = (π R² A) / 360
+
+VARIABLES
+	
+	R  este un entier
+	A est un entier
+	dSurface este un reel
+
+DEBUT PROGRAMME
+
+TRAITEMENT
+
+	ECRIRE "Veuillez écrire la valeur du rayon R"
+
+	LIRE R
+
+	ECRIRE "Veuillez écrire la valeur du angle A"
+
+	LIRE A
+
+	Surface <--(π R² A) / 360
+
+	ECRIRE "La surface d'un secteur circulaire de rqyon " + , R , + "cm et angle " + , A , + "degrés est de " , surface , + " cm²." 
+	
+FIN TRAITEMENT
+
+FIN PROGRAMME

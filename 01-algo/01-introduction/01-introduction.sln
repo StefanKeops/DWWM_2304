@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_1_3Calcul_de_la_moyenne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_1_4_Calcul_de_l_aire_et_du_volum_d_une_sphere", "Exo_1_4_Calcul_de_l_aire_et_du_volum_d_une_sphere\Exo_1_4_Calcul_de_l_aire_et_du_volum_d_une_sphere.csproj", "{20479056-3E49-439C-AC70-41D1D55D27B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_1_4_Calcul_de_la_surface_d_un_secteur_circulaire", "Exo_1_4_Calcul_de_la_surface_d_un_secteur_circulaire\Exo_1_4_Calcul_de_la_surface_d_un_secteur_circulaire.csproj", "{31C94AE2-724B-40E7-90E7-D98F84F1897A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{20479056-3E49-439C-AC70-41D1D55D27B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20479056-3E49-439C-AC70-41D1D55D27B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20479056-3E49-439C-AC70-41D1D55D27B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C94AE2-724B-40E7-90E7-D98F84F1897A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C94AE2-724B-40E7-90E7-D98F84F1897A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C94AE2-724B-40E7-90E7-D98F84F1897A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C94AE2-724B-40E7-90E7-D98F84F1897A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
