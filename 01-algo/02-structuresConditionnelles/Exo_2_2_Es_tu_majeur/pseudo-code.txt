@@ -1,0 +1,36 @@
+﻿Lire un nombre A correspondant à un âge (en années).
+Afficher “Vous êtes majeur” ou “Vous êtes mineur” selon le cas.
+Pour un nombre négatif le message doit être “Vous n’êtes pas encore né”.
+La majorité est fixée à 18 ans.
+
+VARIABLES
+
+	age est un entier
+	
+	majeur est egal a 18
+
+DEBUT PROGRAMME
+
+TRAITEMENT
+
+	ECRIRE "Veuillez saisir votre age s'il vous plaît."
+
+	LIRE age
+
+	DEBUT SI
+
+		SI age > majeur
+
+			ECRIRE "Vous êtes majeur."
+
+		Si age < 0
+
+			ECRIRE "Vous n’êtes pas encore né."
+
+		SINON
+
+			ECRIRE "Vous êtes mineur."
+
+FIN TRAITEMENT
+
+FIN PROGRAMME

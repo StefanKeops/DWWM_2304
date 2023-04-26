@@ -19,11 +19,11 @@ TRAITEMENT
 
 		SI a > b 
 		
-			AFFICHER B, puis A
+			ECRIRE B, puis A
 
 		SINON
 
-			AFICHER A, puis B
+			ECRIRE A, puis B
 
 	FIN SI
 
