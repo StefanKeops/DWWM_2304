@@ -1,0 +1,36 @@
+﻿Lire 2 nombres entier A et B.
+Afficher la valeur de A puis la valeur de B.
+Mettre le contenu de A dans B et celui de B dans A.
+Afficher à nouveau la valeur de A puis la valeur de B.
+
+VARIABLES
+
+	A est un entier
+	B est un entier
+	TMP est un entier
+
+DEBUT PROGRAMME
+
+TRAITEMENT
+
+	ECRIRE "Veuillez écrire la valeur du A"
+
+	LIRE A
+
+	ECRIRE "Veuillez écrire la valeur du B"
+
+	LIRE B
+
+	TMP <-- A
+
+	A <-- B
+
+	B <-- TMP
+
+	LIRE A
+
+	LIRE B
+
+FIN TRAITEMENT
+
+FIN PROGRAMME
