@@ -1,0 +1,33 @@
+﻿Lire 2 nombres entier A et B puis les afficher dans l’ordre croissant.
+
+VARIABLES
+
+	A est un entier
+	B est un entier
+
+DEBUT PROGRAMME
+
+TRAITEMENT
+
+	ECRIRE	"Veuillez donner la valeur du A"
+
+	LIRE A
+
+	ECRIRE "Veuillez donner la valeur du B"
+
+	DEBUT SI
+
+		SI a > b 
+		
+			AFFICHER B, puis A
+
+		SINON
+
+			AFICHER A, puis B
+
+	FIN SI
+
+FIN TRAITEMENT
+
+FIN PROGRAMME
+		
