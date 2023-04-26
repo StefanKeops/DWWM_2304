@@ -1,0 +1,63 @@
+﻿Lire 3 nombres entier A, B et C puis les afficher dans l’ordre décroissant.
+
+VARIABLES
+
+	A est un entier
+	B est un entier
+	C est un entier
+
+DEBUT PROGRAMME
+
+TRAITEMENT
+
+	ECRIRE	"Veuillez donner la valeur du A"
+
+	LIRE A
+
+	ECRIRE "Veuillez donner la valeur du B"
+
+	LIRE B
+
+	ECRIRE "Veuillez donner la valeur du C"
+
+	LIRE C
+
+	DEBUT SI
+
+		SI A > B 
+			
+			SI B > C
+
+				ECRIRE A, puis B, puis C
+				
+		SINON 
+
+				SI B < C et A > C
+
+					ECRIRE A, puis C, puis B
+					
+				SINON
+						
+					ECRIRE C, puis, A, puis B
+
+		SINON
+
+			SI A > C
+
+				ECRIRE B, puis A, puis C
+
+			SINON 
+				
+				SI B > C et C < A
+
+					ECRIRE B, puis C, puis A
+
+				ELSE
+
+					ECRIRE C, puis B, puis A
+
+	FIN SI
+
+FIN TRAITEMENT
+
+FIN PROGRAMME

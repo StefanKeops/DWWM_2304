@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_2_2_Es_tu_majeur", "Exo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_2_3_Ma_retraite", "Exo_2_3_Ma_retraite\Exo_2_3_Ma_retraite.csproj", "{5FC4DE01-C8C1-407B-B6BE-AB5C15CCA01A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_2_4_Tri_de_nombres", "Exo_2_4_Tri_de_nombres\Exo_2_4_Tri_de_nombres.csproj", "{329A0F9E-E467-4A47-870C-AEBFBA92AFDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5FC4DE01-C8C1-407B-B6BE-AB5C15CCA01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FC4DE01-C8C1-407B-B6BE-AB5C15CCA01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FC4DE01-C8C1-407B-B6BE-AB5C15CCA01A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{329A0F9E-E467-4A47-870C-AEBFBA92AFDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329A0F9E-E467-4A47-870C-AEBFBA92AFDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329A0F9E-E467-4A47-870C-AEBFBA92AFDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329A0F9E-E467-4A47-870C-AEBFBA92AFDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

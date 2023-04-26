@@ -10,6 +10,8 @@
             string saisie;
             bool saisieOK;
 
+            Console.WriteLine("Programme de calcul pour retraite");
+
            do
             {
                 Console.WriteLine("Veuillez saisir votre age s'il vous plaît.");

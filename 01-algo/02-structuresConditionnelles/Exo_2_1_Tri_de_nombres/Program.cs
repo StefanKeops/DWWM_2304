@@ -25,13 +25,13 @@
             if (A > B)
             {
 
-                Console.WriteLine("Afficher " + B + "," + A + ".");
+                Console.WriteLine("L'ordre croissant est " + B + "," + A + ".");
 
             }
             else
             { 
 
-                Console.WriteLine("Afficher " + A + "," + B + ".");
+                Console.WriteLine("L'ordre croissant est " + A + "," + B + ".");
             }
 
             Console.ReadLine();

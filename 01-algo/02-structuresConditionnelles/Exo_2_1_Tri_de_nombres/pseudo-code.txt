@@ -15,9 +15,11 @@ TRAITEMENT
 
 	ECRIRE "Veuillez donner la valeur du B"
 
+	LIRE B
+
 	DEBUT SI
 
-		SI a > b 
+		SI A > B 
 		
 			ECRIRE B, puis A
 
