@@ -1,4 +1,6 @@
-﻿namespace Exo_2_2_Es_tu_majeur
+﻿using System.Reflection.Metadata;
+
+namespace Exo_2_2_Es_tu_majeur
 {
     internal class Program
     {

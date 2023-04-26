@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_2_1_Tri_de_nombres", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_2_2_Es_tu_majeur", "Exo_2_2_Es_tu_majeur\Exo_2_2_Es_tu_majeur.csproj", "{4C7C65BD-A07C-4FBD-93B0-0A738DB1136F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_2_3_Ma_retraite", "Exo_2_3_Ma_retraite\Exo_2_3_Ma_retraite.csproj", "{5FC4DE01-C8C1-407B-B6BE-AB5C15CCA01A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4C7C65BD-A07C-4FBD-93B0-0A738DB1136F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C7C65BD-A07C-4FBD-93B0-0A738DB1136F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C7C65BD-A07C-4FBD-93B0-0A738DB1136F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC4DE01-C8C1-407B-B6BE-AB5C15CCA01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC4DE01-C8C1-407B-B6BE-AB5C15CCA01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC4DE01-C8C1-407B-B6BE-AB5C15CCA01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC4DE01-C8C1-407B-B6BE-AB5C15CCA01A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
