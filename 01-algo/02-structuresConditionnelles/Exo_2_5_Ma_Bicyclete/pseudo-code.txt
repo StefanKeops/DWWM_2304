@@ -32,7 +32,7 @@ DEBUT DE PROGRAMME
 
 TRAITEMENT
 
-	ECRIRE  "Veuilez donner l'etat du meteo (s'il fait beau au pas)"
+	ECRIRE  "Veuilez donner l'etat du meteo (s'il fait beau au pas; repondrez par "oui" or "no")"
 
 	LIRE METEO
 
