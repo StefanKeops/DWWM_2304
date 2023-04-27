@@ -18,11 +18,11 @@ Dès que j’aurai le livre qui me convient, je m’installerai confortablement 
 
 VARIABLES
 
-	meteo est un chaine de characteres // etat du meteo
+	meteo est une chaine de caracteres // etat du meteo
 
-	etat est un chaine de characteres // etat de la bicyclette
+	etat est une chaine de caracteres // etat de la bicyclette
 
-	reparations est un chaine de characteres // reparations de la bicyclette
+	reparations est une chaine de caracteres // reparations de la bicyclette
 
 	gameOfThrones est un chaine de characteres // presence du livre dans la biblioteque du salon
 
@@ -32,7 +32,7 @@ DEBUT DE PROGRAMME
 
 TRAITEMENT
 
-	ECRIRE  "Veuilez donner l'etat du meteo (s'il fait beau au pas; repondrez par "oui" or "no")"
+	ECRIRE  "Veuilez donner l'etat du meteo (s'il fait beau au pas; repondrez par "oui" or "non")"
 
 	LIRE METEO
 
@@ -40,7 +40,9 @@ DEBUT SI
 
 	SI meteo = oui
 		
-			ECRIRE "Le velo est dans une bonne etat? (repondrez par "oui" or "no")"
+			ECRIRE "Le velo est dans une bonne etat? (repondrez par "oui" or "non")"
+
+			LIRE etat
 
 				SI etat = oui
 
@@ -50,7 +52,9 @@ DEBUT SI
 
 					ECRIRE "On va passer chez le garagiste"
 
-					ECRIRE "Le reparations vont dureé beaucoup? (repondrez par "oui" or "no")"
+					ECRIRE 
+
+					LIRE reparation
 
 						si reparation = no
 
@@ -64,7 +68,9 @@ DEBUT SI
 	SINON
 		ECRIRE "Je consacrerai ma journée à la lecture. J’aimerais relire le 1er tome de Game of Thrones."
 
-		ECRIRE "Je pense posséder ce livre, il doit être dans la bibliothèque du salon. (repondrez par "oui" or "no")"
+		ECRIRE "Je pense posséder ce livre, il doit être dans la bibliothèque du salon. (repondrez par "oui" or "non")"
+
+		LIRE gameOfThrones
 
 			SI gameOfThrones = oui
 
@@ -74,15 +80,17 @@ DEBUT SI
 				
 				ECRIRE "J’irai l’emprunter à la bibliothèque municipale."
 
-				ECRIRE "Je retrouve Game of Thrones a la biblioteque municipale. (repondrez par "oui" or "no")"
+				ECRIRE "Je retrouve Game of Thrones a la biblioteque municipale. (repondrez par "oui" or "non")"
+
+				LIRE gameOfThrones
 
 					SI gameOfThrones = oui
 
-					ECRIRE "Je rentrerai ensuite directement à la maison, , je m’installerai confortablement dans un fauteuil et je me plongerai dans la lecture."
+					ECRIRE "Je rentrerai ensuite directement à la maison, je m’installerai confortablement dans un fauteuil et je me plongerai dans la lecture."
 
 					SINON
 
-						ECRIRE "J’emprunterai un roman policier, je rentrerai ensuite directement à la maison, , je m’installerai confortablement dans un fauteuil et je me plongerai dans la lecture."
+						ECRIRE "J’emprunterai un roman policier, je rentrerai ensuite directement à la maison, je m’installerai confortablement dans un fauteuil et je me plongerai dans la lecture."
 
 		FIN SI
 
