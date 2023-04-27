@@ -26,7 +26,7 @@ VARIABLES
 
 	gameOfThrones est un chaine de characteres // presence du livre dans la biblioteque du salon
 
-	romanPolicier est un chaine de characteres // le livre empumute a la Biblioteque si Game of Thrones n'est pas dans la biblioteque du salon ni a la Biblioteque municipale
+	// romanPolicier est un chaine de characteres // le livre empumute a la Biblioteque si Game of Thrones n'est pas dans la biblioteque du salon ni a la Biblioteque municipale
 
 DEBUT DE PROGRAMME
 
@@ -61,5 +61,31 @@ DEBUT SI
 
 							ECRIRE "On ira à pied jusqu'à l'étang pour cueillir les joncs."
 
-
 	SINON
+		ECRIRE "Je consacrerai ma journée à la lecture. J’aimerais relire le 1er tome de Game of Thrones."
+
+		ECRIRE "Je pense posséder ce livre, il doit être dans la bibliothèque du salon. (repondrez par "oui" or "no")"
+
+			SI gameOfThrones = oui
+
+				ECRIRE "Je m’installerai confortablement dans un fauteuil et je me plongerai dans la lecture."
+
+			SINON
+				
+				ECRIRE "J’irai l’emprunter à la bibliothèque municipale."
+
+				ECRIRE "Je retrouve Game of Thrones a la biblioteque municipale. (repondrez par "oui" or "no")"
+
+					SI gameOfThrones = oui
+
+					ECRIRE "Je rentrerai ensuite directement à la maison, , je m’installerai confortablement dans un fauteuil et je me plongerai dans la lecture."
+
+					SINON
+
+						ECRIRE "J’emprunterai un roman policier, je rentrerai ensuite directement à la maison, , je m’installerai confortablement dans un fauteuil et je me plongerai dans la lecture."
+
+		FIN SI
+
+FIN TRAITEMENT
+
+FIN PROGRAMME		
