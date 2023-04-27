@@ -28,7 +28,7 @@ PROCESSING
 
 	        READ password
 		
-		START IF
+		START IF 
 
 		if password n'est pas formation and  le compteur est égal à 1
 			
