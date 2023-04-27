@@ -16,9 +16,11 @@
             }
             while (prenom.Length < 2);
 
+            
             Console.WriteLine("Bonjour " + prenom);
+          
 
-        Console.WriteLine();
+            Console.ReadLine();
         }
     }
 }

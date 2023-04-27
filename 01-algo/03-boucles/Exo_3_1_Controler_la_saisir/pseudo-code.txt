@@ -20,11 +20,9 @@ PROCESSING
 
 	READ prenom
 
-	DEBUT WHILE
+	WHILE le prénom contenient au moins 2 caractères
 		
 		WRITE "Bonjour" + , prenom , + "."
-
-		WHILE le prénom contenient au moins 2 caractères
 
 	END WHILE
 
