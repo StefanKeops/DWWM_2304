@@ -98,6 +98,9 @@ namespace Exo_2_5_Ma_Bicyclete
                     }
                 }
             }
+
+            Console.WriteLine();
+            
         }
     }
 }

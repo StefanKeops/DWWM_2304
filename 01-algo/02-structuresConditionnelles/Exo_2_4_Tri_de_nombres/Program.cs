@@ -63,6 +63,9 @@
                     Console.WriteLine("L'ordre decroissant est " + C + " , " + B + " , " + A + ".");
                 }
             }
+        
+        Console.WriteLine();
+
         }
     }
 }
