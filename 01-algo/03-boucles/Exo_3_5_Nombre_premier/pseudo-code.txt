@@ -1,0 +1,34 @@
+﻿Lire un nombre N et déterminer s’il est un nombre premier.
+
+Un nombre premier n’est divisible que par 1 et par lui-même.
+
+VARIABLES
+
+	nombre est un premier
+	reste 
+	diviseur est un premier
+	premier est boleen
+
+	START PROGRAM
+
+	WRITE "Introduisez la valeur d'un nombre"
+
+	Lire nombre
+
+	FOR chaque nombre entier "diviseur" alland de 2 a "nombre - 1"
+
+		if "nombre" est divisible par "diviseur"
+
+		estPremier <-- faux
+
+	si estPremier est vrais 
+		
+		ALORS WRITE "nombre est premier"
+
+		SINON 
+
+		WRITE "nombre n'est pas premier"
+
+END PROCESSING
+
+END PROGRAM

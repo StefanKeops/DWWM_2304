@@ -19,7 +19,7 @@ PROCESSING
 			
 			Ajouter "diviseur" a la liste "diviseurs"
 
-	Retourner "diviseurs"
-
 	Write "Les diviseurs de " , nombre , " sont:"
+
+	Retourner "diviseurs"
 

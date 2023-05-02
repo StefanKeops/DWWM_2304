@@ -16,7 +16,7 @@
 
             Console.WriteLine("Les diviseurs de " + nombre + " sont:");
 
-            for (diviseur = 1; diviseur < nombre; diviseur++)
+            for (diviseur = 2; diviseur < nombre; diviseur++)
 
                 if (nombre % diviseur == 0)
                 {
