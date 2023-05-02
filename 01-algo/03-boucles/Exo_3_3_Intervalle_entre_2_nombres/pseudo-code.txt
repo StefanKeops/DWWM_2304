@@ -9,11 +9,11 @@ START PROGRAM
 
 PROCESSING
 
-	WRITE "Introduisez le premiere numbre entier A"
+	WRITE "Introduisez le premier nombre entier A"
 
 	LIRE A
 
-	WRITE "Introduisez le premiere numbre entier B"
+	WRITE "Introduisez le deuxieme nombre entier B"
 
 	LIRE B
 

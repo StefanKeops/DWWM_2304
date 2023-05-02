@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo_3_2_Controler_la_saisie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_3_3_Intervalle_entre_2_nombres", "..\Exo_3_3_Intervalle_entre_2_nombres\Exo_3_3_Intervalle_entre_2_nombres.csproj", "{D071BDEF-750A-420B-85EA-FA1AA7362B25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_3_4_Recherche_des_diviseurs_d_un_numbre", "..\Exo_3_4_Recherche_des_diviseurs_d_un_numbre\Exo_3_4_Recherche_des_diviseurs_d_un_numbre.csproj", "{9A9BEFC8-A562-4FFC-873A-6A4AD8401032}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D071BDEF-750A-420B-85EA-FA1AA7362B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D071BDEF-750A-420B-85EA-FA1AA7362B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D071BDEF-750A-420B-85EA-FA1AA7362B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9BEFC8-A562-4FFC-873A-6A4AD8401032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9BEFC8-A562-4FFC-873A-6A4AD8401032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9BEFC8-A562-4FFC-873A-6A4AD8401032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9BEFC8-A562-4FFC-873A-6A4AD8401032}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

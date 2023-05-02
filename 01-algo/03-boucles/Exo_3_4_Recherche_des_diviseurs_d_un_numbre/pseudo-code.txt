@@ -1,0 +1,25 @@
+﻿Lire un nombre entier et afficher tous ses diviseurs autres que 1 et lui-même.
+
+VARIABLES
+
+	diviseur est un nombre entier
+	nombre est un nombre entier
+
+START PROGRAM
+
+PROCESSING
+
+	WRITE "Introduisez la valeur d'un nombre"
+
+	LIRE nombre
+
+	FOR chaque numbre entier "diviseur" alland de 2 a "nombre - 1"
+
+		If "nombre" est divisible par "diviseur"
+			
+			Ajouter "diviseur" a la liste "diviseurs"
+
+	Retourner "diviseurs"
+
+	Write "Les diviseurs de " , nombre , " sont:"
+
