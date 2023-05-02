@@ -1,0 +1,28 @@
+﻿Lire 2 nombres entier A et B puis afficher tous les nombres entier dans l’intervalle.
+
+VARIABLES
+
+A est un entier
+B est un entier
+
+START PROGRAM
+
+PROCESSING
+
+	WRITE "Introduisez le premiere numbre entier A"
+
+	LIRE A
+
+	WRITE "Introduisez le premiere numbre entier B"
+
+	LIRE B
+
+	WRITE "Le nombre entiere dans l'intervalle sont: "
+	
+    	FOR 
+
+		L'interval entre A et B
+
+	END PROCESSING
+
+	END PROGRAM

@@ -10,12 +10,13 @@ namespace Exo_3_2_Controler_la_saisie_avec_limite
             string password = "formation";
             int tentative = 0;
             bool connecte = false;
+            string motDePasse;
 
             while (!connecte && tentative < 3)
             {
                 Console.WriteLine("Tapez votre mot de passe!");
 
-                string motDePasse = Console.ReadLine();
+                motDePasse = Console.ReadLine();
 
                 if (motDePasse == password)
                 {
@@ -25,7 +26,7 @@ namespace Exo_3_2_Controler_la_saisie_avec_limite
                 }
                 else
                 {
-                    Console.WriteLine("Mot de passe incorrect, vous devez réessayer");
+                    Console.WriteLine("Mot de passe incorrect, vous devez réessayer;");
 
                     tentative++;
                 }
