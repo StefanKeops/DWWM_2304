@@ -13,41 +13,40 @@ Note : Le bon mot de passe est formation
 VARIABLES
 
 	password est une chaine de caracteres
-	
-	compteur est un entier
+	tentative est un entier
+	connecte est un boolean
+	motDePasse este une chaine de caracteres
+
 
 START PROGRAM
 
 PROCESSING
 
-	compteur <-- 1
-
-		DO 
+	WHILE 
 			
 			WRITE "Tapez votre mot de passe!"
 
-	        READ password
+	        READ motDePasse
 		
 		START IF 
 
-		if password n'est pas formation and  le compteur est égal à 1
+		IF password est formation 
 			
-			WRITE "Mot de passe incorrect, vous devez réessayer ; vous avez encore 2 tentatives"
+			connecte deviens true
 
-		else if password n'est pas formation and  le compteur est égal à 2
+			ALORS WRITE "Vous êtes connecté"
+
+		ELSE 
 			
-			WRITE "Mot de passe incorrect, vous devez réessayer ; vous avez encore 1 tentative"
+			WRITE "Mot de passe incorrect, vous devez réessayer;"
 
-		else 
-
-			WRITE "Votre compte est bloqué"
+			il s'ajoute 1 au tentative
 
 		END IF
 
-		WHILE password est "formation" and le compteur est inférieur ou égal à 3
+		apres 3 tentative rattés
 
-			WRITE "Vous êtes connecté"
-
+			WRITE "Votre compte est bloqué"
 
 END PROCESSING
 

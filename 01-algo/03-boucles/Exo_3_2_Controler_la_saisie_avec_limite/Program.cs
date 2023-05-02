@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 namespace Exo_3_2_Controler_la_saisie_avec_limite
 {
@@ -6,31 +7,34 @@ namespace Exo_3_2_Controler_la_saisie_avec_limite
     {
         static void Main(string[] args)
         {
-            string password;
-            int compteur = 0;
-            int tentative = 3;
+            string password = "formation";
+            int tentative = 0;
+            bool connecte = false;
 
-            do
+            while (!connecte && tentative < 3)
             {
                 Console.WriteLine("Tapez votre mot de passe!");
 
-                password = Console.ReadLine();
+                string motDePasse = Console.ReadLine();
 
-                compteur++;
-
-                while (password == "formation" && (tentative - compteur) == 0 ) ;
+                if (motDePasse == password)
                 {
-                    Console.WriteLine("Mot de passe incorrect, vous devez réessayer ; vous avez encore " + (tentative - compteur) + " tentatives");
-                    { 
-                    while (password != "formation" && compteur = 3);
+                    connecte = true;
 
-                        Console.WriteLine("Votre compte est bloqué");
-                    }
+                    Console.WriteLine("Vous êtes connecté");
+                }
+                else
+                {
+                    Console.WriteLine("Mot de passe incorrect, vous devez réessayer");
+
+                    tentative++;
                 }
             }
-            while (password != "formation" && compteur <= 3);
-
-            Console.WriteLine("Vous êtes connecté");
+            if (!connecte)
+            { 
+                Console.WriteLine("Votre compte est bloqué");
+            }
         }
     }
 }
+
