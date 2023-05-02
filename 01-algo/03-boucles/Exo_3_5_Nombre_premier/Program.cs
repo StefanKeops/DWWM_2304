@@ -7,7 +7,7 @@
             int nombre;
             int rest;
             int diviseur;
-            bool premier;
+            bool premier = true;
             string saisie;
 
             Console.WriteLine("Introduisez la valeur d'un nombre");
@@ -26,15 +26,15 @@
                     break;
                 }
             }
-            if (premier = true)
+            if (premier)
             {
                 Console.WriteLine(nombre + " est un nombre premier");
             }
             else
             {
-                Console.WriteLine(nombre + " n'est pas un nombre premier");
+            Console.WriteLine(nombre + " n'est pas un nombre premier");
             }
 
+            }
         }
     }
-}
