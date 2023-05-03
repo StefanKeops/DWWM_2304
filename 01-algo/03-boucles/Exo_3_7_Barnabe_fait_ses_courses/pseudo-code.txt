@@ -1,0 +1,40 @@
+﻿EXERCICE 3.7 : BARNABÉ FAIT SES COURSES
+Barnabé fait ses courses dans plusieurs magasins.
+
+Dans chacun, il dépense 1 € de plus que la moitié de ce qu’il possédait en entrant.
+
+Dans le dernier magasin, il dépense le solde.
+
+Soit la somme S dont il disposait au départ (S > 1 €).
+
+Représenter l’algorithme permettant de trouver le nombre de magasins dans lesquels il a acheté.
+
+VARIABLES
+
+	s est un entier // la somme dont Barnabé disposait au départ
+
+	magasins est un entier // le nombre de magasins dans lesquels Barnabé a acheté
+
+	depense est un entier // la somme dépensée dans un magasin
+
+START PROGRAM
+
+PROCESSING
+
+	s > 1
+
+	magasins <-- 0
+
+	depense <-- (s/2 +1)
+
+WHILE depense <= s
+
+	s <- s - depense
+
+	ajoutez 1 au compteur
+
+	depense <- s + 1
+
+END PROCESSING
+
+END PROGRAM
