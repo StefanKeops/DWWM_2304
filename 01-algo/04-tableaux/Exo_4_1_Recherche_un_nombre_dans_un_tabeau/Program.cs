@@ -28,8 +28,9 @@ namespace Exo_4_1_Recherche_un_nombre_dans_un_tabeau
 
                 if (tableau[indiceMilieu] == n)
                 {
-                    Console.WriteLine("Le numero est " + n);
-                    return;
+                    trouve = true;
+                    Console.WriteLine("Le numero " + n + " etais trouve a l'indice " + indiceMilieu );
+                    break;
                 }
                 else if (tableau[indiceMilieu] < n)
                 {
