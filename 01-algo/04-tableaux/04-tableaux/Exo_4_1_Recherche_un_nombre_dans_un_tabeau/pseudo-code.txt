@@ -1,0 +1,32 @@
+﻿EXERCICE 4.1 : RECHERCHER UN NOMBRE DANS UN TABLEAU
+Soit un tableau de nombres entier triés par ordre croissant.
+
+Exemple: [8, 16, 32, 64, 128, 256, 512]
+
+Chercher si un nombre donné N figure parmi les éléments.
+
+Si oui, afficher la valeur de l’indice correspondant. Sinon, afficher « Nombre non trouvé ».
+
+VARIABLES
+	
+	tableau 
+
+	n est un entier
+
+	indiceDebut est un entier
+
+	indiceFin est un entier
+
+	indiceMilieu est un entier
+
+START PROGRAM
+
+PROCESSING
+
+	Demander à l'utilisateur de saisir le nombre à rechercher et le stocker dans une variable nombre_a_rechercher
+
+	Déclarer une variable indice_debut initialisée à 0 et une variable indice_fin initialisée à la taille du tableau moins 1
+
+END PROCESSING
+
+END PROGRAM
