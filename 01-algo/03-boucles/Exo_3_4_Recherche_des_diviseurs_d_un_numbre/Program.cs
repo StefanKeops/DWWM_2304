@@ -17,11 +17,12 @@
             Console.WriteLine("Les diviseurs de " + nombre + " sont:");
 
             for (diviseur = 2; diviseur < nombre; diviseur++)
-
+            {
                 if (nombre % diviseur == 0)
                 {
                     Console.WriteLine(diviseur);
                 }
+            }
         }
     }
 }

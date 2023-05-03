@@ -4,29 +4,30 @@
     {
         static void Main(string[] args)
         {
-            int A;
-            int B;
+            int a;
+            int b;
             int i;
-            string saisie;
+            string saisieA;
+            string saisieB;
 
             Console.WriteLine("Introduisez le premiere numbre entier A");
 
-            saisie = Console.ReadLine();
+            saisieA = Console.ReadLine();
 
-            A = int.Parse(saisie);
+            a = int.Parse(saisieA);
 
             Console.WriteLine("Introduisez le premiere numbre entier B");
 
-            saisie = Console.ReadLine();
+            saisieB = Console.ReadLine();
 
-            B = int.Parse(saisie);
+            b = int.Parse(saisieB);
 
             Console.WriteLine("Le nombre entiere dans l'intervalle sont: ");
 
-                for (i = A; i <= B; i++)
-                {
+            for (i = a + 1; i < b; i++)
+            {
                 Console.Write(i);
-                }
+            }
         }
     }
 }

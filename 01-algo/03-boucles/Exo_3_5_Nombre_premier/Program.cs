@@ -5,34 +5,36 @@
         static void Main(string[] args)
         {
             int nombre;
-            int rest;
             int diviseur;
             bool premier = true;
             string saisie;
+            bool saisieOk;
 
-            Console.WriteLine("Introduisez la valeur d'un nombre");
-
-            saisie = Console.ReadLine();
-
-            nombre = int.Parse(saisie);
-
-            for (diviseur = 2; diviseur <= nombre / 2; diviseur++)
+            do
             {
-                rest = nombre % diviseur;
+                Console.WriteLine("Introduisez la valeur d'un nombre");
 
-                if (rest == 0)
+                saisie = Console.ReadLine();
+
+                saisieOk = int.TryParse(saisie, out nombre);
+            }
+            while (!saisieOk);
+
+            for (diviseur = 2; diviseur < nombre; diviseur++)
+            {
+                if (nombre % 2 == 0)
                 {
                     premier = false;
-                    break;
                 }
             }
-            if (premier)
+
+            if (premier && nombre > 2)
             {
-                Console.WriteLine(nombre + " est un nombre premier");
+                Console.WriteLine("le numero " + nombre + " est premier");
             }
             else
             {
-            Console.WriteLine(nombre + " n'est pas un nombre premier");
+                Console.WriteLine("le numero " + nombre + " n'est pas premier");
             }
 
             }

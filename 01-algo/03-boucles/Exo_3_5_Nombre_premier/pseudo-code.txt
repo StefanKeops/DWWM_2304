@@ -5,29 +5,32 @@ Un nombre premier n’est divisible que par 1 et par lui-même.
 VARIABLES
 
 	nombre est un premier
-	reste 
 	diviseur est un premier
-	premier est boleen
+	premier est boleen, initialise vrais
+	saisie est une chaine de caractere
+	saisieOk est boleen
 
 	START PROGRAM
 
-	WRITE "Introduisez la valeur d'un nombre"
+	DO
 
-	Lire nombre
+		WRITE "Introduisez la valeur d'un nombre"
+
+		lIRE nombre
 
 	FOR chaque nombre entier "diviseur" alland de 2 a "nombre - 1"
 
-		if "nombre" est divisible par "diviseur"
+		if "nombre" est divisible par "2"
 
 		estPremier <-- faux
 
-	si estPremier est vrais 
+	si estPremier est vrais et nombre plus grqnd que 2
 		
-		ALORS WRITE "nombre est premier"
+		ALORS WRITE "le numero" + , nombre , + "est premier"
 
 		SINON 
 
-		WRITE "nombre n'est pas premier"
+		WRITE ""le numero" + , nombre , + "n'est pas premier""
 
 END PROCESSING
 
