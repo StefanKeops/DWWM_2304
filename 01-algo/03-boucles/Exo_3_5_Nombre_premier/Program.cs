@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             int nombre;
-            int diviseur;
+            int diviseur =2;
             bool premier = true;
             string saisie;
             bool saisieOk;
@@ -20,15 +20,16 @@
             }
             while (!saisieOk);
 
-            for (diviseur = 2; diviseur < nombre; diviseur++)
+            while (diviseur < nombre && premier)
             {
-                if (nombre % 2 == 0)
+                if (nombre % diviseur == 0)
                 {
                     premier = false;
                 }
+                diviseur++;
             }
 
-            if (premier && nombre > 2)
+            if (premier && nombre > 1)
             {
                 Console.WriteLine("le numero " + nombre + " est premier");
             }
