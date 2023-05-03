@@ -12,19 +12,21 @@ VARIABLES
 
 	START PROGRAM
 
+	PROCESSING
+
 	DO
 
 		WRITE "Introduisez la valeur d'un nombre"
 
-		lIRE nombre
+		LIRE nombre
 
 	FOR chaque nombre entier "diviseur" alland de 2 a "nombre - 1"
 
-		if "nombre" est divisible par "2"
+		IF "nombre" est divisible par "2"
 
 		estPremier <-- faux
 
-	si estPremier est vrais et nombre plus grqnd que 2
+	IF estPremier est vrais et nombre plus grqnd que 2
 		
 		ALORS WRITE "le numero" + , nombre , + "est premier"
 
