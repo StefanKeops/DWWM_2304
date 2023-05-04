@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo_4_1_Recherche_un_nombre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_4_2_Recherche_une_lettre_dans_un_phrase", "Exo_4_2_Recherche_une_lettre_dans_un_phrase\Exo_4_2_Recherche_une_lettre_dans_un_phrase.csproj", "{CDC73085-AD71-4705-BFA8-36FA64A54A93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_4_2_1_Recherche_une_lettre_dans_un_phrase", "Exo_4_2_1_Recherche_une_lettre_dans_un_phrase\Exo_4_2_1_Recherche_une_lettre_dans_un_phrase.csproj", "{8C55D45B-56EB-4CAC-8294-2EFCCD344D11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CDC73085-AD71-4705-BFA8-36FA64A54A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDC73085-AD71-4705-BFA8-36FA64A54A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDC73085-AD71-4705-BFA8-36FA64A54A93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C55D45B-56EB-4CAC-8294-2EFCCD344D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C55D45B-56EB-4CAC-8294-2EFCCD344D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C55D45B-56EB-4CAC-8294-2EFCCD344D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C55D45B-56EB-4CAC-8294-2EFCCD344D11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

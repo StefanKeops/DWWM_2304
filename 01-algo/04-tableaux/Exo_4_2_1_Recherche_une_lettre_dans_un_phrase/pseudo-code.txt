@@ -1,0 +1,50 @@
+﻿EXERCICE 4.2 : RECHERCHER UNE LETTRE DANS UNE PHRASE
+
+Soit une chaîne de caractères terminée par le caractère « . ».
+
+Donnez l’algorithme d’un programme qui compte le nombre d’occurrences d’une lettre donnée (“a” par exemple) dans cette chaîne.
+
+Si la chaîne de caractères est vide ou n’est composée que du caractère « . », le message “LA CHAINE EST VIDE” sera affiché.
+
+Proposez un jeu d’essai prévoyant les 3 cas suivants :
+
+La phrase est vide
+La lettre n’est pas présente
+La lettre est présente une ou plusieurs fois
+
+VARIABLES
+
+	chaine este un chaine de caracteres <-- "RECHERCHER UNE LETTRE DANS UNE PHRASE."
+	chaine2 este un chaine de caracteres vide
+	Lettre est un caractere
+	lettre2 est un caractere
+	lettreCount est un contor
+	lettreCount2 est un contor
+
+START PROGRAM
+
+PROCESSING
+
+	IF chaine2 = 0 ou "."
+	
+		SO WRITE "LA CHAINE EST VIDE"
+	
+	ELSE return lettre count
+
+	ENS IF
+
+	IF chaine = 0 ou "."
+	
+		SO WRITE "LA CHAINE EST VIDE"
+
+	ELSE IF lettre = 0
+
+		SO WRITE "La lettre n'est pas presente dans le chaine de caracteres"
+	
+	ELSE return lettre2 count
+
+		SO WRITRE "Le nombre d'occurences de " + letter2 + " est : " + count2
+
+END PROCESSING
+
+END PROGRAM
