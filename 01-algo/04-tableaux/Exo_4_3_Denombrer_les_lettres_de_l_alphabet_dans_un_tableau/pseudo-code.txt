@@ -1,0 +1,43 @@
+﻿EXERCICE 4.3 : DÉNOMBRER LES LETTRES DE L’ALPHABET DANS UN TABLEAU
+Lire un texte d’au moins 120 caractères (à contrôler).
+
+Compter et afficher le nombre d’occurrences (d’apparitions) de chacune des lettres de l’alphabet.
+
+
+VARIABLES
+
+	texte este un chaine de caracteres proprose par l'utilisateur
+	occurrences este un entier
+	alphabet este un chaine de caracteres compose de lettres de l'alphabet
+
+START PROGRAM
+
+PROCESSING
+
+	DO
+
+		WRITE "Ecrivez un text d'au moins 120 caractere"
+
+		LIRE text
+
+	WHILE |text| >= 120
+
+		FOR EACH letter IN alphabet
+
+			occurences <-- 0
+
+			IF lettre IN text
+
+				occurences <- occurences + 1
+
+			END IF
+			
+			WRITE "La lettre: " , alphabet[letter] , " est presente " , occurrences , " fois."
+		
+		END FOR
+
+	END WHILE
+
+
+
+	
