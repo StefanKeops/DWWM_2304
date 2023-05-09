@@ -5,7 +5,6 @@
         static void Main(string[] args)
         {
             string text;
-            int occurrence;
             string alphabet = "abcdefghijklmnopqrstuvwxyz";
 
             do
@@ -16,19 +15,19 @@
             }
             while (text.Length <= 120);
             {
-                for (int letter = 0; letter < alphabet.Length; letter++)
+                for (int lettre = 0; lettre < alphabet.Length; lettre++)
                 {
-                    occurrence = 0;
+                    int occurrence = 0;
 
                     for (int i = 0; i < text.Length; i++)
                     {
-                        if (text[i] == alphabet[letter])
+                        if (text[i] == alphabet[lettre])
                         {
                             occurrence++;
                         }
                     }
 
-                    Console.WriteLine("La lettre: " + alphabet[letter] + " est presente " + occurrence + " fois.");
+                    Console.WriteLine("La lettre: " + alphabet[lettre] + " est presente " + occurrence + " fois.");
                 }
             }
         }

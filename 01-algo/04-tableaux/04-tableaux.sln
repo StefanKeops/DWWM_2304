@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo_4_2_1_Recherche_une_let
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_4_3_Denombrer_les_lettres_de_l_alphabet_dans_un_tableau", "Exo_4_3_Denombrer_les_lettres_de_l_alphabet_dans_un_tableau\Exo_4_3_Denombrer_les_lettres_de_l_alphabet_dans_un_tableau.csproj", "{0BEA7485-181E-4B27-8E26-2E642230A497}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_4_4_Tri_d_un_tableau", "Exo_4_4_Tri_d_un_tableau\Exo_4_4_Tri_d_un_tableau.csproj", "{4E5AFEF6-F7A1-44B8-904B-1C94FCFE156A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0BEA7485-181E-4B27-8E26-2E642230A497}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BEA7485-181E-4B27-8E26-2E642230A497}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BEA7485-181E-4B27-8E26-2E642230A497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E5AFEF6-F7A1-44B8-904B-1C94FCFE156A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E5AFEF6-F7A1-44B8-904B-1C94FCFE156A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E5AFEF6-F7A1-44B8-904B-1C94FCFE156A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E5AFEF6-F7A1-44B8-904B-1C94FCFE156A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
