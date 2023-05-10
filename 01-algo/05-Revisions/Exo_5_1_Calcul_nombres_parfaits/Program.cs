@@ -6,7 +6,7 @@
         {
             int compteur = 0;
             int nombre = 2;
-            
+
             while (compteur < 4)
             {
                 int sommeDiviseurs = 1; // 1 est le diviseur de toutes les nombres
