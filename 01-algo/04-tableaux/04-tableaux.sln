@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo_4_2_Recherche_une_lettr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo_4_2_1_Recherche_une_lettre_dans_un_phrase", "Exo_4_2_1_Recherche_une_lettre_dans_un_phrase\Exo_4_2_1_Recherche_une_lettre_dans_un_phrase.csproj", "{8C55D45B-56EB-4CAC-8294-2EFCCD344D11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_4_3_Denombrer_les_lettres_de_l_alphabet_dans_un_tableau", "Exo_4_3_Denombrer_les_lettres_de_l_alphabet_dans_un_tableau\Exo_4_3_Denombrer_les_lettres_de_l_alphabet_dans_un_tableau.csproj", "{0BEA7485-181E-4B27-8E26-2E642230A497}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo_4_3_Denombrer_les_lettres_de_l_alphabet_dans_un_tableau", "Exo_4_3_Denombrer_les_lettres_de_l_alphabet_dans_un_tableau\Exo_4_3_Denombrer_les_lettres_de_l_alphabet_dans_un_tableau.csproj", "{0BEA7485-181E-4B27-8E26-2E642230A497}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_4_4_Tri_d_un_tableau", "Exo_4_4_Tri_d_un_tableau\Exo_4_4_Tri_d_un_tableau.csproj", "{4E5AFEF6-F7A1-44B8-904B-1C94FCFE156A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo_4_4_Tri_d_un_tableau", "Exo_4_4_Tri_d_un_tableau\Exo_4_4_Tri_d_un_tableau.csproj", "{4E5AFEF6-F7A1-44B8-904B-1C94FCFE156A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_4_5_Palidrome", "Exo_4_5_Palidrome\Exo_4_5_Palidrome.csproj", "{D45F2834-D9F6-45DB-9890-00CD343636E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4E5AFEF6-F7A1-44B8-904B-1C94FCFE156A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E5AFEF6-F7A1-44B8-904B-1C94FCFE156A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E5AFEF6-F7A1-44B8-904B-1C94FCFE156A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D45F2834-D9F6-45DB-9890-00CD343636E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D45F2834-D9F6-45DB-9890-00CD343636E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D45F2834-D9F6-45DB-9890-00CD343636E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D45F2834-D9F6-45DB-9890-00CD343636E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
