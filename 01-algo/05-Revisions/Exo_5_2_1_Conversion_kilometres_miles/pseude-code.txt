@@ -1,0 +1,51 @@
+﻿Exercice 5.2.1
+L’utilisateur saisit une valeur en kilomètres comprise entre 0.01 et 1 000 000.
+
+Si la valeur est hors limite, l’utilisateur est invité à saisir une nouvelle valeur. Si la valeur est égale à q, le programme se termine et se ferme.
+
+Formule km vers mi : 1 miles = 1.609 kilomètres.
+
+Le programme affiche le résultat de la conversion sous forme de nombre réel double précision.
+
+
+VARIABLES
+
+	valeur // la valeur laquelle l'utilisateur est invite a saisir
+
+	START PROGRAM
+
+PROCESSING
+
+	WRITE "Entrez une valeur en kilomètres (0.01 à 1 000 000) ou 'q' pour quitter :"
+
+	READ valeur
+
+		WHILE (valeur n'est pas egal a 'q')
+
+		IF ('valeur' n'est pas un nombre valide) 
+
+			SO WRITE "Entrez une valeur en kilomètres (0.01 à 1 000 000) ou 'q' pour quitter :"
+
+			READ valeur
+
+		END IF
+
+		IF 'valeur' est inferior a 0.01 ou 'valeur' est superior a 1 000 000)
+
+			SO WRITE "La valeur saisie est hors limite. Veuillez saisir une nouvelle valeur, ou 'q' pour quitter :"
+
+			READ valeur
+
+			convert from km to miles (1 miles = 1.609 kilomètres)
+
+		ELSE
+
+			Sortir de la boucle
+
+		FIN IF
+
+		FIN WHILE
+
+END PROCESSING
+
+END PROGRAM
