@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo_5_1_Calcul_nombres_parfaits", "Exo_5_1_Calcul_nombres_parfaits\Exo_5_1_Calcul_nombres_parfaits.csproj", "{0899DE9F-39F4-4A7A-BD64-51C7515588B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_5_2_2_Conversion_kilometres_miles", "Exo_5_1_2_Conversion_kilometres_miles\Exo_5_2_2_Conversion_kilometres_miles.csproj", "{B6B54BBC-619B-4228-9BD6-43FDEE2E3679}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0899DE9F-39F4-4A7A-BD64-51C7515588B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0899DE9F-39F4-4A7A-BD64-51C7515588B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0899DE9F-39F4-4A7A-BD64-51C7515588B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6B54BBC-619B-4228-9BD6-43FDEE2E3679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B54BBC-619B-4228-9BD6-43FDEE2E3679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B54BBC-619B-4228-9BD6-43FDEE2E3679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B54BBC-619B-4228-9BD6-43FDEE2E3679}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
