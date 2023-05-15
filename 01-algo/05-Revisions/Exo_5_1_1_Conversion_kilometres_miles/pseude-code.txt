@@ -35,25 +35,17 @@ PROCESSING
 
 				miles <-- valeur / 1,609
 			
-				WRITE ""
+				WRITE , valeur , " kilometres = " , miles ,
 
-		END IF
-
-		IF 'valeur' est inferior a 0.01 ou 'valeur' est superior a 1 000 000)
-
-			SO WRITE "La valeur saisie est hors limite. Veuillez saisir une nouvelle valeur, ou 'q' pour quitter :"
-
-			READ valeur
-
-			convert from km to miles (1 miles = 1.609 kilomètres)
+			END IF
 
 		ELSE
 
 			Sortir de la boucle
 
-		FIN IF
+		END IF
 
-		FIN WHILE
+		END WHILE
 
 END PROCESSING
 
