@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace Exo_5_2_1_Conversion_kilometres_miles
+﻿namespace Exo_5_1_1_Conversion_kilometres_miles
 {
     internal class Program
     {
@@ -21,7 +19,7 @@ namespace Exo_5_2_1_Conversion_kilometres_miles
                     bool ok = double.TryParse(saisie, out valeur);
                     if (!ok || valeur < 0.01 || valeur > 1000000)
                     {
-                        Console.WriteLine("Valeur invalide.");
+                        Console.WriteLine("Valeur invalide. Entrez une valeur en kilomètres (0.01 à 1 000 000) ou 'q' pour quitter :");
                     }
                     else
                     {

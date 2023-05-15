@@ -11,22 +11,31 @@ Le programme affiche le résultat de la conversion sous forme de nombre réel do
 VARIABLES
 
 	valeur // la valeur laquelle l'utilisateur est invite a saisir
+	valeurAccepte 
 
 	START PROGRAM
 
 PROCESSING
 
-	WRITE "Entrez une valeur en kilomètres (0.01 à 1 000 000) ou 'q' pour quitter :"
+	DO
+	
+		WRITE "Entrez une valeur en kilomètres (0.01 à 1 000 000) ou 'q' pour quitter :"
 
 	READ valeur
 
-		WHILE (valeur n'est pas egal a 'q')
+		IF (valeur n'est pas egal a 'q')
 
-		IF ('valeur' n'est pas un nombre valide) 
+			IF ('valeur' n'est pas un nombre valide) 
 
-			SO WRITE "Entrez une valeur en kilomètres (0.01 à 1 000 000) ou 'q' pour quitter :"
+				SO WRITE "Valeur invalide. Entrez une valeur en kilomètres (0.01 à 1 000 000) ou 'q' pour quitter :"
+			
+			ELSE
 
-			READ valeur
+				READ valeur
+
+				miles <-- valeur / 1,609
+			
+				WRITE ""
 
 		END IF
 
