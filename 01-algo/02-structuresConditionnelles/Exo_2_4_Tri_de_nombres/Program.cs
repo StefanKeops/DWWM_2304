@@ -37,35 +37,32 @@
                 }
                 else
                 {
-                    if ((A > B) && (B < C))
-                    {
-                        Console.WriteLine("L'ordre decroissant est " + A + " , " + C + " , " + B + ".");
-                    }
-                    else
-                    {
-                        Console.WriteLine("L'ordre decroissant est " + C + " , " + A + " , " + B + ".");
-                    }
+                    Console.WriteLine("L'ordre decroissant est " + A + " , " + C + " , " + B + ".");
+                }
+            }
+            else if (B > A)
+            {
+                if (A > C)
+                {
+                    Console.WriteLine("L'ordre decroissant est " + B + " , " + A + " , " + C + ".");
+                }
+                else
+                {
+                    Console.WriteLine("L'ordre decroissant est " + B + " , " + C + " , " + A + ".");
                 }
             }
             else
-                if (A > C)
             {
-                Console.WriteLine("L'ordre decroissant est " + B + " , " + A + " , " + C + ".");
-            }
-            else
-            {
-                if ((B > C) && (A < C))
+                if (A > B)
                 {
-                    Console.WriteLine("L'ordre decroissant est " + B + " , " + C + " , " + A + ".");
+                    Console.WriteLine("L'ordre decroissant est " + C + " , " + A + " , " + B + ".");
                 }
                 else
                 {
                     Console.WriteLine("L'ordre decroissant est " + C + " , " + B + " , " + A + ".");
                 }
             }
-        
-        Console.WriteLine();
-
+            Console.WriteLine();
         }
     }
 }
