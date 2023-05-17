@@ -6,57 +6,58 @@ namespace Exo_2_4_Tri_de_nombres
     {
         static void Main(string[] args)
         {
-            int A;
-            int B;
-            int C;
+            int a;
+            int b;
+            int c;
             string saisie;
 
             Console.WriteLine("Programme Tri de trois nombres");
 
-            Console.WriteLine("Veuillez donner la valeur du A");
+            Console.WriteLine("Veuillez donner la valeur du a");
             saisie = Console.ReadLine();
-            A = int.Parse(saisie);
+            a = int.Parse(saisie);
 
-            Console.WriteLine("Veuillez donner la valeur du B");
+            Console.WriteLine("Veuillez donner la valeur du b");
             saisie = Console.ReadLine();
-            B = int.Parse(saisie);
+            b = int.Parse(saisie);
 
-            Console.WriteLine("Veuillez donner la valeur du C");
+            Console.WriteLine("Veuillez donner la valeur du c");
             saisie = Console.ReadLine();
-            C = int.Parse(saisie);
+            c = int.Parse(saisie);
 
-            if (A >= B && A >= C)
+            if (a >= b && a >= c)
             {
-                if (B >= C)
+                if (b >= c)
                 {
-                    Console.WriteLine("L'ordre décroissant est " + A + ", " + B + ", " + C + ".");
+                    Console.WriteLine("L'ordre décroissant est " + a + ", " + b + ", " + c + ".");
                 }
                 else
                 {
-                    Console.WriteLine("L'ordre décroissant est " + A + ", " + C + ", " + B + ".");
+                    Console.WriteLine("L'ordre décroissant est " + a + ", " + c + ", " + b + ".");
                 }
             }
-            else if (B >= A && B >= C)
+            else if (b >= a && b >= c)
             {
-                if (A >= C)
+                if (a >= c)
                 {
-                    Console.WriteLine("L'ordre décroissant est " + B + ", " + A + ", " + C + ".");
+                    Console.WriteLine("L'ordre décroissant est " + b + ", " + a + ", " + c + ".");
                 }
                 else
                 {
-                    Console.WriteLine("L'ordre décroissant est " + B + ", " + C + ", " + A + ".");
+                    Console.WriteLine("L'ordre décroissant est " + b + ", " + c + ", " + a + ".");
                 }
             }
-            else if (C >= A && C >= B)
+            else if (c >= a && c >= b)
             {
-                if (A >= B)
+                if (a >= b)
                 {
-                    Console.WriteLine("L'ordre décroissant est " + C + ", " + A + ", " + B + ".");
+                    Console.WriteLine("L'ordre décroissant est " + c + ", " + a + ", " + b + ".");
                 }
                 else
                 {
-                    Console.WriteLine("L'ordre décroissant est " + C + ", " + B + ", " + A + ".");
+                    Console.WriteLine("L'ordre décroissant est " + c + ", " + b + ", " + a + ".");
                 }
+                Console.WriteLine();
             }
         }
     }
