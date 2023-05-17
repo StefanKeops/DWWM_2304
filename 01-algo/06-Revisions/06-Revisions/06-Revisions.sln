@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-Revisions", "06-Revisions.csproj", "{8C171260-6E72-4AF9-AC48-D46C1DE3474F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo_6_1_Fruits_et_legumes", "..\Exo_6_1_Fruits_et_legumes\Exo_6_1_Fruits_et_legumes.csproj", "{7DBDED08-E405-4B64-B117-473F0E60FB40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C171260-6E72-4AF9-AC48-D46C1DE3474F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C171260-6E72-4AF9-AC48-D46C1DE3474F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C171260-6E72-4AF9-AC48-D46C1DE3474F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C171260-6E72-4AF9-AC48-D46C1DE3474F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DBDED08-E405-4B64-B117-473F0E60FB40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBDED08-E405-4B64-B117-473F0E60FB40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBDED08-E405-4B64-B117-473F0E60FB40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBDED08-E405-4B64-B117-473F0E60FB40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FD7817D-178F-4833-9E2E-678B423546B8}
+	EndGlobalSection
+EndGlobal
