@@ -1,4 +1,4 @@
-﻿namespace Exo_5_3_1_Conversion_temperature
+﻿namespace conversionTemperature
 {
     internal class Program
     {
@@ -10,12 +10,13 @@
 
             do
             {
+                valeurAccepte = false;
                 Console.WriteLine("Entrez une valeur à convertir suivi de l'unité de température: - C pour Celsius - F pour Fahrenheit (la valeur et l’unité de température sont séparés par un espace (exemple: 32 C pour 32 degrés Celsius))");
-                saisie = Console.ReadLine();
+                saisie = Console.ReadLine().ToUpper();
 
                 if (saisie.EndsWith("C"))
                 {
-                    if (double.TryParse(saisie.Replace(" C", string.empty).Trim(), out x))
+                    if (double.TryParse(saisie.Replace(" C", String.Empty).Trim(), out x))
                     {
                         if (x < -273.15 || x > 5000000)
                         {
@@ -37,7 +38,7 @@
                 }
                 else if (saisie.EndsWith("F"))
                 {
-                    if (double.TryParse(saisie.Replace(" F", string.empty).Trim(), out x))
+                    if (double.TryParse(saisie.Replace(" F", String.Empty).Trim(), out x))
                     {
                         if (x < -459.67 || x > 5000000)
                         {
@@ -59,6 +60,9 @@
                 }
             }
             while (valeurAccepte == false);
+
+
+
         }
     }
 }

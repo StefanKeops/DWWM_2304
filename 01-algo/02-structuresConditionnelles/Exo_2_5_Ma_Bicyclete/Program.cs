@@ -18,7 +18,7 @@ namespace Exo_2_5_Ma_Bicyclete
 
             do
             {
-                Console.WriteLine("Veuilez donner l'etat du meteo (s'il fait beau au pas; repondrez par 'oui' or \"non\")");
+                Console.WriteLine("Veuilez donner l'etat du meteo (s'il fait beau ou pas; repondrez par 'oui' or \"non\")");
                 
                 meteo = Console.ReadLine();
             }
@@ -44,7 +44,7 @@ namespace Exo_2_5_Ma_Bicyclete
 
                     do
                     {
-                        Console.WriteLine("Le reparations vont dureé beaucoup? (repondrez par 'oui' or \"non\")");
+                        Console.WriteLine("Les reparations vont dureé beaucoup? (repondrez par 'oui' or \"non\")");
 
                         reparation = Console.ReadLine();
                     }
