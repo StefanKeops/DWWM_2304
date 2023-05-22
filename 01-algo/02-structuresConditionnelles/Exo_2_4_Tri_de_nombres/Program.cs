@@ -47,7 +47,7 @@ namespace Exo_2_4_Tri_de_nombres
                     Console.WriteLine("L'ordre décroissant est " + b + ", " + c + ", " + a + ".");
                 }
             }
-            else if (c >= a && c >= b)
+            else 
             {
                 if (a >= b)
                 {
