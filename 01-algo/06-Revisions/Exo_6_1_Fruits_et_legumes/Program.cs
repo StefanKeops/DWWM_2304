@@ -27,6 +27,7 @@ namespace Exo_6_1_Fruits_et_legumes
                     if (elements.Length != 2 || !double.TryParse(elements[1], out double prix))
                     {
                         Console.WriteLine("Valeur saisie invalide");
+                        valeurAccepte = false;
                     }
             }
             
