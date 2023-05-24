@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Diagnostics;
 
 namespace Exo_6_1_Fruits_et_legumes
 {
@@ -29,7 +30,16 @@ namespace Exo_6_1_Fruits_et_legumes
                         Console.WriteLine("Valeur saisie invalide");
                         valeurAccepte = false;
                     }
-            }
-            
+                    else
+                    {
+                        legumes.Add(new legumes(elements[0], prix));
+                        valeurAccepte = true;
+                    }
+                }
+                while (!valeurAccepte);
+
+                Console.WriteLine("Liste de legumes et leur prix: ");
+                double prixMinimum = double.MaxValue;
+                string legumeMoinsCher = legume.Nom;
     }
 }
