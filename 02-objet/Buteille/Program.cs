@@ -1,37 +1,136 @@
 ﻿using System;
 using System.Numerics;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Buteille
 {
+    public class Bouteille
+    {
+        private int capaciteEnMl;
+        private int contenanceEnMl;
+        private bool estFerme;
+        private string nom;
+        private int hauteurEnCm;
+        private int largeurEnMm;
+        private double prixEnEuro;
+        private double vide;
+        public Bouteille(int contenanceEnMl, int capaciteEnMl, bool estFerme, string nom, int hauteurEnCm, int largeurEnMm, double prixEnEuro)
+        {
+            this.capaciteEnMl = capaciteEnMl;
+            this.contenanceEnMl = contenanceEnMl;
+            this.estFerme = estFerme;
+            this.nom = nom;
+            this.hauteurEnCm = hauteurEnCm;
+            this.largeurEnMm = largeurEnMm;
+            this.prixEnEuro = prixEnEuro;
+            this.vide = vide;
+        }
+
+        public string getNom()
+        {
+            return this.nom;
+        }
+
+        public int getcapaciteEnMl()
+        {
+            return this.capaciteEnMl;
+        }
+
+        public int getcontenanceEnMl()
+        {
+            return this.contenanceEnMl;
+        }
+
+        public int gethauteurEnCm()
+        {
+            return this.hauteurEnCm;
+        }
+
+        public int getlargeurEnMm()
+        {
+            return this.largeurEnMm;
+        }
+
+        public double getprixEnEuro()
+        {
+            return this.prixEnEuro;
+        }
+
+        public bool Ouvrir()
+        {
+            if (this.estFerme)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+
+        }
+
+        public bool Fermer()
+        {
+            if(this.estFerme)
+            {
+                return false;
+            }
+            else
+            {
+                return true ;
+            }
+        }
+
+        public bool RemplirTouT()
+        {
+            if (this.estFerme = false)
+            {
+                estFerme = true;
+                double diference = this.capaciteEnMl - this.contenanceEnMl;
+                double complet = this.contenanceEnMl + diference;
+                return true;
+            }
+            else
+            {
+                double diference = this.capaciteEnMl - this.contenanceEnMl;
+                double complet = this.contenanceEnMl + diference;
+                return true;
+            }
+        }
+
+        public bool ViderTouT()
+        {
+            if (this.estFerme = false)
+            {
+               if (vide = 0)
+                estFerme = true;
+                double vide = this.capaciteEnMl - this.contenanceEnMl;
+                return true;
+            }
+            else
+            {
+                double vide = this.capaciteEnMl - this.contenanceEnMl;
+                return true;
+            }
+        }
+
+
+    }
+
     internal class Program
     {
         static void Main(string[] args)
         {
-            int capaciteEnMl = 800;
-            int capaciteEnMl2 = 375;
-            int capaciteEnMl3 = 1600;
-            int contenanceEnMl = 750;
-            int contenanceEnMl2 = 333;
-            int contenanceEnMl3 = 1500;
-            bool estFerme = true;
-            bool estFerme2 = true;
-            bool estFerme3 = true;
-            int hauteurEnCm = 30;
-            int hauteurEnCm2 = 20;
-            int hauteurEnCm3 = 30;
-            int largeurEnMm = 20;
-            int largeurEnMm2 = 18;
-            int largeurEnMm3 = 20;
-            string nom = "Ace of Spades Gold Rose";
-            string nom2 = "Coca Cola Zero";
-            string nom3 = "Evian Natural";
-            double prixEnEuro = 46.86;
-            double prixEnEuro2 = 0.50;
-            double prixEnEuro3 = 0.20;
             string reponse;
-            string a = "a";
-            string b = "b";
-            string c = "c";
+            const string a = "a";
+            const string b = "b";
+            const string c = "c";
+
+            Bouteille champagne = new(750, 800, true, "Ace of Spades Gold Rose", 30, 20, 46.86);
+
+            Bouteille cocaCola = new(333, 375, true, "Coca Cola Zero", 20, 18, 0.50);
+
+            Bouteille evian = new(1500, 1600, true, "Evian Natural", 30, 20, 0.20);
 
             Console.WriteLine("Programme Ma Bouteille");
 
@@ -41,61 +140,23 @@ namespace Buteille
 
                 reponse = Console.ReadLine();
             }
-            while (reponse != a && reponse !=b && reponse !=c);
+            while (reponse != a && reponse != b && reponse != c);
 
             if (reponse == a)
             {
-                string caracteristics = Champagne(capaciteEnMl, contenanceEnMl, nom, hauteurEnCm, largeurEnMm, prixEnEuro);
-                Console.WriteLine("Vous avez choisi une bouteille de champagne: " + caracteristics);
+                Console.WriteLine("Vous avez choisi une bouteille de champagne, " + champagne.getNom() + ", ses caractéristiques sont: contenance: " + champagne.getcontenanceEnMl() + " ml " + "(avec une capacite totale de " + champagne.getcapaciteEnMl() + "ml), une hauteur de " + champagne.gethauteurEnCm() + " largeur de cou de " + champagne.getlargeurEnMm() + ", avec un prix de " + champagne.getprixEnEuro() + " euro.");
             }
 
             else if (reponse == b)
             {
-                string caracteristics2 = CocaCola(capaciteEnMl2, contenanceEnMl2, nom2, hauteurEnCm2, largeurEnMm2, prixEnEuro2);
-                Console.WriteLine("Vous avez choisi une bouteille de Coca Cola: " + caracteristics2);
+                Console.WriteLine("Vous avez choisi une bouteille de champagne, " + cocaCola.getNom() + ", ses caractéristiques sont: contenance: " + cocaCola.getcontenanceEnMl() + " ml " + "(avec une capacite totale de " + cocaCola.getcapaciteEnMl() + "ml), une hauteur de " + cocaCola.gethauteurEnCm() + " largeur de cou de " + cocaCola.getlargeurEnMm() + ", avec un prix de " + cocaCola.getprixEnEuro() + " euro.");
             }
 
             else if (reponse == c)
             {
-                string caracteristics3 = Evian(capaciteEnMl3, contenanceEnMl3, nom3, hauteurEnCm3, largeurEnMm3, prixEnEuro3);
-                Console.WriteLine("Vous avez choisi une bouteille de Coca Cola: " + caracteristics3);
-            }
-        }
-        public static string Champagne(int capaciteEnMl, int contenanceEnMl, string nom, int hauteurEnCm, int largeurEnMm, double prixEnEuro)
-        {
-            string caracteristics = nom + " avec les caractéristiques suivantes: " + capaciteEnMl + " ml, capacité maximale, " + contenanceEnMl + " ml, capacité optimale, avec une hauteur de " + hauteurEnCm + " cm, " + largeurEnMm + " cm de largeur de cou, et un prix de " + prixEnEuro + " euro.";
-            return caracteristics;
-        }
-
-        public static string CocaCola(int capaciteEnMl2, int contenanceEnMl2, string nom2, int hauteurEnCm2, int largeurEnMm2, double prixEnEuro2)
-        {
-            string caracteristics2 = nom2 + " avec les caractéristiques suivantes: " + capaciteEnMl2 + " ml, capacité maximale, " + contenanceEnMl2 + " ml, capacité optimale, avec une hauteur de " + hauteurEnCm2 + " cm, " + largeurEnMm2 + " cm de largeur de cou, et un prix de " + prixEnEuro2 + " euro.";
-            return caracteristics2;
-        }
-        public static string Evian(int capaciteEnMl3, int contenanceEnMl3, string nom3, int hauteurEnCm3, int largeurEnMm3, double prixEnEuro3)
-        {
-            string caracteristics3 = nom3 + " avec les caractéristiques suivantes: " + capaciteEnMl3 + " ml, capacité maximale, " + contenanceEnMl3 + " ml, capacité optimale, avec une hauteur de " + hauteurEnCm3 + " cm, " + largeurEnMm3 + " cm de largeur de cou, et un prix de " + prixEnEuro3 + " euro.";
-            return caracteristics3;
-        }
-        public class Buteille
-        {
-            private int capaciteEnMl;
-            private int contenanceEnMl;
-            private bool estFerme;
-            private string nom;
-            private int hauteurEnCm;
-            private int largeurEnMm;
-            private double prixEnEuro;
-            public Bouteille(int contenanceEnMl, int capaciteEnMl, bool estFerme, string nom, int hauteurEnCm, int largeurEnMm, double prixEnEuro)
-            {
-                this.capaciteEnMl = capaciteEnMl;
-                this.contenanceEnMl = contenanceEnMl;
-                this.estFerme = estFerme;
-                this.nom = nom;
-                this.hauteurEnCm = hauteurEnCm;
-                this.largeurEnMm = largeurEnMm;
-                this.prixEnEuro = prixEnEuro;
+                Console.WriteLine("Vous avez choisi une bouteille de champagne, " + evian.getNom() + ", ses caractéristiques sont: contenance: " + evian.getcontenanceEnMl() + " ml " + "(avec une capacite totale de " + evian.getcapaciteEnMl() + "ml), une hauteur de " + evian.gethauteurEnCm() + " largeur de cou de " + evian.getlargeurEnMm() + ", avec un prix de " + evian.getprixEnEuro() + " euro.");
             }
         }
     }
+    
 }
