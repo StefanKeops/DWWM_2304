@@ -13,7 +13,6 @@ namespace Buteille
         private int hauteurEnCm;
         private int largeurEnMm;
         private double prixEnEuro;
-        private double vide;
         public Bouteille(int contenanceEnMl, int capaciteEnMl, bool estFerme, string nom, int hauteurEnCm, int largeurEnMm, double prixEnEuro)
         {
             this.capaciteEnMl = capaciteEnMl;
@@ -23,7 +22,6 @@ namespace Buteille
             this.hauteurEnCm = hauteurEnCm;
             this.largeurEnMm = largeurEnMm;
             this.prixEnEuro = prixEnEuro;
-            this.vide = vide;
         }
 
         public string getNom()
@@ -69,6 +67,20 @@ namespace Buteille
 
         }
 
+        public bool Remplir(int pourcentage)
+        {
+            if (!estFerme)
+            {
+                double volumeAjoute = (pourcentage / 100.0) * capaciteEnMl;
+                double nouvelleContenanceEnMl = contenanceEnMl + volumeAjoute;
+
+                if (nouvelleContenanceEnMl > capaciteEnMl)
+                {
+                    return false;
+                }
+            }
+        }
+
         public bool Fermer()
         {
             if(this.estFerme)
@@ -83,7 +95,7 @@ namespace Buteille
 
         public bool RemplirTouT()
         {
-            if (this.estFerme = false)
+            if (this.estFerme == false)
             {
                 estFerme = true;
                 double diference = this.capaciteEnMl - this.contenanceEnMl;
@@ -100,17 +112,15 @@ namespace Buteille
 
         public bool ViderTouT()
         {
-            if (this.estFerme = false)
+            if (estFerme == false)
             {
-               if (vide = 0)
+                contenanceEnMl = 0;
                 estFerme = true;
-                double vide = this.capaciteEnMl - this.contenanceEnMl;
                 return true;
             }
             else
             {
-                double vide = this.capaciteEnMl - this.contenanceEnMl;
-                return true;
+                return false;
             }
         }
 
@@ -145,16 +155,76 @@ namespace Buteille
             if (reponse == a)
             {
                 Console.WriteLine("Vous avez choisi une bouteille de champagne, " + champagne.getNom() + ", ses caractéristiques sont: contenance: " + champagne.getcontenanceEnMl() + " ml " + "(avec une capacite totale de " + champagne.getcapaciteEnMl() + "ml), une hauteur de " + champagne.gethauteurEnCm() + " largeur de cou de " + champagne.getlargeurEnMm() + ", avec un prix de " + champagne.getprixEnEuro() + " euro.");
+
+                do
+                {
+                    Console.WriteLine("Que voulez-vous que nous fassions ensuite, garder cette bouteille ou sortir de programme?(reponse posibles: tapez 'a' pour garder la bouteille, 'b' pour sortir.)");
+
+                    reponse = Console.ReadLine();
+                }
+                while (reponse != a && reponse != b);
+
+                if (reponse == a)
+                {
+                    do
+                    {
+                        Console.WriteLine("Donc on garde celui-ci... qu'est-ce que tu veux qu'on en fasse? (reponse posibles: tapez 'a' pour ouvrir la bouteille ou 'b' pour renoncer");
+
+                        reponse = Console.ReadLine();
+                    }
+                    while(reponse != a && reponse != b);
+
+                    if (reponse == a)
+                    {
+                        bool aReussi = champagne.Ouvrir();
+
+                        if (aReussi == true)
+                        {
+                            Console.WriteLine ("La bouteille a pu etre ouverte");
+                        }
+
+                        else
+                        {
+                            Console.WriteLine("La bouteille n'a pas pu etre ouverte car elle etait déjà ouverte");
+                        }
+
+
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else
+                {
+                    return;
+                }
             }
 
             else if (reponse == b)
             {
                 Console.WriteLine("Vous avez choisi une bouteille de champagne, " + cocaCola.getNom() + ", ses caractéristiques sont: contenance: " + cocaCola.getcontenanceEnMl() + " ml " + "(avec une capacite totale de " + cocaCola.getcapaciteEnMl() + "ml), une hauteur de " + cocaCola.gethauteurEnCm() + " largeur de cou de " + cocaCola.getlargeurEnMm() + ", avec un prix de " + cocaCola.getprixEnEuro() + " euro.");
+
+                do
+                {
+                    Console.WriteLine("Que voulez-vous que nous fassions ensuite, garder cette bouteille et en choisir une autre?(reponse posibles: tapez a pour garder la bouteille, b pour choisir une autre boutrille ou c pour sortir.)");
+
+                    reponse = Console.ReadLine();
+                }
+                while (reponse != a && reponse != b && reponse != c);
             }
 
             else if (reponse == c)
             {
                 Console.WriteLine("Vous avez choisi une bouteille de champagne, " + evian.getNom() + ", ses caractéristiques sont: contenance: " + evian.getcontenanceEnMl() + " ml " + "(avec une capacite totale de " + evian.getcapaciteEnMl() + "ml), une hauteur de " + evian.gethauteurEnCm() + " largeur de cou de " + evian.getlargeurEnMm() + ", avec un prix de " + evian.getprixEnEuro() + " euro.");
+
+                do
+                {
+                    Console.WriteLine("Que voulez-vous que nous fassions ensuite, garder cette bouteille et en choisir une autre?(reponse posibles: tapez a pour garder la bouteille, b pour choisir une autre boutrille ou c pour sortir.)");
+
+                    reponse = Console.ReadLine();
+                }
+                while (reponse != a && reponse != b && reponse != c);
             }
         }
     }
