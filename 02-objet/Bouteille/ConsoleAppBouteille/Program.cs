@@ -1,209 +1,10 @@
-﻿using System;
-using System.ComponentModel;
-using System.ComponentModel.Design.Serialization;
-using System.Numerics;
-using System.Reflection;
-using System.Reflection.Metadata.Ecma335;
+﻿using CL_Bouteille;
 
-
-
-namespace Buteille
+namespace ConsoleAppBouteille
 {
-    public class Bouteille
-    {
-        private string type;
-        private double capaciteEnMl;
-        private double contenanceEnMl;
-        private bool estFerme;
-        private string nom;
-        private int hauteurEnCm;
-        private int largeurEnMm;
-        private double prixEnEuro;
-        public Bouteille(string type, double contenanceEnMl, double capaciteEnMl, bool estFerme, string nom, int hauteurEnCm, int largeurEnMm, double prixEnEuro)
-        {
-            this.type = type;
-            this.capaciteEnMl = capaciteEnMl;
-            this.contenanceEnMl = contenanceEnMl;
-            this.estFerme = estFerme;
-            this.nom = nom;
-            this.hauteurEnCm = hauteurEnCm;
-            this.largeurEnMm = largeurEnMm;
-            this.prixEnEuro = prixEnEuro;
-        }
-
-        public string getType()
-        {
-            return this.type;
-        }
-
-        public string getNom()
-        {
-            return this.nom;
-        }
-
-
-
-        public double getCapaciteEnMl()
-        {
-            return this.capaciteEnMl;
-        }
-
-
-
-        public double getContenanceEnMl()
-        {
-            return this.contenanceEnMl;
-        }
-
-
-
-        public int getHauteurEnCm()
-        {
-            return this.hauteurEnCm;
-        }
-
-
-
-        public int getLargeurEnMm()
-        {
-            return this.largeurEnMm;
-        }
-
-
-
-        public double getPrixEnEuro()
-        {
-            return this.prixEnEuro;
-        }
-
-
-
-        public bool Ouvrir()
-        {
-            if (this.estFerme)
-            {
-                this.estFerme = false;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-
-
-        }
-
-
-
-        public bool Remplir(int pourcentage)
-        {
-            if (!this.estFerme)
-            {
-                double volumeAjoute = (pourcentage / 100.0) * this.capaciteEnMl;
-                double nouvelleContenanceEnMl = this.contenanceEnMl + volumeAjoute;
-
-
-                if (nouvelleContenanceEnMl > this.capaciteEnMl)
-                {
-                    return false;
-                }
-                else
-                {
-                    this.contenanceEnMl = nouvelleContenanceEnMl;
-                    return true;
-                }
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public bool Vider(int pourcentage)
-        {
-            if (!this.estFerme)
-            {
-                double volumeVide = (pourcentage / 100.0) * this.capaciteEnMl;
-                double nouvelleContenanceEnMl = this.contenanceEnMl - volumeVide;
-
-
-                if (nouvelleContenanceEnMl < 0)
-                {
-                    return false;
-                }
-                else
-                {
-                    this.contenanceEnMl = nouvelleContenanceEnMl;
-                    return true;
-                }
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-
-        public bool Fermer()
-        {
-            if (this.estFerme)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
-
-
-
-        public bool RemplirTouT()
-        {
-            if (!this.estFerme)
-            {
-                estFerme = true;
-                double diference = this.capaciteEnMl - this.contenanceEnMl;
-                double complet = this.contenanceEnMl + diference;
-                return true;
-            }
-            else
-            {
-                double diference = this.capaciteEnMl - this.contenanceEnMl;
-                double complet = this.contenanceEnMl + diference;
-                return true;
-            }
-        }
-
-
-
-        public bool ViderTouT()
-        {
-            if (!this.estFerme)
-            {
-                contenanceEnMl = 0;
-                estFerme = true;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-
-
-
-    }
 
     internal class Program
     {
-        static void Fonction()
-        {
-
-        }
-
         static void Main(string[] args)
         {
             string reponse;
@@ -244,7 +45,7 @@ namespace Buteille
 
             if (reponse == a)
             {
-                Console.WriteLine("Vous avez choisi une " + champagne.getType() + ": " + champagne.getNom() + ", ses caractéristiques sont: contenance: " + champagne.getContenanceEnMl() + " ml " + "(avec une capacite totale de " + champagne.getCapaciteEnMl() + "ml), une hauteur de " + champagne.getHauteurEnCm() + " largeur de cou de " + champagne.getLargeurEnMm() + ", avec un prix de " + champagne.getPrixEnEuro() + " euro.");
+                Console.WriteLine("Vous avez choisi une " + champagne.GetType() + ": " + champagne.getNom() + ", ses caractéristiques sont: contenance: " + champagne.getContenanceEnMl() + " ml " + "(avec une capacite totale de " + champagne.getCapaciteEnMl() + "ml), une hauteur de " + champagne.getHauteurEnCm() + " largeur de cou de " + champagne.getLargeurEnMm() + ", avec un prix de " + champagne.getPrixEnEuro() + " euro.");
 
 
 
@@ -386,4 +187,3 @@ namespace Buteille
         }
     }
 }
-       
