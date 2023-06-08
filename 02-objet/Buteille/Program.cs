@@ -117,6 +117,29 @@ namespace Buteille
             }
         }
 
+        public bool Vider(int pourcentage)
+        {
+            if (!this.estFerme)
+            {
+                double volumeVide = (pourcentage / 100.0) * this.capaciteEnMl;
+                double nouvelleContenanceEnMl = this.contenanceEnMl - volumeVide;
+
+
+                if (nouvelleContenanceEnMl < 0)
+                {
+                    return false;
+                }
+                else
+                {
+                    this.contenanceEnMl = nouvelleContenanceEnMl;
+                    return true;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 
         public bool Fermer()
@@ -135,7 +158,7 @@ namespace Buteille
 
         public bool RemplirTouT()
         {
-            if (this.estFerme == false)
+            if (!this.estFerme)
             {
                 estFerme = true;
                 double diference = this.capaciteEnMl - this.contenanceEnMl;
@@ -238,7 +261,7 @@ namespace Buteille
                 {
                     do
                     {
-                        Console.WriteLine("Donc on garde celui-ci... qu'est-ce que tu veux qu'on en fasse? (reponse posibles: tapez 'a' pour ouvrir la bouteille ou 'q' pour renoncer et sortir.");
+                        Console.WriteLine("Donc on garde celui-ci... qu'est-ce que tu veux qu'on en fasse? (reponse posibles: tapez 'a' pour ouvrir la bouteille ou 'q' pour renoncer et sortir).");
 
 
 
@@ -266,40 +289,93 @@ namespace Buteille
                             Console.WriteLine("La bouteille n'a pas pu etre ouverte car elle etait déjà ouverte");
                         }
 
-
-
-                        int demande;
-                        bool pourcentage = false;
-
                         do
                         {
-                            Console.WriteLine("La bouteille est ouverte, quel pourcentage du volume total de la bouteille voulez-vous ajouter à l'intérieur ? réponse possible un numero entier entre 0 et 100, 'q' - sortie du programme");
-                            
+                            Console.WriteLine("La bouteille est ouverte, vous voulez vider ou ajouter du liquide? (reponse posibles: tapez 'a' pour vider du liquid de la bouteille, 'b' pour ajouter du liquid dans la bouteille ou 'q' pour renoncer et sortir)");
+
                             reponse = Console.ReadLine();
+                        }
+                        while (reponse != a && reponse != b && reponse != q);
 
-                            if (reponse == "q")
-                            {
-                                return;
-                            }
-
-                            pourcentage = int.TryParse(reponse, out demande);
-
-                            if (!pourcentage || demande < 0 || demande > 100)
-                            {
-                                Console.WriteLine("Option invalide. Veuillez entrer un numéro entier valide entre 0 et 100.");
-                                pourcentage = false;
-                            }
-                        } while (!pourcentage);
-
-                        bool aReussi2 = champagne.Remplir(demande);
-
-                        if (aReussi2 == true)
+                        if (reponse == a)
                         {
-                            Console.WriteLine("La quantité de liquide a été ajoutée à la bouteille");
+                            int demandeVider;
+
+                            bool pourcentage = false;
+
+                            do
+                            {
+                                Console.WriteLine("Quel pourcentage du volume total de la bouteille voulez-vous vider du buteille? réponse possible un numero entier entre 0 et 100, 'q' - sortie du programme");
+
+                                reponse = Console.ReadLine();
+
+                                if (reponse == "q")
+                                {
+                                    return;
+                                }
+
+                                pourcentage = int.TryParse(reponse, out demandeVider);
+
+                                if (!pourcentage || demandeVider < 0 || demandeVider > 100)
+                                {
+                                    Console.WriteLine("Option invalide. Veuillez entrer un numéro entier valide entre 0 et 100.");
+                                    pourcentage = false;
+                                }
+                            }
+                            while (!pourcentage);
+
+                            bool aReussi2 = champagne.Vider(demandeVider);
+
+                            if (aReussi2 == true)
+                            {
+                                double nouvelleContenanceEnMl = champagne.getcontenanceEnMl();
+                                Console.WriteLine("La quantité de liquide a été vudée du bouteille");
+                                Console.WriteLine("La nouvelle contenance de la bouteille est de : " + nouvelleContenanceEnMl + " ml");
+                            }
+                            else
+                            {
+                                Console.WriteLine("La quantité de liquide n'a pas pu être vidée du bouteille");
+                            }
                         }
                         else
                         {
-                            Console.WriteLine("La quantitéz de liquide n'a pas pu être ajoutée à la bouteille");
+                            int demandeAjouter;
+
+                            bool pourcentage2 = false;
+
+                            do
+                            {
+                                Console.WriteLine("Quel pourcentage du volume total de la bouteille voulez-vous ajouter à l'intérieur,  ? réponse possible un numero entier entre 0 et 100, 'q' - sortie du programme");
+
+                                reponse = Console.ReadLine();
+
+                                if (reponse == "q")
+                                {
+                                    return;
+                                }
+
+                                pourcentage2 = int.TryParse(reponse, out demandeAjouter);
+
+                                if (!pourcentage2 || demandeAjouter < 0 || demandeAjouter > 100)
+                                {
+                                    Console.WriteLine("Option invalide. Veuillez entrer un numéro entier valide entre 0 et 100.");
+                                    pourcentage2 = false;
+                                }
+                            }
+                            while (!pourcentage2);
+
+                            bool aReussi3 = champagne.Remplir(demandeAjouter);
+
+                            if (aReussi3 == true)
+                            {
+                                double nouvelleContenanceEnMl = champagne.getcontenanceEnMl();
+                                Console.WriteLine("La quantité de liquide a été ajoutée à la bouteille");
+                                Console.WriteLine("La nouvelle contenance de la bouteille est de : " + nouvelleContenanceEnMl + " ml");
+                            }
+                            else
+                            {
+                                Console.WriteLine("La quantité de liquide n'a pas pu être ajoutée à la bouteille");
+                            }
                         }
                     }
                 }
@@ -307,7 +383,4 @@ namespace Buteille
         }
     }
 }
-
-
-
-  
+       
