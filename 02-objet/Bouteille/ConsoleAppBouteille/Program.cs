@@ -12,7 +12,7 @@ namespace ConsoleAppBouteille
             const string a = "a";
             const string b = "b";
             const string c = "c";
-            const string q = "q";
+            const string quit = "quit";
 
 
             Bouteille champagne = new("bouteille de champagne", 750, 800, true, "Ace of Spades Gold Rose", 30, 20, 46.86);
@@ -39,7 +39,7 @@ namespace ConsoleAppBouteille
 
                 reponse = Console.ReadLine();
             }
-            while (reponse != a && reponse != b && reponse != c);
+            while (reponse != a && reponse != b && reponse != quit);
 
 
 
@@ -51,13 +51,13 @@ namespace ConsoleAppBouteille
 
                 do
                 {
-                    Console.WriteLine("Que voulez-vous que nous fassions ensuite, garder cette bouteille ou sortir de programme?(reponse posibles: tapez 'a' pour garder la bouteille, 'q' pour sortir.)");
+                    Console.WriteLine("Que voulez-vous que nous fassions ensuite, garder cette bouteille ou sortir de programme?(reponse posibles: tapez 'a' pour garder la bouteille, 'quit' pour sortir.)");
 
 
 
                     reponse = Console.ReadLine();
                 }
-                while (reponse != a && reponse != q);
+                while (reponse != a && reponse != quit);
 
 
 
@@ -65,13 +65,13 @@ namespace ConsoleAppBouteille
                 {
                     do
                     {
-                        Console.WriteLine("Donc on garde celui-ci... qu'est-ce que tu veux qu'on en fasse? (reponse posibles: tapez 'a' pour ouvrir la bouteille ou 'q' pour renoncer et sortir).");
+                        Console.WriteLine("Donc on garde celui-ci... qu'est-ce que tu veux qu'on en fasse? (reponse posibles: tapez 'a' pour ouvrir la bouteille ou 'quit' pour renoncer et sortir).");
 
 
 
                         reponse = Console.ReadLine();
                     }
-                    while (reponse != a && reponse != q);
+                    while (reponse != a && reponse != quit);
 
 
 
@@ -95,11 +95,11 @@ namespace ConsoleAppBouteille
 
                         do
                         {
-                            Console.WriteLine("La bouteille est ouverte, vous voulez vider ou ajouter du liquide? (reponse posibles: tapez 'a' pour vider du liquid de la bouteille, 'b' pour ajouter du liquid dans la bouteille ou 'q' pour renoncer et sortir)");
+                            Console.WriteLine("La bouteille est ouverte, vous voulez vider ou ajouter du liquide? (reponse posibles: tapez 'a' pour vider du liquid de la bouteille, 'b' pour ajouter du liquid dans la bouteille ou 'quit' pour renoncer et sortir)");
 
                             reponse = Console.ReadLine();
                         }
-                        while (reponse != a && reponse != b && reponse != q);
+                        while (reponse != a && reponse != b && reponse != quit);
 
                         if (reponse == a)
                         {
@@ -109,11 +109,11 @@ namespace ConsoleAppBouteille
 
                             do
                             {
-                                Console.WriteLine("Quel pourcentage du volume total de la bouteille voulez-vous vider du buteille? réponse possible un numero entier entre 0 et 100, 'q' - sortie du programme");
+                                Console.WriteLine("Quel pourcentage du volume total de la bouteille voulez-vous vider du buteille? réponse possible un numero entier entre 0 et 100, 'quit' - sortie du programme");
 
                                 reponse = Console.ReadLine();
 
-                                if (reponse == "q")
+                                if (reponse == quit)
                                 {
                                     return;
                                 }
@@ -149,11 +149,11 @@ namespace ConsoleAppBouteille
 
                             do
                             {
-                                Console.WriteLine("Quel pourcentage du volume total de la bouteille voulez-vous ajouter à l'intérieur,  ? réponse possible un numero entier entre 0 et 100, 'q' - sortie du programme");
+                                Console.WriteLine("Quel pourcentage du volume total de la bouteille voulez-vous ajouter à l'intérieur,  ? réponse possible un numero entier entre 0 et 100, 'quit' - sortie du programme");
 
                                 reponse = Console.ReadLine();
 
-                                if (reponse == "q")
+                                if (reponse == quit)
                                 {
                                     return;
                                 }
@@ -184,11 +184,11 @@ namespace ConsoleAppBouteille
                     }
                     do
                     {
-                        Console.WriteLine("Que voulez-vous que nous fassions ensuite ?? (reponse posibles: tapez 'a' pour vider tout le contenu, 'b' pour remplir la bouteille, 'c'  pour fermer la bouteille ou 'q' pour renoncer et sortir).");
+                        Console.WriteLine("Que voulez-vous que nous fassions ensuite ?? (reponse posibles: tapez 'a' pour vider tout le contenu, 'b' pour remplir la bouteille, 'c'  pour fermer la bouteille ou 'quit' pour renoncer et sortir).");
 
                         reponse = Console.ReadLine();
                     }
-                    while (reponse != "a" && reponse != "b" && reponse != "c" && reponse != "q");
+                    while (reponse != a && reponse != b && reponse != c && reponse != quit);
 
                     bool aReussi4 = champagne.ViderTouT();
                     bool aReussi5 = champagne.RemplirTouT();
