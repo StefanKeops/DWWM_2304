@@ -127,13 +127,14 @@ namespace CL_Bouteille
         }
         public bool Fermer()
         {
-            if (this.estFerme)
+            if (!this.estFerme)
             {
-                return false;
+                this.estFerme = true;
+                return true;
             }
             else
             {
-                return true;
+                return false;
             }
         }
 
@@ -146,23 +147,22 @@ namespace CL_Bouteille
                 estFerme = true;
                 double diference = this.capaciteEnMl - this.contenanceEnMl;
                 double complet = this.contenanceEnMl + diference;
+                this.contenanceEnMl = complet;
                 return true;
             }
             else
             {
-                double diference = this.capaciteEnMl - this.contenanceEnMl;
-                double complet = this.contenanceEnMl + diference;
-                return true;
+                return false;
             }
         }
 
 
         public bool ViderTouT()
         {
-            if (!this.estFerme)
+            if (!this.estFerme && this.contenanceEnMl > 0)
             {
-                contenanceEnMl = 0;
-                estFerme = true;
+                double bouteilleVide = this.capaciteEnMl - this.contenanceEnMl;
+                this.contenanceEnMl = bouteilleVide;
                 return true;
             }
             else

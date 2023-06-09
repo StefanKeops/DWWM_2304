@@ -45,7 +45,7 @@ namespace ConsoleAppBouteille
 
             if (reponse == a)
             {
-                Console.WriteLine("Vous avez choisi une " + champagne.GetType() + ": " + champagne.getNom() + ", ses caractéristiques sont: contenance: " + champagne.getContenanceEnMl() + " ml " + "(avec une capacite totale de " + champagne.getCapaciteEnMl() + "ml), une hauteur de " + champagne.getHauteurEnCm() + " largeur de cou de " + champagne.getLargeurEnMm() + ", avec un prix de " + champagne.getPrixEnEuro() + " euro.");
+                Console.WriteLine("Vous avez choisi une " + champagne.getType() + ": " + champagne.getNom() + ", ses caractéristiques sont: contenance: " + champagne.getContenanceEnMl() + " ml " + "(avec une capacite totale de " + champagne.getCapaciteEnMl() + "ml), une hauteur de " + champagne.getHauteurEnCm() + ", largeur de cou de " + champagne.getLargeurEnMm() + ", avec un prix de " + champagne.getPrixEnEuro() + " euro.");
 
 
 
@@ -182,6 +182,39 @@ namespace ConsoleAppBouteille
                             }
                         }
                     }
+                    do
+                    {
+                        Console.WriteLine("Que voulez-vous que nous fassions ensuite ?? (reponse posibles: tapez 'a' pour vider tout le contenu, 'b' pour remplir la bouteille, 'c'  pour fermer la bouteille ou 'q' pour renoncer et sortir).");
+
+                        reponse = Console.ReadLine();
+                    }
+                    while (reponse != "a" && reponse != "b" && reponse != "c" && reponse != "q");
+
+                    bool aReussi4 = champagne.ViderTouT();
+                    bool aReussi5 = champagne.RemplirTouT();
+                    bool aReussi6 = champagne.Fermer();
+
+                    do
+                    {
+                        if (aReussi4 == true)
+                        {
+                            Console.WriteLine("Le contenu de la bouteille a été vidé.");
+                        }
+                        else if (aReussi5 == true)
+                        {
+                            Console.WriteLine("La bouteille est pleine");
+                        }
+                        else if (aReussi6 == true)
+                        {
+                            double contenu = champagne.getContenanceEnMl();
+                            Console.WriteLine("vous avez décidé de fermer la bouteille avec un contenu de " + contenu + " ml.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("quelque chose s'est mal passé");
+                        }
+                    }
+                    while (reponse != "q");
                 }
             }
         }
