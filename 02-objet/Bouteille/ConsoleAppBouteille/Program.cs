@@ -1,222 +1,69 @@
-﻿using CL_Bouteille;
+﻿using System;
+using System.Data;
+using System.Runtime.CompilerServices;
+using CL_Bouteille;
 
 namespace ConsoleAppBouteille
 {
 
     internal class Program
     {
+
+        // Déclaration fonctions :
+
+
+
+        // Programme :
+
         static void Main(string[] args)
         {
             string reponse;
-            string saisie;
             const string a = "a";
             const string b = "b";
             const string c = "c";
             const string quit = "quit";
 
+            // Lister les bouteilles
 
-            Bouteille champagne = new("bouteille de champagne", 750, 800, true, "Ace of Spades Gold Rose", 30, 20, 46.86);
+            Bouteille bouteille = new Bouteille("model", 1000, 950, true, "defaut", 30, 20, 0.00);
+            Bouteille champagne = new Bouteille("bouteille de champagne", 750, 800, true, "Ace of Spades Gold Rose", 30, 20, 46.86);
+            Bouteille cocaCola = new Bouteille("bouteille de Coca Cola", 333, 375, true, "Coca Cola Zero", 20, 18, 0.50);
+            Bouteille evian = new Bouteille("bouteille de Evian", 1500, 1600, true, "Evian Natural", 30, 20, 0.20);
 
-
-
-            Bouteille cocaCola = new("bouteille de Coca Cola", 333, 375, true, "Coca Cola Zero", 20, 18, 0.50);
-
-
-
-            Bouteille evian = new("bouteille de Evian", 1500, 1600, true, "Evian Natural", 30, 20, 0.20);
-
-
-
-            Console.WriteLine("Programme Ma Bouteille");
-
-
+            // Choisir une bouteille
 
             do
             {
-                Console.WriteLine("Choisissez la bouteille dans laquelle vous souhaitez mettre le liquide (a, b, c) :");
-
-
-
+                Console.WriteLine("Choisissez la bouteille dans laquelle vous souhaitez mettre le liquide (a, b, c), ou quit pour quitter");
                 reponse = Console.ReadLine();
             }
-            while (reponse != a && reponse != b && reponse != quit);
-
-
+            while (reponse != a && reponse != b && reponse != c && reponse != quit);
 
             if (reponse == a)
             {
-                Console.WriteLine("Vous avez choisi une " + champagne.getType() + ": " + champagne.getNom() + ", ses caractéristiques sont: contenance: " + champagne.getContenanceEnMl() + " ml " + "(avec une capacite totale de " + champagne.getCapaciteEnMl() + "ml), une hauteur de " + champagne.getHauteurEnCm() + ", largeur de cou de " + champagne.getLargeurEnMm() + ", avec un prix de " + champagne.getPrixEnEuro() + " euro.");
-
-
-
-                do
-                {
-                    Console.WriteLine("Que voulez-vous que nous fassions ensuite, garder cette bouteille ou sortir de programme?(reponse posibles: tapez 'a' pour garder la bouteille, 'quit' pour sortir.)");
-
-
-
-                    reponse = Console.ReadLine();
-                }
-                while (reponse != a && reponse != quit);
-
-
-
-                if (reponse == a)
-                {
-                    do
-                    {
-                        Console.WriteLine("Donc on garde celui-ci... qu'est-ce que tu veux qu'on en fasse? (reponse posibles: tapez 'a' pour ouvrir la bouteille ou 'quit' pour renoncer et sortir).");
-
-
-
-                        reponse = Console.ReadLine();
-                    }
-                    while (reponse != a && reponse != quit);
-
-
-
-                    if (reponse == a)
-                    {
-                        bool aReussi = champagne.Ouvrir();
-
-
-
-                        if (aReussi == true)
-                        {
-                            Console.WriteLine("La bouteille a pu etre ouverte");
-                        }
-
-
-
-                        else
-                        {
-                            Console.WriteLine("La bouteille n'a pas pu etre ouverte car elle etait déjà ouverte");
-                        }
-
-                        do
-                        {
-                            Console.WriteLine("La bouteille est ouverte, vous voulez vider ou ajouter du liquide? (reponse posibles: tapez 'a' pour vider du liquid de la bouteille, 'b' pour ajouter du liquid dans la bouteille ou 'quit' pour renoncer et sortir)");
-
-                            reponse = Console.ReadLine();
-                        }
-                        while (reponse != a && reponse != b && reponse != quit);
-
-                        if (reponse == a)
-                        {
-                            int demandeVider;
-
-                            bool pourcentage = false;
-
-                            do
-                            {
-                                Console.WriteLine("Quel pourcentage du volume total de la bouteille voulez-vous vider du buteille? réponse possible un numero entier entre 0 et 100, 'quit' - sortie du programme");
-
-                                reponse = Console.ReadLine();
-
-                                if (reponse == quit)
-                                {
-                                    return;
-                                }
-
-                                pourcentage = int.TryParse(reponse, out demandeVider);
-
-                                if (!pourcentage || demandeVider < 0 || demandeVider > 100)
-                                {
-                                    Console.WriteLine("Option invalide. Veuillez entrer un numéro entier valide entre 0 et 100.");
-                                    pourcentage = false;
-                                }
-                            }
-                            while (!pourcentage);
-
-                            bool aReussi2 = champagne.Vider(demandeVider);
-
-                            if (aReussi2 == true)
-                            {
-                                double nouvelleContenanceEnMl = champagne.getContenanceEnMl();
-                                Console.WriteLine("La quantité de liquide a été vudée du bouteille");
-                                Console.WriteLine("La nouvelle contenance de la bouteille est de : " + nouvelleContenanceEnMl + " ml");
-                            }
-                            else
-                            {
-                                Console.WriteLine("La quantité de liquide n'a pas pu être vidée du bouteille");
-                            }
-                        }
-                        else
-                        {
-                            int demandeAjouter;
-
-                            bool pourcentage2 = false;
-
-                            do
-                            {
-                                Console.WriteLine("Quel pourcentage du volume total de la bouteille voulez-vous ajouter à l'intérieur,  ? réponse possible un numero entier entre 0 et 100, 'quit' - sortie du programme");
-
-                                reponse = Console.ReadLine();
-
-                                if (reponse == quit)
-                                {
-                                    return;
-                                }
-
-                                pourcentage2 = int.TryParse(reponse, out demandeAjouter);
-
-                                if (!pourcentage2 || demandeAjouter < 0 || demandeAjouter > 100)
-                                {
-                                    Console.WriteLine("Option invalide. Veuillez entrer un numéro entier valide entre 0 et 100.");
-                                    pourcentage2 = false;
-                                }
-                            }
-                            while (!pourcentage2);
-
-                            bool aReussi3 = champagne.Remplir(demandeAjouter);
-
-                            if (aReussi3 == true)
-                            {
-                                double nouvelleContenanceEnMl = champagne.getContenanceEnMl();
-                                Console.WriteLine("La quantité de liquide a été ajoutée à la bouteille");
-                                Console.WriteLine("La nouvelle contenance de la bouteille est de : " + nouvelleContenanceEnMl + " ml");
-                            }
-                            else
-                            {
-                                Console.WriteLine("La quantité de liquide n'a pas pu être ajoutée à la bouteille");
-                            }
-                        }
-                    }
-                    do
-                    {
-                        Console.WriteLine("Que voulez-vous que nous fassions ensuite ?? (reponse posibles: tapez 'a' pour vider tout le contenu, 'b' pour remplir la bouteille, 'c'  pour fermer la bouteille ou 'quit' pour renoncer et sortir).");
-
-                        reponse = Console.ReadLine();
-                    }
-                    while (reponse != a && reponse != b && reponse != c && reponse != quit);
-
-                    bool aReussi4 = champagne.ViderTouT();
-                    bool aReussi5 = champagne.RemplirTouT();
-                    bool aReussi6 = champagne.Fermer();
-
-                    do
-                    {
-                        if (aReussi4 == true)
-                        {
-                            Console.WriteLine("Le contenu de la bouteille a été vidé.");
-                        }
-                        else if (aReussi5 == true)
-                        {
-                            Console.WriteLine("La bouteille est pleine");
-                        }
-                        else if (aReussi6 == true)
-                        {
-                            double contenu = champagne.getContenanceEnMl();
-                            Console.WriteLine("vous avez décidé de fermer la bouteille avec un contenu de " + contenu + " ml.");
-                        }
-                        else
-                        {
-                            Console.WriteLine("quelque chose s'est mal passé");
-                        }
-                    }
-                    while (reponse != "q");
-                }
+                ManipulerBouteille(champagne);
             }
+            else if (reponse == b)
+            {
+                ManipulerBouteille(cocaCola);
+            }
+            else if (reponse == c)
+            {
+                ManipulerBouteille(evian);
+            }
+            else
+            {
+                Console.WriteLine();
+            }
+
+            // Choisir une action
+
+            // Donner une précision de l'action
+
+            // Afficher le résultat
+
+            // Recommencer ou finir
+
         }
     }
 }

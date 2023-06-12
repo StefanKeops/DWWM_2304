@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.ComponentModel.Design.Serialization;
 using System.Numerics;
@@ -82,7 +81,7 @@ namespace CL_Bouteille
         {
             if (!this.estFerme)
             {
-                double volumeAjoute = (pourcentage / 100.0) * this.capaciteEnMl;
+                double volumeAjoute = (pourcentage / 100.0) * this.contenanceEnMl;
                 double nouvelleContenanceEnMl = this.contenanceEnMl + volumeAjoute;
 
 
@@ -106,7 +105,7 @@ namespace CL_Bouteille
         {
             if (!this.estFerme)
             {
-                double volumeVide = (pourcentage / 100.0) * this.capaciteEnMl;
+                double volumeVide = (pourcentage / 100.0) * this.contenanceEnMl;
                 double nouvelleContenanceEnMl = this.contenanceEnMl - volumeVide;
 
 

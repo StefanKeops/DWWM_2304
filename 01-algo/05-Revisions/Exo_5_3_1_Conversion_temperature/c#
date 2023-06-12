@@ -1,0 +1,376 @@
+using System;
+
+namespace ConsoleAppBouteille
+
+{
+
+    internal class Program
+
+    {
+
+        private const string a = "a";
+
+        private const string quit = "quit";
+
+        private static void Main(string[] args)
+
+        {
+
+            Bouteille champagne = new Bouteille("bouteille de champagne", 750, 800, true, "Ace of Spades Gold Rose", 30, 20, 46.86);
+
+            Bouteille cocaCola = new Bouteille("bouteille de Coca Cola", 333, 375, true, "Coca Cola Zero", 20, 18, 0.50);
+
+            Bouteille evian = new Bouteille("bouteille de Evian", 1500, 1600, true, "Evian Natural", 30, 20, 0.20);
+
+            Console.WriteLine("Programme Ma Bouteille");
+
+            string reponse;
+
+            do
+
+            {
+
+                Console.WriteLine("Choisissez la bouteille dans laquelle vous souhaitez mettre le liquide (a, b, c) :");
+
+                reponse = Console.ReadLine();
+
+            } while (reponse != a && reponse != quit);
+
+            if (reponse == a)
+
+            {
+
+                GestionareSticla(champagne);
+
+            }
+
+            else if (reponse == "b")
+
+            {
+
+                GestionareSticla(cocaCola);
+
+            }
+
+            else if (reponse == "c")
+
+            {
+
+                GestionareSticla(evian);
+
+            }
+
+        }
+
+        private static void GestionareSticla(Bouteille sticla)
+
+        {
+
+            Console.WriteLine("Vous avez choisi une " + sticla.GetType() + ": " + sticla.GetNom() + ", ses caractéristiques sont: contenance: " + sticla.GetContenanceEnMl() + " ml " + "(avec une capacite totale de " + sticla.GetCapaciteEnMl() + "ml), une hauteur de " + sticla.GetHauteurEnCm() + ", largeur de cou de " + sticla.GetLargeurEnMm() + ", avec un prix de " + sticla.GetPrixEnEuro() + " euro.");
+
+            string reponse;
+
+            do
+
+            {
+
+                Console.WriteLine("Que voulez-vous que nous fassions ensuite, garder cette bouteille ou sortir de programme? (reponse possibles: tapez 'a' pour garder la bouteille, 'quit' pour sortir.)");
+
+                reponse = Console.ReadLine();
+
+            } while (reponse != a && reponse != quit);
+
+            if (reponse == a)
+
+            {
+
+                string action;
+
+                do
+
+                {
+
+                    Console.WriteLine("Donc on garde celui-ci... qu'est-ce que tu veux qu'on en fasse? (reponse possibles: tapez 'a' pour ouvrir la bouteille ou 'quit' pour renoncer et sortir).");
+
+                    action = Console.ReadLine();
+
+                } while (action != a && action != quit);
+
+                if (action == a)
+
+                {
+
+                    bool aReussi = sticla.Ouvrir();
+
+                    if (aReussi)
+
+                    {
+
+                        Console.WriteLine("La bouteille a pu être ouverte");
+
+                    }
+
+                    else
+
+                    {
+
+                        Console.WriteLine("La bouteille n'a pas pu être ouverte");
+
+                    }
+
+                    Console.WriteLine("Que voulez-vous faire ensuite ? (reponse possibles: tapez 'a' pour vider tout le contenu, 'b' pour remplir la bouteille, 'c'  pour fermer la bouteille ou 'quit' pour renoncer et sortir).");
+
+                    do
+
+                    {
+
+                        action = Console.ReadLine();
+
+                    } while (action != a && action != "b" && action != "c" && action != quit);
+
+                    if (action == a)
+
+                    {
+
+                        bool aReussi2 = sticla.ViderTouT();
+
+                        if (aReussi2)
+
+                        {
+
+                            Console.WriteLine("La bouteille a été vidée avec succès");
+
+                        }
+
+                        else
+
+                        {
+
+                            Console.WriteLine("La bouteille n'a pas pu être vidée");
+
+                        }
+
+                    }
+
+                    else if (action == "b")
+
+                    {
+
+                        bool aReussi3 = sticla.RemplirTouT();
+
+                        if (aReussi3)
+
+                        {
+
+                            Console.WriteLine("La bouteille a été remplie avec succès");
+
+                        }
+
+                        else
+
+                        {
+
+                            Console.WriteLine("La bouteille n'a pas pu être remplie");
+
+                        }
+
+                    }
+
+                    else if (action == "c")
+
+                    {
+
+                        bool aReussi4 = sticla.Fermer();
+
+                        if (aReussi4)
+
+                        {
+
+                            Console.WriteLine("La bouteille a été fermée avec succès");
+
+                        }
+
+                        else
+
+                        {
+
+                            Console.WriteLine("La bouteille n'a pas pu être fermée");
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    internal class Bouteille
+
+    {
+
+        private string nom;
+
+        private int contenance;
+
+        private int capacite;
+
+        private bool estOuvert;
+
+        private string nomLiquide;
+
+        private int hauteur;
+
+        private int largeur;
+
+        private double prix;
+
+        public Bouteille(string nom, int contenance, int capacite, bool estOuvert, string nomLiquide, int hauteur, int largeur, double prix)
+
+        {
+
+            this.nom = nom;
+
+            this.contenance = contenance;
+
+            this.capacite = capacite;
+
+            this.estOuvert = estOuvert;
+
+            this.nomLiquide = nomLiquide;
+
+            this.hauteur = hauteur;
+
+            this.largeur = largeur;
+
+            this.prix = prix;
+
+        }
+
+        public string GetNom()
+
+        {
+
+            return nom;
+
+        }
+
+        public int GetContenanceEnMl()
+
+        {
+
+            return contenance;
+
+        }
+
+        public int GetCapaciteEnMl()
+
+        {
+
+            return capacite;
+
+        }
+
+        public bool Ouvrir()
+
+        {
+
+            if (!estOuvert)
+
+            {
+
+                estOuvert = true;
+
+                return true;
+
+            }
+
+            return false;
+
+        }
+
+        public bool ViderTouT()
+
+        {
+
+            if (!estOuvert)
+
+            {
+
+                return false;
+
+            }
+
+            contenance = 0;
+
+            return true;
+
+        }
+
+        public bool RemplirTouT()
+
+        {
+
+            if (!estOuvert)
+
+            {
+
+                return false;
+
+            }
+
+            contenance = capacite;
+
+            return true;
+
+        }
+
+        public bool Fermer()
+
+        {
+
+            if (estOuvert)
+
+            {
+
+                estOuvert = false;
+
+                return true;
+
+            }
+
+            return false;
+
+        }
+
+        public int GetHauteurEnCm()
+
+        {
+
+            return hauteur;
+
+        }
+
+        public int GetLargeurEnMm()
+
+        {
+
+            return largeur;
+
+        }
+
+        public double GetPrixEnEuro()
+
+        {
+
+            return prix;
+
+        }
+
+    }
+
+}
+

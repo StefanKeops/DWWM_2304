@@ -1,64 +1,73 @@
-﻿namespace Exo_5_3_1_Conversion_temperature
+﻿using System;
+
+namespace JeuTourDeRole
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            double x;
-            string saisie;
-            bool valeurAccepte;
+        Random random = new Random();
+        int scoreJoueur = 0;
+        int scoreOrdinateur = 0;
 
-            do
-            {
-                Console.WriteLine("Entrez une valeur à convertir suivi de l'unité de température: - C pour Celsius - F pour Fahrenheit (la valeur et l’unité de température sont séparés par un espace (exemple: 32 C pour 32 degrés Celsius))");
-                saisie = Console.ReadLine();
+        while (scoreJoueur < 10 && scoreOrdinateur < 10)
+        {
+            Console.WriteLine("Choisissez un nombre (0, 1 ou 2) ou entrez un nombre négatif pour arrêter le jeu :");
+            int choixJoueur;
+if (!int.TryParse(Console.ReadLine(), out choixJoueur))
+{
+Console.WriteLine("Valeur saisie invalide. Veuillez réessayer.");
+continue;
+}
 
-                if (saisie.EndsWith("C"))
-                {
-                    if (double.TryParse(saisie.Replace(" C", string.empty).Trim(), out x))
-                    {
-                        if (x < -273.15 || x > 5000000)
-                        {
-                            valeurAccepte = false;
-                            Console.WriteLine("La valeur doit être comprise entre -273.15 et 5 000 000");
-                        }
-                        else
-                        {
-                            double fahrenheit = (x * 9 / 5) + 32;
-                            Console.WriteLine("{0:#.##} C = {1:#,###.##} F", x, fahrenheit);
-                            valeurAccepte = true;
-                        }
-                    }
-                    else
-                    {
-                        valeurAccepte = false;
-                        Console.WriteLine("La valeur saisie n'est pas un nombre veuillez recommencer.");
-                    }
-                }
-                else if (saisie.EndsWith("F"))
-                {
-                    if (double.TryParse(saisie.Replace(" F", string.empty).Trim(), out x))
-                    {
-                        if (x < -459.67 || x > 5000000)
-                        {
-                            valeurAccepte = false;
-                            Console.WriteLine("La valeur doit être comprise entre -459.67 et 5 000 000");
-                        }
-                        else
-                        {
-                            double celsius = (x - 32) * 5 / 9;
-                            Console.WriteLine("{0:#.##} F = {1:#.##} C", x, celsius);
-                            valeurAccepte = true;
-                        }
-                    }
-                    else
-                    {
-                        valeurAccepte = false;
-                        Console.WriteLine("L'unité de température n'a pas été indiquée ou est incorrecte.");
-                    }
-                }
-            }
-            while (valeurAccepte == false);
-        }
-    }
+if (choixJoueur < 0)
+{
+break;
+}
+
+int choixOrdinateur = random.Next(3);
+
+Console.WriteLine("L'ordinateur a choisi : " + choixOrdinateur);
+
+int difference = Math.Abs(choixJoueur - choixOrdinateur);
+
+switch (difference)
+{
+case 2:
+if (choixJoueur > choixOrdinateur)
+{
+scoreJoueur++;
+Console.WriteLine("Le joueur gagne 1 point.");
+}
+else if (choixOrdinateur > choixJoueur)
+{
+scoreOrdinateur++;
+Console.WriteLine("L'ordinateur gagne 1 point.");
+}
+break;
+case 1:
+if (choixJoueur < choixOrdinateur)
+{
+scoreJoueur++;
+Console.WriteLine("Le joueur gagne 1 point.");
+}
+else if (choixOrdinateur < choixJoueur)
+{
+scoreOrdinateur++;
+Console.WriteLine("L'ordinateur gagne 1 point.");
+}
+break;
+default:
+Console.WriteLine("Aucun point n'est marqué.");
+break;
+}
+
+Console.WriteLine("Score : Joueur = " + scoreJoueur + ", Ordinateur = " + scoreOrdinateur);
+Console.WriteLine();
+}
+
+Console.WriteLine("Jeu terminé.");
+Console.WriteLine("Score final : Joueur = " + scoreJoueur + ", Ordinateur = " + scoreOrdinateur);
+}
+}
 }
