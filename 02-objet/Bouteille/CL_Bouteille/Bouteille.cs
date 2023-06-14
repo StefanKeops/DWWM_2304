@@ -4,6 +4,7 @@ using System.ComponentModel.Design.Serialization;
 using System.Numerics;
 using System.Reflection;
 using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
 
 namespace CL_Bouteille
 {
@@ -17,7 +18,9 @@ namespace CL_Bouteille
         private int hauteurEnCm;
         private int largeurEnMm;
         private double prixEnEuro;
-        public Bouteille(string type, double contenanceEnMl, double capaciteEnMl, bool estFerme, string nom, int hauteurEnCm, int largeurEnMm, double prixEnEuro)
+
+
+        public Bouteille(string type, double capaciteEnMl, double contenanceEnMl, bool estFerme, string nom, int hauteurEnCm, int largeurEnMm, double prixEnEuro)
         {
             this.type = type;
             this.contenanceEnMl = contenanceEnMl;
@@ -162,7 +165,15 @@ namespace CL_Bouteille
             {
                 double bouteilleVide = this.capaciteEnMl - this.contenanceEnMl;
                 this.contenanceEnMl = bouteilleVide;
-                return true;
+                
+                if (this.contenanceEnMl == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
