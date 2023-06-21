@@ -12,7 +12,7 @@ namespace ClassLibraryLepi.Stades
         public override Stade SeMetamorphoser()
         {
             Console.WriteLine("Le papillon ne peut pas se métamorphoser davantage.");
-            return new Papillon();
+            return this;
         }
     }
 }
