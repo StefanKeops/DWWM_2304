@@ -4,24 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LepidoptereBibliotheque.Stades
+
+namespace ClassLibraryLepi.Stades
 {
-    internal class Oeuf : Stade
+    internal class Chenille : Stade
     {
-        public Oeuf()
+        public Chenille()
         {
 
         }
 
         public override void SeDeplacer()
         {
-            Console.WriteLine("Je ne me deplace pas");
+            Console.WriteLine("Attends, laisse-moi secouer mes jambes");
         }
 
         public override Stade SeMetamorphoser()
         {
-            Console.WriteLine("L'œuf se métamorphose en chenille.");
-            return new Chenille();
+            Console.WriteLine("La Chenille se métamorphose en Chrysalide");
+            return new Chrysalide();
         }
     }
 }

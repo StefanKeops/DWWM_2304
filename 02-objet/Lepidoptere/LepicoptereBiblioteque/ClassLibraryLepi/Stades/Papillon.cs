@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LepidoptereBibliotheque.Stades
+namespace ClassLibraryLepi.Stades
 {
     internal class Papillon : Stade
     {

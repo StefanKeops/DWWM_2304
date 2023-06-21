@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LepidoptereBibliotheque.Stades
+namespace ClassLibraryLepi.Stades
 {
     internal abstract class Stade
     {

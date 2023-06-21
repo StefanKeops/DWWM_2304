@@ -5,24 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace LepidoptereBibliotheque.Stades
+namespace ClassLibraryLepi.Stades
 {
-    internal class Chenille : Stade
+    internal class Chrysalide : Stade
     {
-        public Chenille()
+        public Chrysalide()
         {
 
         }
 
         public override void SeDeplacer()
         {
-            Console.WriteLine("Attends, laisse-moi secouer mes jambes");
+            Console.WriteLine("Je ne me deplace pas");
         }
 
         public override Stade SeMetamorphoser()
         {
-            Console.WriteLine("La Chenille se métamorphose en Chrysalide");
-            return new Chrysalide();
+            Console.WriteLine("La Chrysalide se métamorphose en Papillon");
+            return new Papillon();
         }
     }
 }

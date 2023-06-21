@@ -1,7 +1,7 @@
-﻿using System;
-using LepidoptereBibliotheque;
+﻿using ClassLibraryLepi;
 
-namespace ConsoleAppLepi2
+
+namespace ConsoleAppLepi3
 {
     internal class Program
     {

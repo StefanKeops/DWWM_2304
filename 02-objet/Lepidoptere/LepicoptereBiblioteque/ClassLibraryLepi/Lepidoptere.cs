@@ -1,6 +1,6 @@
-﻿using LepidoptereBibliotheque.Stades;
+﻿using ClassLibraryLepi.Stades;
 
-namespace LepidoptereBibliotheque
+namespace ClassLibraryLepi
 {
     public class Lepidoptere
     {
