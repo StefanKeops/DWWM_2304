@@ -1,14 +1,19 @@
-﻿using LepidoptereBibliotheque.Stades;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace LepidoptereBibliotheque.Stades
 {
     internal class Chenille : Stade
     {
+        public Chenille()
+        {
+
+        }
+
         public override void SeDeplacer()
         {
             Console.WriteLine("Attends, laisse-moi secouer mes jambes");

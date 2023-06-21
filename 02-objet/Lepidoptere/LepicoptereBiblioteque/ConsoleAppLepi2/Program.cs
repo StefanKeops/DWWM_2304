@@ -1,4 +1,5 @@
-﻿using LepidoptereBibliotheque;
+﻿using System;
+using LepidoptereBibliotheque;
 
 namespace ConsoleAppLepi2
 {
@@ -9,6 +10,16 @@ namespace ConsoleAppLepi2
             Lepidoptere lepi = new Lepidoptere();
             lepi.SeDeplacer();
             lepi.SeMetamorphoser();
+            lepi.SeDeplacer();
+            lepi.SeMetamorphoser();
+            lepi.SeDeplacer();
+            lepi.SeMetamorphoser();
+            lepi.SeDeplacer();
+            lepi.SeMetamorphoser();
+            lepi.SeDeplacer();
+            lepi.SeMetamorphoser();
+
+            Console.WriteLine("le plaisir de l'évolution");
         }
     }
 }

@@ -12,6 +12,4 @@ namespace LepidoptereBibliotheque.Stades
 
         public abstract Stade SeMetamorphoser();
     }
-
-
 }

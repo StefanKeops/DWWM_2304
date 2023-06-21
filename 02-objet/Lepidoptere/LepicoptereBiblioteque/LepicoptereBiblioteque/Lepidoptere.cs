@@ -1,24 +1,25 @@
-﻿using System.Xml;
+﻿using LepidoptereBibliotheque.Stades;
 
 namespace LepidoptereBibliotheque
 {
     public class Lepidoptere
     {
-      
+
+        private Stade stadeCourant;
+
         public Lepidoptere()
         {
-            
-        }   
-                
-        public void SeMetamorphoser()
-        {
-            
+            this.stadeCourant = new Oeuf();
         }
 
         public void SeDeplacer()
         {
-            
+            this.stadeCourant.SeDeplacer();
         }
 
+        public void SeMetamorphoser()
+        {
+            this.stadeCourant = this.stadeCourant.SeMetamorphoser();
+        }
     }
 }
