@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CL_Voiture", "CL_Voiture\CL_Voiture.csproj", "{40174B97-D318-4F0F-977D-C5C9F09FA172}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CL_Voiture", "CL_Voiture\CL_Voiture.csproj", "{40174B97-D318-4F0F-977D-C5C9F09FA172}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppVoiture", "ConsoleAppVoiture\ConsoleAppVoiture.csproj", "{980D4BF6-FD84-44B0-89DB-0E45F2767C9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppVoiture", "ConsoleAppVoiture\ConsoleAppVoiture.csproj", "{980D4BF6-FD84-44B0-89DB-0E45F2767C9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
