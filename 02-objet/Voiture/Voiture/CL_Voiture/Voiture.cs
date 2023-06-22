@@ -37,14 +37,14 @@ namespace CL_Voiture
 
         public bool Avancer()
         {
-            List<Roue> rouesAEntrainer = new List<Roue> { this.desRoues[0], this.desRoues[1] };
-            return this.aMoteur.EntrainerRoues(rouesAEntrainer);
+            List<Roue> rouesABouger = new List<Roue> { this.desRoues[0], this.desRoues[1] };
+            return this.aMoteur.EntrainerRoues(rouesABouger);
         }
 
         public bool Freiner()
         {
-            List<Roue> rouesAArreter = new List<Roue> { this.desRoues[0], this.desRoues[1] };
-            return this.aMoteur.ArreterRoues(rouesAArreter);
+            List<Roue> rouesAFreiner = new List<Roue> { this.desRoues[0], this.desRoues[1] };
+            return this.aMoteur.FreinerRoues(rouesAFreiner);
         }
     }
 }

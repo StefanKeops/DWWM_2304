@@ -17,9 +17,9 @@ namespace CL_Voiture.Components
             this.enMarche = _enMarche;
         }
 
-        public Moteur(Moteur moteurSource)
+        public Moteur(Moteur moteurInitial)
         {
-            this.enMarche = moteurSource.enMarche;
+            this.enMarche = moteurInitial.enMarche;
         }
 
         public bool Demarer()
@@ -44,33 +44,33 @@ namespace CL_Voiture.Components
             return false;
         }
 
-        public bool EntrainerRoues(List<Roue> rouesAEntrainer)
+        public bool EntrainerRoues(List<Roue> rouesABouger)
         {
             if (this.enMarche)
             {
-                bool toutesRouesEntrainees = true;
+                bool toutesRouesEnMouvement = true;
 
-                foreach (Roue roue in rouesAEntrainer)
+                foreach (Roue roue in rouesABouger)
                 {
                     if (!roue.Tourner())
                     {
-                        toutesRouesEntrainees = false;
+                        toutesRouesEnMouvement = false;
                     }
                 }
 
-                return toutesRouesEntrainees;
+                return toutesRouesEnMouvement;
             }
 
             return false;
         }
 
-        public bool ArreterRoues(List<Roue> rouesAArreter)
+        public bool FreinerRoues(List<Roue> rouesAStoper)
         {
             if (this.enMarche)
             {
                 bool toutesRouesStoppees = true;
 
-                foreach (Roue roue in rouesAArreter)
+                foreach (Roue roue in rouesAStoper)
                 {
                     if (!roue.Stopper())
                     {

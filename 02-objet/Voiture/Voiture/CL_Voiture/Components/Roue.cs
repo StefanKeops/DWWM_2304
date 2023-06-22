@@ -8,32 +8,32 @@ namespace CL_Voiture
 {
     public class Roue
     {
-        private double dimensionPneuEnPouces;
-        private double vitesseEnDegParS;
+        private double dimension;
+        private double vitesseEnToursParSec;
 
         public Roue()
         {
-            this.dimensionPneuEnPouces = 16;
-            this.vitesseEnDegParS = 0;
+            this.dimension = 17;
+            this.vitesseEnToursParSec = 0;
         }
 
-        public Roue(double _dimensionPneuEnPouces, double _vitesseEnDegParS)
+        public Roue(double _dimension, double _vitesseEnToursParSec)
         {
-            this.dimensionPneuEnPouces = _dimensionPneuEnPouces;
-            this.vitesseEnDegParS = _vitesseEnDegParS;
+            this.dimension = _dimension;
+            this.vitesseEnToursParSec = _vitesseEnToursParSec;
         }
 
         public Roue(Roue roueSource)
         {
-            this.dimensionPneuEnPouces = roueSource.dimensionPneuEnPouces;
-            this.vitesseEnDegParS = roueSource.vitesseEnDegParS;
+            this.dimension = roueSource.dimension;
+            this.vitesseEnToursParSec = roueSource.vitesseEnToursParSec;
         }
 
         public bool Tourner()
         {
-            if (this.vitesseEnDegParS == 0)
+            if (this.vitesseEnToursParSec == 0)
             {
-                this.vitesseEnDegParS = 10;
+                this.vitesseEnToursParSec = 30;
                 return true;
             }
 
@@ -42,9 +42,9 @@ namespace CL_Voiture
 
         public bool Stopper()
         {
-            if (this.vitesseEnDegParS != 0)
+            if (this.vitesseEnToursParSec != 0)
             {
-                this.vitesseEnDegParS = 0;
+                this.vitesseEnToursParSec = 0;
                 return true;
             }
 
