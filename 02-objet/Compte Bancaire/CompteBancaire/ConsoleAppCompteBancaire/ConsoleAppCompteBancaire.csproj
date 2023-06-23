@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CL_CompteBancaire\CL_CompteBancaire.csproj" />
+  </ItemGroup>
+
 </Project>
