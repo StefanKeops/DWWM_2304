@@ -17,10 +17,10 @@ namespace ConsoleAppCompteBancaire
             compte.Debiter(200);
             Console.WriteLine("Après le débit de 200 : " + compte1.ToString());
 
-            compte.Debiter(3000); // Tentative de débit supérieur au solde autorisé
+            compte.Debiter(3000); 
             Console.WriteLine("Après le débit de 3000 : " + compte1.ToString());
 
-            CompteBancaire compte2 = new CompteBancaire(987654321, "Alice", 2000, -500);
+            CompteBancaire compte2 = new CompteBancaire(987654321, "Mircea", 2000, -500);
 
             Console.WriteLine("Compte 1 : " + compte1.ToString());
             Console.WriteLine("Compte 2 : " + compte2.ToString());
@@ -31,7 +31,7 @@ namespace ConsoleAppCompteBancaire
             Console.WriteLine("Compte 1 : " + compte1.ToString());
             Console.WriteLine("Compte 2 : " + compte2.ToString());
 
-            compte2.Transferer(compte1, 1000); // Tentative de transfert supérieur au solde autorisé
+            compte2.Transferer(compte1, 1000); 
 
             Console.WriteLine("Après le transfert de 1000 de compte 2 à compte 1 :");
             Console.WriteLine("Compte 1 : " + compte1.ToString());
