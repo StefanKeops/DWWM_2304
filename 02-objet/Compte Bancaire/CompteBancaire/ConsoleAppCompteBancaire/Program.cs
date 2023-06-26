@@ -11,13 +11,13 @@ namespace ConsoleAppCompteBancaire
             Console.WriteLine(compte.ToString());
             Console.WriteLine(compte1.ToString());
 
-            compte.Crediter(500);
+            compte1.Crediter(500);
             Console.WriteLine("Après le crédit de 500 : " + compte1.ToString());
 
             bool ok =compte.Debiter(200);
             Console.WriteLine("Après le débit de 200 : " + compte1.ToString());
 
-            compte.Debiter(3000); 
+            compte1.Debiter(3000); 
             Console.WriteLine("Après le débit de 3000 : " + compte1.ToString());
 
             CompteBancaire compte2 = new CompteBancaire(987654321, "Mircea", 2000, -500);
