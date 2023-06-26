@@ -14,7 +14,7 @@ namespace ConsoleAppCompteBancaire
             compte.Crediter(500);
             Console.WriteLine("Après le crédit de 500 : " + compte1.ToString());
 
-            compte.Debiter(200);
+            bool ok =compte.Debiter(200);
             Console.WriteLine("Après le débit de 200 : " + compte1.ToString());
 
             compte.Debiter(3000); 
@@ -31,7 +31,7 @@ namespace ConsoleAppCompteBancaire
             Console.WriteLine("Compte 1 : " + compte1.ToString());
             Console.WriteLine("Compte 2 : " + compte2.ToString());
 
-            compte2.Transferer(compte1, 1000); 
+            bool ok2=compte2.Transferer(compte1, 1000); 
 
             Console.WriteLine("Après le transfert de 1000 de compte 2 à compte 1 :");
             Console.WriteLine("Compte 1 : " + compte1.ToString());

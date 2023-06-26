@@ -4,7 +4,7 @@ namespace CL_CompteBancaire
 {
     public class CompteBancaire
     {
-        private int decouvertAutorise;
+        private decimal decouvertAutorise;// valeur positive
         private string nomProprietaire;
         private int numeroUniqueIdentification;
         private decimal solde;
@@ -17,7 +17,7 @@ namespace CL_CompteBancaire
             this.decouvertAutorise = 0;
         }
 
-        public CompteBancaire(int numeroUniqueIdentification, string nomProprietaire, decimal solde, int decouvertAutorise)
+        public CompteBancaire(int numeroUniqueIdentification, string nomProprietaire, decimal solde, decimal decouvertAutorise)
         {
             this.numeroUniqueIdentification = numeroUniqueIdentification;
             this.nomProprietaire = nomProprietaire;
@@ -35,29 +35,33 @@ namespace CL_CompteBancaire
             solde = this.solde + montant;
         }
 
-        public void Debiter(decimal montant)
+        public bool Debiter(decimal montant)
         {
             if (montant <= (solde + decouvertAutorise))
             {
                 solde = this.solde - montant;
+                return true;
             }
             else
             {
-                Console.WriteLine("Débit non autorisé : solde insuffisant.");
+                return false;
+                //Console.WriteLine("Débit non autorisé : solde insuffisant.");
             }
         }
 
-        public void Transferer(CompteBancaire compteDestination, decimal montant)
+        public bool Transferer(CompteBancaire compteDestination, decimal montant)
         {
-            if (montant <= (solde + decouvertAutorise))
+            if (Debiter(montant))
             {
-                Debiter(montant);
+                
                 compteDestination.Crediter(montant);
-                Console.WriteLine("Transfert de " + montant + " effectué avec succès.");
+                return true;
+                //Console.WriteLine("Transfert de " + montant + " effectué avec succès.");
             }
             else
             {
-                Console.WriteLine("Transfert non autorisé : solde insuffisant.");
+                return false;
+                //Console.WriteLine("Transfert non autorisé : solde insuffisant.");
             }
         }
 
