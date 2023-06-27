@@ -1,4 +1,6 @@
-﻿namespace CL_Fraction
+﻿using System.Reflection.PortableExecutable;
+
+namespace CL_Fraction
 {
     public class Fraction
     {
@@ -11,7 +13,7 @@
             this.numerateur = 0;
         }
 
-        public Fraction(int denominateur, int numerateur)
+        public Fraction(int numerateur, int denominateur)
         {
             this.denominateur = denominateur;
             this.numerateur = numerateur;
@@ -40,18 +42,79 @@
             denominateur = temp;
         }
 
+        private double CalculValeur()
+        {
+            return (double)numerateur / denominateur;
+        }
+
         public bool SuperieurA(Fraction fraction2)
         {
-            double valeurActulle = (double)numerateur / denominateur;
-            double valeurAutre = (double)fraction2.numerateur / fraction2.denominateur;
-            return valeurActulle > valeurAutre;
+            double valeur = CalculValeur();
+            double valeur2 = fraction2.CalculValeur();
+            return valeur > valeur2;
         }
 
         public bool EgalA(Fraction fraction2)
         {
-            double valeurActulle = (double)numerateur / denominateur;
-            double valeurAutre = (double)fraction2.numerateur / fraction2.denominateur;
-            return valeurActulle == valeurAutre;
+            double valeur = CalculValeur();
+            double valeur2 = fraction2.CalculValeur();
+            return valeur == valeur2;
+        }
+
+        private int GetPgcd()
+        {
+            int a = this.numerateur;
+            int b = this.denominateur;
+            int pgcd = 1;
+
+            if (a != 0 && b != 0)
+            {
+                if (a < 0)
+                {
+                    a = -a;
+                }
+                if (b < 0)
+                {
+                    b = -b;
+                }
+                while (a != b)
+                {
+                    if (a < b)
+                    {
+                        b = b - a;
+                    }
+                    else
+                    {
+                        a = a- b;
+                    }
+                }
+                pgcd = a;
+            }
+            return pgcd;
+        }
+
+        private void Reduire()
+        {
+            int pgcd = GetPgcd();
+            numerateur /= pgcd;
+            denominateur /= pgcd;
+
+            if (denominateur < 0)
+            {
+                numerateur = -numerateur;
+                denominateur = -denominateur;
+            }
+        }
+
+        private float GetValue()
+        {
+           
+        }
+
+        public string ToDisplay()
+        {
+            GetValue();
+            Console.WriteLine(ToString());
         }
     }
 }

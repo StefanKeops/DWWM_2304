@@ -1,5 +1,6 @@
 ﻿using CL_Fraction;
 using System.Drawing;
+using System;
 
 namespace ConsoleAppFraction
 {
@@ -33,6 +34,9 @@ namespace ConsoleAppFraction
             Fraction f9 = new Fraction(22, 14);
             bool estEgal = f8.EgalA(f9);
             Console.WriteLine(estEgal);
+
+            Fraction f10 = new Fraction(120, -150);
+            Console.WriteLine(f10.ToDisplay());
         }
     }
 }

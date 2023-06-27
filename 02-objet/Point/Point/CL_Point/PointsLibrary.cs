@@ -54,10 +54,9 @@ namespace CL_Points
         }
 
        //  public Points PointSymetriqueOrigine()
-       // {
-       //    utiliser PointSymetriqueAxeAbscisses et PointSymetriqueAxeOrdonnees
-       //    return new Points(-x, -y);
-       // }
+       //  {
+       //      return new Points(-x, -y);
+       //  }
 
         public void PermuterCoordonees()
         {
