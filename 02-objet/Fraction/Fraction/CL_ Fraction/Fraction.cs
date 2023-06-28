@@ -7,16 +7,21 @@ namespace CL_Fraction
         private int denominateur;
         private int numerateur;
 
-        public Fraction()
+        public Fraction():this(0,0)
         {
-            this.denominateur = 0;
-            this.numerateur = 0;
         }
 
         public Fraction(int numerateur, int denominateur)
         {
-            this.denominateur = denominateur;
-            this.numerateur = numerateur;
+            if (denominateur != 0)
+            {
+                this.denominateur = denominateur;
+                this.numerateur = numerateur;
+            }
+            else
+            {
+                Console.WriteLine("denominateur est 0 -  error fraction");
+            }
         }   
 
         public Fraction(int numerateur)
@@ -25,7 +30,13 @@ namespace CL_Fraction
             this.numerateur = numerateur;
         }
 
-        public string ToString()
+        public Fraction(Fraction fractionACloner)
+        {
+            this.denominateur = fractionACloner.denominateur;
+            this.numerateur= fractionACloner.numerateur;
+        }
+
+        public override string ToString()
         {
             return $"{numerateur}/{denominateur}";
         }
@@ -37,9 +48,7 @@ namespace CL_Fraction
 
         public void Inverse()
         {
-            int temp = numerateur;
-            numerateur = denominateur;
-            denominateur = temp;
+            (denominateur, numerateur) = (numerateur, denominateur);
         }
 
         private double CalculValeur()
@@ -81,11 +90,11 @@ namespace CL_Fraction
                 {
                     if (a < b)
                     {
-                        b = b - a;
+                        b -= a;
                     }
                     else
                     {
-                        a = a- b;
+                        a -= b;
                     }
                 }
                 pgcd = a;
@@ -108,7 +117,6 @@ namespace CL_Fraction
 
         public string ToDisplay()
         {
-            Reduire();
             return $"{numerateur}/{denominateur} = {CalculValeur()}";
         }
 
@@ -116,6 +124,7 @@ namespace CL_Fraction
         {
             int newDenominator = denominateur * fraction2.denominateur;
             int newNumerator = (numerateur * fraction2.denominateur) + (denominateur * fraction2.numerateur);
+            Reduire();
 
             return new Fraction(newNumerator, newDenominator);
         }
@@ -124,6 +133,7 @@ namespace CL_Fraction
         {
             int newDenominator = denominateur * fraction2.denominateur;
             int newNumerator = (numerateur * fraction2.denominateur) - (denominateur * fraction2.numerateur);
+            Reduire();
 
             return new Fraction(newNumerator, newDenominator);
         }
@@ -132,15 +142,37 @@ namespace CL_Fraction
         {
             int newDenominator = denominateur * fraction2.denominateur;
             int newNumerator = numerateur * fraction2.numerateur;
+            Reduire();
 
             return new Fraction(newNumerator, newDenominator);
         }
 
         public Fraction Divise(Fraction fraction2)
         {
+            Fraction fractionClone = new (fraction2);
+            fractionClone.Inverse();
+            Reduire();
+            return Multiplie(fractionClone);
+        }
 
-            fraction2.Inverse();
-            return Multiplie(fraction2);
+        public static Fraction operator +(Fraction fraction, Fraction fraction2)
+        {
+            return fraction.Plus(fraction2);
+        }
+
+        public static Fraction operator -(Fraction fraction, Fraction fraction2)
+        {
+            return fraction.Moins(fraction2);
+        }
+
+        public static Fraction operator *(Fraction fraction, Fraction fraction2)
+        {
+            return fraction.Multiplie(fraction2);
+        }
+
+        public static Fraction operator /(Fraction fraction, Fraction fraction2)
+        {
+            return fraction.Divise(fraction2);
         }
     }
 }
