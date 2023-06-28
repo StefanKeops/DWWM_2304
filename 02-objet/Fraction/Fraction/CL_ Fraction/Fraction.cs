@@ -105,54 +105,62 @@ namespace CL_Fraction
         private void Reduire()
         {
             int pgcd = GetPgcd();
+
+            if(denominateur < 0)
+            {
+                numerateur = - numerateur;
+                denominateur = - denominateur;
+            }
+            
             numerateur /= pgcd;
             denominateur /= pgcd;
-
-            if (denominateur < 0)
-            {
-                numerateur = -numerateur;
-                denominateur = -denominateur;
-            }
-        }
-
-        public string ToDisplay()
-        {
-            return $"{numerateur}/{denominateur} = {CalculValeur()}";
         }
 
         public Fraction Plus(Fraction fraction2)
         {
             int newDenominator = denominateur * fraction2.denominateur;
             int newNumerator = (numerateur * fraction2.denominateur) + (denominateur * fraction2.numerateur);
-            Reduire();
-
-            return new Fraction(newNumerator, newDenominator);
+           
+            Fraction fractionModifie = new Fraction(newNumerator, newDenominator);
+            fractionModifie.Reduire();
+            
+            return fractionModifie;
         }
 
         public Fraction Moins(Fraction fraction2)
         {
             int newDenominator = denominateur * fraction2.denominateur;
             int newNumerator = (numerateur * fraction2.denominateur) - (denominateur * fraction2.numerateur);
-            Reduire();
+         
+            Fraction fractionModifie = new Fraction(newNumerator, newDenominator);
+            fractionModifie.Reduire();
 
-            return new Fraction(newNumerator, newDenominator);
+            return fractionModifie;
         }
 
         public Fraction Multiplie(Fraction fraction2)
         {
             int newDenominator = denominateur * fraction2.denominateur;
             int newNumerator = numerateur * fraction2.numerateur;
-            Reduire();
+            Fraction fractionModifie = new Fraction(newNumerator, newDenominator);
+            fractionModifie.Reduire();
 
-            return new Fraction(newNumerator, newDenominator);
+            return fractionModifie;
         }
 
         public Fraction Divise(Fraction fraction2)
         {
-            Fraction fractionClone = new (fraction2);
+            Fraction fractionClone = new Fraction (fraction2);
             fractionClone.Inverse();
-            Reduire();
-            return Multiplie(fractionClone);
+            Fraction fractionModifie = Multiplie(fractionClone);
+            fractionModifie.Reduire();
+
+            return fractionModifie;
+        }
+
+        public string ToDisplay()
+        {
+            return $"{numerateur}/{denominateur} = {CalculValeur()}";
         }
 
         public static Fraction operator +(Fraction fraction, Fraction fraction2)

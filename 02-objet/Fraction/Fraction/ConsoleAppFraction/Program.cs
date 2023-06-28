@@ -38,8 +38,8 @@ namespace ConsoleAppFraction
             Fraction f10 = new (120, -150);
             Console.WriteLine(f10.ToDisplay());
 
-            Fraction f11 = new (28, 6);
-            Fraction f12 = new (9, 1);
+            Fraction f11 = new (-2, -8);
+            Fraction f12 = new (6, 8);
             Fraction resultat = f11 + f12;
             Console.WriteLine(resultat.ToDisplay());
 
@@ -51,7 +51,7 @@ namespace ConsoleAppFraction
             Fraction resultat3 = f11 * f14;
             Console.WriteLine(resultat3.ToDisplay());
 
-            Fraction f15 = new (9, 46);
+            Fraction f15 = new (9, 45);
             Fraction resultat4 = f11 / f15;
             Console.WriteLine(resultat4.ToDisplay());
         }
