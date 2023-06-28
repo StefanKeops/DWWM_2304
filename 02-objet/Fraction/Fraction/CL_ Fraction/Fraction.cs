@@ -106,15 +106,41 @@ namespace CL_Fraction
             }
         }
 
-        private float GetValue()
-        {
-           
-        }
-
         public string ToDisplay()
         {
-            GetValue();
-            Console.WriteLine(ToString());
+            Reduire();
+            return $"{numerateur}/{denominateur} = {CalculValeur()}";
+        }
+
+        public Fraction Plus(Fraction fraction2)
+        {
+            int newDenominator = denominateur * fraction2.denominateur;
+            int newNumerator = (numerateur * fraction2.denominateur) + (denominateur * fraction2.numerateur);
+
+            return new Fraction(newNumerator, newDenominator);
+        }
+
+        public Fraction Moins(Fraction fraction2)
+        {
+            int newDenominator = denominateur * fraction2.denominateur;
+            int newNumerator = (numerateur * fraction2.denominateur) - (denominateur * fraction2.numerateur);
+
+            return new Fraction(newNumerator, newDenominator);
+        }
+
+        public Fraction Multiplie(Fraction fraction2)
+        {
+            int newDenominator = denominateur * fraction2.denominateur;
+            int newNumerator = numerateur * fraction2.numerateur;
+
+            return new Fraction(newNumerator, newDenominator);
+        }
+
+        public Fraction Divise(Fraction fraction2)
+        {
+
+            fraction2.Inverse();
+            return Multiplie(fraction2);
         }
     }
 }

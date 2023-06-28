@@ -37,6 +37,23 @@ namespace ConsoleAppFraction
 
             Fraction f10 = new Fraction(120, -150);
             Console.WriteLine(f10.ToDisplay());
+
+            Fraction f11 = new Fraction(28, 6);
+            Fraction f12 = new Fraction(9, 1);
+            Fraction resultat = f11.Plus(f12);
+            Console.WriteLine(resultat.ToDisplay());
+
+            Fraction f13 = new Fraction(9, 13);
+            Fraction resultat2 = f11.Moins(f13);
+            Console.WriteLine(resultat2.ToDisplay());
+
+            Fraction f14 = new Fraction(9, 21);
+            Fraction resultat3 = f11.Multiplie(f14);
+            Console.WriteLine(resultat3.ToDisplay());
+
+            Fraction f15 = new Fraction(9, 46);
+            Fraction resultat4 = f11.Divise(f15);
+            Console.WriteLine(resultat4.ToDisplay());
         }
     }
 }
