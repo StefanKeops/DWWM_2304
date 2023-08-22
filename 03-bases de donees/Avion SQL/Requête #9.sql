@@ -96,7 +96,7 @@ FROM projets p
 JOIN participer ON p.projet_ref = p.projet_ref
 GROUP BY p.projet_ref;
 
--- procedure
+-- procedures --
 
 USE db_architecte;
 DELIMITER //
@@ -121,5 +121,48 @@ WHERE fonctions.fonction_nom = p_fonction_nom;
 END //
 DELIMITER ;
 
-SET @fonction_nom = 'Dessinateur';
+SET @fonction_nom := 'Dessinateur';
 CALL recherche_empl_par_fonction( @fonction_nom);
+
+DELIMITER //
+CREATE PROCEDURE nb_effectif_par_fonction(IN p_nom_fonction VARCHAR(50), OUT p_nb_effectif INT)
+BEGIN
+SELECT COUNT(employes.emp_matricule) INTO p_nb_effectif
+FROM employes
+JOIN fonctions ON employes.fonction_id = fonctions.fonction_id
+WHERE fonctions.fonction_nom = p_nom_fonction;
+END //
+DELIMITER ;
+
+SET @nom_fonction = 'Dessinateur';
+CALL nb_effectif_par_fonction(@nom_fonction, @nb_effectif) ;
+SELECT @nb_effectif;
+
+DELIMITER //
+CREATE PROCEDURE list_projects_for_employee_par_nom(IN employee_nom VARCHAR(50))
+BEGIN
+SELECT projets.projet_ref, projets.projet_date_fin_prevue, projets.projet_prix
+FROM projets
+JOIN participer ON projets.projet_ref = participer.projet_ref
+JOIN employes ON participer.emp_matricule = employes.emp_matricule
+WHERE employes.emp_nom = employee_nom;
+END //
+DELIMITER ;
+
+CALL list_projects_for_employee_par_nom('Robson');
+
+DELIMITER //
+CREATE PROCEDURE calcul_anciennete_par_nom(IN employee_nom VARCHAR(50), OUT p_annee_anciennete INT)
+BEGIN
+SELECT employes.emp_date_embauche AS date_entree
+FROM employes
+WHERE emp_nom = employee_nom
+ORDER BY employes.emp_date_embauche DESC;
+
+SET p_annee_anciennete = TIMESTAMPDIFF(YEAR, date_entree, CURDATE());
+
+END //
+DELIMITER ;
+
+CALL calcul_anciennete_par_nom('Neymar', @annee_anciennete); 
+SELECT @annee_anciennete;
