@@ -152,17 +152,15 @@ DELIMITER ;
 CALL list_projects_for_employee_par_nom('Robson');
 
 DELIMITER //
-CREATE PROCEDURE calcul_anciennete_par_nom(IN employee_nom VARCHAR(50), OUT p_annee_anciennete INT)
+CREATE PROCEDURE calcul_anciennete_par_nom(IN employee_nom VARCHAR(50), OUT p_annee_anciennete INT, OUT p_emp_date_embauche DATE)
 BEGIN
-SELECT employes.emp_date_embauche AS date_entree
+SELECT employes.emp_date_embauche, TIMESTAMPDIFF(YEAR, employes.emp_date_embauche, CURDATE())
+INTO p_emp_date_embauche, p_annee_anciennete
 FROM employes
 WHERE emp_nom = employee_nom
 ORDER BY employes.emp_date_embauche DESC;
-
-SET p_annee_anciennete = TIMESTAMPDIFF(YEAR, date_entree, CURDATE());
-
 END //
 DELIMITER ;
 
-CALL calcul_anciennete_par_nom('Neymar', @annee_anciennete); 
-SELECT @annee_anciennete;
+CALL calcul_anciennete_par_nom('Desplanques', @annee_anciennete, @emp_date_embauche); 
+SELECT @annee_anciennete, @emp_date_embauche;
