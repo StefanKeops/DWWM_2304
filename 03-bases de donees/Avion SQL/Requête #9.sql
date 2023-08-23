@@ -164,3 +164,27 @@ DELIMITER ;
 
 CALL calcul_anciennete_par_nom('Desplanques', @annee_anciennete, @emp_date_embauche); 
 SELECT @annee_anciennete, @emp_date_embauche;
+
+DELIMITER //
+CREATE PROCEDURE calcul_anciennete()
+BEGIN
+SELECT employes.emp_nom, employes.emp_date_embauche, TIMESTAMPDIFF(SECOND, employes.emp_date_embauche, CURDATE()) AS anciennete
+FROM employes
+ORDER BY employes.emp_date_embauche DESC;
+END //
+DELIMITER ;
+
+CALL calcul_anciennete();
+
+DELIMITER //
+CREATE PROCEDURE calcul_cumul_prix_projets (IN projet_id INT, INOUT projet_prix DECIMAL(10,2))
+BEGIN
+SELECT projets.projet_prix + projet_prix AS cumul INTO projet_prix
+FROM projets
+WHERE projets.projet_ref = projet_id;
+END //
+DELIMITER ;
+
+SET @cumul = 0;
+CALL calcul_cumul_prix_projets(3, @cumul);
+SELECT @cumul AS total
