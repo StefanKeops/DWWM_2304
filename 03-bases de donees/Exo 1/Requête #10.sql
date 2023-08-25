@@ -119,13 +119,21 @@
 
 -- 4) Afficher la liste des représentants (Numéro et nom) dépendant du chef de secteur PONS
 
-CREATE VIEW e4 AS
-SELECT representant.num_rep, representant.nom_rep
-FROM representant
-join
+-- CREATE VIEW e4 AS
+-- SELECT representant.num_rep AS num, representant.nom_rep AS nom
+-- FROM representant
+-- JOIN couvrir ON representant.num_rep = couvrir.num_rep
+-- JOIN departament ON couvrir.code_dep = departament.code_dep
+-- WHERE departament.chef_secteur = 'Pons'
 
 -- 5) Afficher la liste des départements (code, nom, chef de secteur)
 
-
+-- CREATE VIEW e5 AS
+-- SELECT *
+-- FROM departament
 
 -- 6) Afficher la liste des chefs de secteur 
+
+CREATE VIEW e6 AS
+SELECT DISTINCT chef_secteur
+FROM departament 
