@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un formulaire</title>
+</head>
+<body>
+    <h1>Un formulaire</h1>
+    <!--
+
+    -->
+
+
+    <form action="" method="get">
+        <div>
+            <label for="nomUtilisateur">Nom: </label>
+            <input type="text" id="nomUtilisateur" name="nom">
+            <!--type=texte: text normal sans restriction-->
+        </div>
+        <div>
+            <label for="passUtilisateur">Mot de passe: </label>
+            <input type="password" id="passUtilisateur" name="pass">
+            <!--idem que le type=text mais masque les caracteres saisis-->
+        </div>
+        <div>
+            <label for="ageUtilisateur">Âge: </label>
+            <input type="number" id="ageUtilisateur" name="age">
+            <!--type=number accepte uniquement les valeurs numerique-->
+        </div>
+        <div>
+            <label for="dateUtilisateur">Date d'embauche: </label>
+            <input type="date" id="dateUtilisateur" name="date">
+            <!--type=date permet de renseigner une date-->
+        </div>
+        <div>
+            <label for="heureUtilisateur">Heure d'embauche: </label>
+            <input type="time" id="heureUtilisateur" name="heure">
+            <!--type=heure permet de reiseigner une heure-->
+        </div>
+        <div>
+            <label for="dateTimeUtilisateur">Date et heure d'arrivéé: </label>
+            <input type="datetime-local" id="dateTimeUtilisateur" name="datetime">
+            <!--type=datetime-local permet de reiseigner le date et l'heure local-->
+        </div>
+        <div>
+            <label for="emailUtilisateur">Email: </label>
+            <input type="email" id="emailUtilisateur" name="mail">
+        </div>
+        <div>
+            <label for="telUtilisateur">Téléphone: </label>
+            <input type="tel" id="telUtilisateur" name="telephone">
+        </div>
+        <div>
+            <label >Accepter les condition</label>
+            <input type="checkbox" name="acceptercondition">
+        </div>
+        <div>
+            <input type="radio" name="validercondition">
+            <input type="radio" name="validercondition">
+            <input type="radio" name="validercondition">
+        </div>
+        <div>
+            <label>Ajouter un commentaire</label>
+            <textarea name="" id="" cols="50" rows="10"></textarea>
+        </div>
+        <div>
+            <input list="data">
+            <datalist id ="data">
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+                <!--select = liste deroulante-->
+            </datalist>    
+        </div>
+        <div>
+            <button type="submit">Valider</button>
+            <!--datalist -->
+        </div>
+    </form>
+</body>
+</html>
