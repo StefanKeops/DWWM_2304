@@ -1,0 +1,54 @@
+body
+{
+    background-color: cyan;
+}
+
+p
+{
+    position: static;
+    border: 2px solid #555;
+    padding: 20px;
+    margin: 30px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.container 
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.title 
+{
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: inline-block; 
+  
+}
+
+.horizontal-list {
+
+    list-style-type: none; /* Elimină marcările listei */
+  
+    padding: 0; /* Elimină padding-ul implicit al listei */
+  
+    display: flex; /* Afișează elementele pe aceeași linie folosind flexbox */
+  
+    justify-content: space-between; /* Afișează spațiu egal între elementele listei */
+  
+  }
+  
+   
+  
+  /* Stilurile pentru fiecare element <li> */
+  
+  .horizontal-list li {
+  
+    margin-right: 10px; /* Adaugă spațiu între elementele listei (opțional) */
+  
+  }
