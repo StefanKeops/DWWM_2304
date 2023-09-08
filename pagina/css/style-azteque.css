@@ -1,34 +1,38 @@
-body
+header 
 {
-    background-color: cyan;
-}
-
-p
-{
-    position: static;
-    border: 2px solid #555;
-    padding: 20px;
-    margin: 30px;
-}
-
-h1
-{
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 20px 0;
 }
 
-.container 
+.header-azteque 
+{
+    background-repeat: repeat; /* Imaginea se repetă orizontal */
+    width: 200px; 
+    height: 100px; /* Înălțimea benzii */
+}
+  
+
+h1 
+{
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.container
 {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .title 
 {
-    background-color: #f0f0f0;
-    padding: 20px;
-    display: inline-block; 
-  
+    font-size: 18px;
 }
 
 .horizontal-list 
@@ -49,19 +53,11 @@ h1
     text-align: right;
 }
 
-.header-azteque
-{
-    width: 1000px;
-    height: 1000px;
-    background-image: "azteque-copy.PNG";
-    background-repeat: repeat;
-}
-
 ul.sub-menu 
 {
     display: none;
     position: absolute;
-    background-color: blue; 
+    background-color: black; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     z-index: 1;
 }
@@ -80,7 +76,7 @@ ul.sub-menu li
 ul.sub-menu li a 
 {
     text-decoration: none;
-    color: black; 
+    color: white; 
 }
 
 ul.sub-menu li a:hover 
