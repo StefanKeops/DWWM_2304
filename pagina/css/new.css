@@ -48,3 +48,11 @@ h1
 {
     text-align: right;
 }
+
+.header-azteque
+{
+    width: 1000px;
+    height: 1000px;
+    background-image: "azteque-copy.PNG";
+    background-repeat: repeat;
+}

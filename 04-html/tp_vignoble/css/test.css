@@ -3,10 +3,10 @@ p
     position: static;
     border: 2px solid #555;
     padding: 20px;
-    margin: 30px;
+    margin: 60px;
 }
 .positionnement {
     position: relative;
     top:100px;
-    left:200px;
+    left:100px;
 }
