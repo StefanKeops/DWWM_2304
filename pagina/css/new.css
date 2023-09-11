@@ -60,7 +60,7 @@ h1
 ul.sub-menu 
 {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: blue; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     z-index: 1;
@@ -80,7 +80,7 @@ ul.sub-menu li
 ul.sub-menu li a 
 {
     text-decoration: none;
-    color: black; 
+    color: white; 
 }
 
 ul.sub-menu li a:hover 
