@@ -31,13 +31,13 @@ nav a:hover
 
 header 
 {
-    background-color: #333;
-    color: white;
+    background-color: yellow;
+    color: green;
     text-align: center;
     padding: 20px 0;
 }
 
-.header-azteque 
+.header-egyprien 
 {
     background-repeat: repeat; 
     width: 205px; 
@@ -46,7 +46,7 @@ header
   
 body
 {
-    background-color: grey;
+    background-color: white;
 }
 
 h1
@@ -64,7 +64,7 @@ h1
 
 .title 
 {
-    background-color: #f0f0f0;
+    background-color: grey;
     padding: 10px;
     display: inline-block; 
   

@@ -3,6 +3,37 @@ body
     background-color: cyan;
 }
 
+nav ul 
+{
+    list-style: none;  
+    padding: 0;  
+    display: flex;  
+    justify-content: center;   
+}
+  
+ nav li 
+ {  
+    margin: 0 1px; 
+ }
+  
+nav a 
+{
+    display: inline-block;
+    padding: 5px 10px; 
+    text-decoration: none;
+    background-color: #333; 
+    color: #fff; 
+    border: 2px solid #555; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+  
+nav a:hover 
+{
+    background-color: #555; 
+    color: #fff; 
+}
+
 p
 {
     position: static;

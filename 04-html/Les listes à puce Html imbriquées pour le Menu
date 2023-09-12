@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>le vignoble d'alsace forêt</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li>Accueil</li>
+                <li><a href="#">HTML5</a>
+                    <ul>
+                        <li><a href="">Structure</a></li>
+                        <li><a href="">Multimedia</a></li>
+                        <li><a href="">Polaroid</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="">CSS3</a>
+                    <ul>
+
+                        <li><a href="">Introduction</a></li>
+                        <li><a href="">Background</a></li>
+                        <li><a href="">Bordure</a></li>
+                        <li><a href="">Texte</a></li>
+                        <li><a href="">Transformation</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Application</a>
+                    <ul>
+                        <li><a href="">Canvas</a></li>
+                        <li><a href="">SVG</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+</body>
+
+</html>
