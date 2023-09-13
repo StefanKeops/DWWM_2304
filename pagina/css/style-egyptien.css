@@ -37,7 +37,7 @@ header
     padding: 20px 0;
 }
 
-.header-egyprien 
+.header-egyptien 
 {
     background-repeat: repeat; 
     width: 205px; 
@@ -46,7 +46,7 @@ header
   
 body
 {
-    background-color: white;
+    background-color: green;
 }
 
 h1
@@ -64,7 +64,7 @@ h1
 
 .title 
 {
-    background-color: grey;
+    background-color: wheat;
     padding: 10px;
     display: inline-block; 
   
