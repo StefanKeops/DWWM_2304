@@ -1,3 +1,28 @@
+body
+{
+    background-color: green;
+}
+
+header 
+{
+    background-color: yellow;
+    color: green;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-egyptien 
+{
+    width: 205px; 
+    height: 100px; 
+}
+
+container 
+{
+    padding: 20px;
+    display: flex;
+}
+
 nav ul 
 {
     list-style: none;  
@@ -29,65 +54,17 @@ nav a:hover
     color: #fff; 
 }
 
-header 
-{
-    background-color: yellow;
-    color: green;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.header-egyptien 
-{
-    width: 205px; 
-    height: 100px; 
-}
-  
-body
-{
-    background-color: green;
-}
-
-h1
-{
-    text-align: center;
-}
-
-.container 
-{
-    padding: 20px;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-}
-
-.title 
-{
-    background-color: wheat;
-    padding: 10px;
-    display: inline-block; 
-  
-}
-
-.page-principale
-{
-    list-style-type: none; 
-    padding: 0;   
-    display: flex;   
-    justify-content: center; 
-}
-
 .horizontal-list 
 {
     list-style-type: none; 
     padding: 0;   
-    display: flex;   
-    justify-content: space-between; 
+    display: grid;   
+    justify-content: center; 
 }
   
   .horizontal-list li 
 {
-    margin-right: 10px; 
+    margin-right: auto; 
 }
 
 .align-right 
@@ -130,29 +107,6 @@ ul.horizontal-list li:hover ul.sub-menu {
     display: block;
 }
 
-.gallery 
-{
-    display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  
-    grid-gap: 70px;
-    justify-content: center;
-    align-items: center;
-}
-  
-.gallery img 
-{  
-    max-width: 250px;  
-    height: 250px;  
-    transition: transform 0.2s;  
-    display: block;
-    margin: 0 auto;
-}
-  
-.gallery img:hover 
-{
-    transform: scale(1.1);
-}
-
 .container2
 {
     display: flex;  
@@ -175,4 +129,11 @@ ul.horizontal-list li:hover ul.sub-menu {
     margin-right: 20px;   
     max-width: 250px;   
     height: auto;
+}
+
+.title 
+{
+    background-color: wheat;
+    padding: 10px;
+    display: inline-block; 
 }
