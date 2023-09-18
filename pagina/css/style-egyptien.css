@@ -133,7 +133,8 @@ ul.horizontal-list li:hover ul.sub-menu {
 .gallery 
 {
     display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 70px;
     justify-content: center;
     align-items: center;
@@ -176,3 +177,4 @@ ul.horizontal-list li:hover ul.sub-menu {
     max-width: 250px;   
     height: auto;
 }
+
