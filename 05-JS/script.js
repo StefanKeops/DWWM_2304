@@ -14,3 +14,9 @@ document.querySelector("#btndate").addEventListener("click", function()
 {
     afficher();
 })
+
+let txtheure = document.querySelector("#monheure");
+txtheure.value = 'text';
+
+
+/* alert('hello world'); */
