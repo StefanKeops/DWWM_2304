@@ -1,5 +1,16 @@
-// Function to retrieve and display form data from local storage
-function getFormDataFromLocalStorage() {
+    generatePseudo()
+    {
+        var nom = document.getElementById('nomUtilisateur').value;
+        var prenom = document.getElementById('prenomUtilisateur').value;
+        var pseudo = nom.substr(0,3) + prenom.substr(0,3) + Math.floor(Math.random() * 100);
+        document.getElementById('pseudo').value = pseudo;
+        document.getElementById('valider').disable = false;
+    }
+
+    document.getElementById('nomUtilisateur').addEventListener('input', generatePseudo);
+    document.getElementById('prenomUtilisateur').addEventListener('input', generatePseudo);
+
+    function getFormDataFromLocalStorage() {
     var formData = localStorage.getItem('formData');
 
     if (formData) {
@@ -10,8 +21,8 @@ function getFormDataFromLocalStorage() {
         var newRow = formDataTable.insertRow();
 
         // Insert data into the row cells
-        var cellPseudo = newRow.insertCell(0); // Pseudo-ul este acum în prima coloană
-        cellPseudo.innerHTML = formData.pseudo; // Adăugați Pseudo-ul în prima celulă
+        var cellPseudo = newRow.insertCell(0); 
+        cellPseudo.innerHTML = formData.pseudo; 
         var cellNom = newRow.insertCell(1);
         cellNom.innerHTML = formData.nom;
         var cellPrenom = newRow.insertCell(2);
