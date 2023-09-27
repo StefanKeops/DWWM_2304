@@ -6,44 +6,41 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <div id="container">
         <h1>EVALUATION COURS JAVASCRIPT</h1>
-        <h2>formulaire avec traitament Javascript</h2>
-
-        <form id="registrationForm" onsubmit="storeFormData()">
+        <h2>formulaire avec traitement Javascript</h2>
+        <form id="registrationForm" onsubmit="storeFormData()" method="get" action="#">
             <div class="form-group">
                 <label for="nomUtilisateur">Nom :</label>
                 <input type="text" id="nomUtilisateur" name="nomUtilisateur" required>
             </div>
-
             <div class="form-group">
                 <label for="prenomUtilisateur">Prénom :</label>
                 <input type="text" id="prenomUtilisateur" name="prenomUtilisateur" required>
             </div>
-
             <div class="form-group">
                 <label>Date de Naissance :</label>
                 <input type="text" id="jour" name="jour" placeholder="Jour" required>
                 <input type="text" id="mois" name="mois" placeholder="Mois" required>
                 <input type="text" id="annee" name="annee" placeholder="Année" required>
             </div>
-
             <div class="form-group">
                 <label for="pseudo">Pseudo :</label>
                 <input type="text" id="pseudo" name="pseudo" readonly>
             </div>
-
             <div class="form-group">
                 <label for="commentaire">Commentaire :</label>
                 <textarea id="commentaire" name="commentaire" rows="4"></textarea>
             </div>
-
             <div class="form-group">
-                <button type="submit" id="valider" disabled>Valider</button>
+                <button type="button" id="valider" disabled>Valider</button>
                 <button type="reset">Réinitialiser</button>
+                <button type="button" id="goToAccueil" href="accueil.html">Accueil</button>  <!-- Butonul pentru a accesa "accueil.html" -->
             </div>
         </form>
     </div>
 </body>
+
 </html>
