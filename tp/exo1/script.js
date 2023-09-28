@@ -123,6 +123,14 @@ function afficheAnee()
 {
     let uneOption = document.createElement('option');
     uneOption.value = 0;
-    uneOption.text = "choisissez votre anée de naissance";
-    document.querySelector("#anee").options[0] = uneOption;
+    uneOption.text = "choisissez votre année de naissance";
+    document.querySelector("#annee").options[0] = uneOption;
+    for (let i = 2023; i => 1900; i--)
+    {
+        uneOption = document.createElement('option');
+        uneOption.value = i;
+        uneOption.text = i;
+        document.querySelector('#annee').options[i] = uneOption;
+    }
 }
+afficheAnee();
