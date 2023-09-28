@@ -8,10 +8,10 @@
 </head>
 
 <body>
-    <div id="container">
+    <header id="container">
         <h1>EVALUATION COURS JAVASCRIPT</h1>
         <h2>formulaire avec traitement Javascript</h2>
-        <form id="registrationForm" onsubmit="storeFormData()" method="get" action="#">
+        <form id="registrationForm" onsubmit="storeFormData()" method="post" action="accueil.html">  
             <div class="form-group">
                 <label for="nomUtilisateur">Nom :</label>
                 <input type="text" id="nomUtilisateur" name="nomUtilisateur" required>
@@ -21,10 +21,17 @@
                 <input type="text" id="prenomUtilisateur" name="prenomUtilisateur" required>
             </div>
             <div class="form-group">
+                <label for="emailUtilisateur">Email :</label>
+                <input type="email" id="emailUtilisateur" name="emailUtilisateur" required>
+            </div>
+            <div class="form-group">
                 <label>Date de Naissance :</label>
-                <input type="text" id="jour" name="jour" placeholder="Jour" required>
-                <input type="text" id="mois" name="mois" placeholder="Mois" required>
-                <input type="text" id="annee" name="annee" placeholder="Année" required>
+                <select name="jour" id="jour" required>
+                    <option value="1">01</option>
+                </select>
+                <select name="mois" id="mois" required>
+                    <option value="1">Janvier</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="pseudo">Pseudo :</label>
@@ -37,10 +44,9 @@
             <div class="form-group">
                 <button type="button" id="valider" disabled>Valider</button>
                 <button type="reset">Réinitialiser</button>
-                <button type="button" id="goToAccueil" href="accueil.html">Accueil</button>  <!-- Butonul pentru a accesa "accueil.html" -->
-            </div>
+             </div>
         </form>
-    </div>
+    </header>
 </body>
 
 </html>
