@@ -1,6 +1,6 @@
-// Funcția pentru generarea pseudonimului
+// Funcția pentru generarea pseudonimului pe baza la nume si prenume
 
-function generatePseudo() 
+/*function generatePseudo() 
 {
     var nom = document.getElementById('nomUtilisateur').value;
     var prenom = document.getElementById('prenomUtilisateur').value;
@@ -10,7 +10,7 @@ function generatePseudo()
 }
 
 document.getElementById('nomUtilisateur').addEventListener('input', generatePseudo);
-document.getElementById('prenomUtilisateur').addEventListener('input', generatePseudo);
+document.getElementById('prenomUtilisateur').addEventListener('input', generatePseudo);*/
 
 // Funcția pentru stocarea datelor în localStorage
 
@@ -19,8 +19,8 @@ function storeFormData()
     var formData = 
     {
         pseudo: document.getElementById('pseudo').value,
-        nom: document.getElementById('nomUtilisateur').value,
-        prenom: document.getElementById('prenomUtilisateur').value,
+        nom: document.getElementById('nom').value,
+        prenom: document.getElementById('prenom').value,
         email: document.getElementById('email').value,
         jour: document.getElementById('jour').value,
         mois: document.getElementById('mois').value,
@@ -63,7 +63,7 @@ function newCookie(_nom, _valeur)
 
 document.getElementById('valider').addEventListener('click', function()
 {
-    newCookie('nom', document.getElementById('nomUtilisateur').value);
+    newCookie('nom', document.getElementById('nom').value);
     window.location.href = "accueil.html";
 })
 
@@ -72,16 +72,29 @@ document.getElementById('valider').addEventListener('click', function()
 function valNum(maChaine)
 {
     maChaine = maChaine.toUpperCase(); // convertirea din minuscule in majuscule
+    console.log(maChaine)
     let somme = 0; // reinitializarea la 0 a sumei
+    console.log(somme)
 
-    for (let i = 0; i < maChaine.lenght; i++) // cautarea fiecarui caracter din sir
+    for (let i = 0; i < maChaine.length; i++) // cautarea fiecarui caracter din sir
     {
-        const codeAscii = maChaine.charCodeAT; (i) // obtinerea codului ASCII al caracterului
-        somme += valeurCaracter; // adaugarea valorii in suma
-
-        return somme;
+        const nume = maChaine.charCodeAt(i) - 64; // obtinerea codului ASCII al caracterului
+        console.log(nume)
+        somme += nume; // adaugarea valorii in suma
+        console.log("Somme"+ somme)  
     }
+    return somme;
 }
+
+document.getElementById('nom').addEventListener('blur', () => 
+{
+    valNum('nom')
+})
+
+document.getElementById('prenom').addEventListener('blur', () => 
+{
+    valNum('prenom')
+})
 
 // bucla care se repeta ... utila pentru liste ca zile, luni, ani, departamente
 
@@ -113,7 +126,7 @@ function afficheMois()
         uneOption = document.createElement('option');
         uneOption.value = i;
         const monthNames = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
-        uneOption.text = monthNames[i - 1];
+        uneOption.text = monthNames[i];
         document.querySelector("#mois").options[i] = uneOption;
     }
 }
@@ -135,58 +148,98 @@ function afficheAnee()
 }
 afficheAnee();
 
-// calcularea semnului astrologic
+// calculul pseudonimului in functie de selnul astrologic
 
-const zi = parseInt(document.getElementById('jour').value);
-const luna = parseInt(document.getElementById('mois').value);
+function generatePseudo2()
+{
+    var jour = document.getElementById('jour').value;
+    var mois = document.getElementById('mois').value;
+    var nom = document.getElementById('nom').value;
+    var prenom = document.getElementById('prenom').value;
 
-let signeAstrologique = '';
+    let signeAstrologique = '';
 
-if((mois === 0 && jour >=21) || (mois === 1 && jour <= 19))
-{
-    signeAstrologique = 'Verseau'
+    if ((mois == 0 && jour >= 21) || (mois == 1 && jour <= 19)) {
+        signeAstrologique = 'Verseau'
+    }
+    else if ((mois == 1 && jour >= 20) || (mois == 2 && jour <= 20)) {
+        signeAstrologique = 'Poissons'
+    }
+    else if ((mois == 2 && jour >= 21) || (mois == 3 && jour <= 20)) {
+        signeAstrologique = 'Bélier'
+    }
+    else if ((mois == 3 && jour >= 21) || (mois == 4 && jour <= 20)) {
+        signeAstrologique = 'Taureau'
+    }
+    else if ((mois == 4 && jour >= 22) || (mois == 5 && jour <= 21)) {
+        signeAstrologique = 'Gémeaux'
+    }
+    else if ((mois == 5 && jour >= 22) || (mois == 6 && jour <= 22)) {
+        signeAstrologique = 'Cancer'
+    }
+    else if ((mois == 6 && jour >= 23) || (mois == 7 && jour <= 22)) {
+        signeAstrologique = 'Lion'
+    }
+    else if ((mois == 7 && jour >= 23) || (mois == 8 && jour <= 22)) {
+        signeAstrologique = 'Vierge'
+    }
+    else if ((mois == 8 && jour >= 23) || (mois == 9 && jour <= 22)) {
+        signeAstrologique = 'Balance'
+    }
+    else if ((mois == 9 && jour >= 23) || (mois == 10 && jour <= 22)) {
+        signeAstrologique = 'Scorpion'
+    }
+    else if ((mois == 10 && jour >= 23) || (mois == 11 && jour <= 21)) {
+        signeAstrologique = 'Sagittaire'
+    }
+    else
+    {
+        signeAstrologique = 'Capricorne'
+    }
+
+    var valeurNom = valNum(nom);
+    var valeurPrenom = valNum(prenom);
+
+    pseudo = signeAstrologique + (valeurNom + valeurPrenom);
+
+    document.getElementById('pseudo').value = pseudo;
+
+    document.getElementById('valider').disabled = false;
 }
-else if((mois === 1 && jour >=20) || (mois === 2 && jour <= 20))
+
+var nom = document.getElementById('nom').value;
+var prenom = document.getElementById('prenom').value;
+document.getElementById('nom').addEventListener('input', function () 
 {
-    signeAstrologique = 'Poissons'
-}
-else if((mois === 2 && jour >=21) || (mois === 3 && jour <= 20))
+    if (document.getElementById('prenom').value && document.getElementById('jour').value && document.getElementById('mois').value) 
+    {   
+
+        generatePseudo2();
+        valNum(prenom);
+    }
+});
+
+document.getElementById('prenom').addEventListener('input', function () 
 {
-    signeAstrologique = 'Bélier'
-}
-else if((mois === 3 && jour >=21) || (mois === 4 && jour <= 20))
+    if (document.getElementById('nom').value && document.getElementById('jour').value && document.getElementById('mois').value) 
+    {
+        generatePseudo2();
+        valNum(nom);
+    }
+});
+
+document.getElementById('jour').addEventListener('change', function () 
 {
-    signeAstrologique = 'Taureau'
-}
-else if((mois === 4 && jour >=22) || (mois === 5 && jour <= 21))
+    if (document.getElementById('nom').value && document.getElementById('prenom').value && document.getElementById('mois').value) 
+    {
+        generatePseudo2();
+    }
+});
+
+document.getElementById('mois').addEventListener('change', function () 
 {
-    signeAstrologique = 'Gémeaux'
-}
-else if((mois === 5 && jour >=22) || (mois === 6 && jour <= 22))
-{
-    signeAstrologique = 'Cancer'
-}
-else if((mois === 6 && jour >=23) || (mois === 7 && jour <= 22))
-{
-    signeAstrologique = 'Lion'
-}
-else if((mois === 7 && jour >=23) || (mois === 8 && jour <= 22))
-{
-    signeAstrologique = 'Vierge'
-}
-else if((mois === 8 && jour >=23) || (mois === 9 && jour <= 22))
-{
-    signeAstrologique = 'Balance'
-}
-else if((mois === 9 && jour >=23) || (mois === 10 && jour <= 22))
-{
-    signeAstrologique = 'Scorpion'
-}
-else if((mois === 10 && jour >=23) || (mois === 11 && jour <= 21))
-{
-    signeAstrologique = 'Sagittaire'
-}
-else((mois === 11 && jour >=22) || (mois === 0 && jour <= 20))
-{
-    signeAstrologique = 'Capricorne'
-}
+    if (document.getElementById('nom').value && document.getElementById('prenom').value && document.getElementById('jour').value) 
+    {
+        generatePseudo2();
+    }
+});
