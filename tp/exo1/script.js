@@ -125,12 +125,68 @@ function afficheAnee()
     uneOption.value = 0;
     uneOption.text = "choisissez votre année de naissance";
     document.querySelector("#annee").options[0] = uneOption;
-    for (let i = 2023; i => 1900; i--)
+    for (let i = 1900; i <= 2023; i++)
     {
         uneOption = document.createElement('option');
         uneOption.value = i;
         uneOption.text = i;
-        document.querySelector('#annee').options[i] = uneOption;
+        document.querySelector('#annee').appendChild(uneOption);
     }
 }
 afficheAnee();
+
+// calcularea semnului astrologic
+
+const zi = parseInt(document.getElementById('jour').value);
+const luna = parseInt(document.getElementById('mois').value);
+
+let signeAstrologique = '';
+
+if((mois === 0 && jour >=21) || (mois === 1 && jour <= 19))
+{
+    signeAstrologique = 'Verseau'
+}
+else if((mois === 1 && jour >=20) || (mois === 2 && jour <= 20))
+{
+    signeAstrologique = 'Poissons'
+}
+else if((mois === 2 && jour >=21) || (mois === 3 && jour <= 20))
+{
+    signeAstrologique = 'Bélier'
+}
+else if((mois === 3 && jour >=21) || (mois === 4 && jour <= 20))
+{
+    signeAstrologique = 'Taureau'
+}
+else if((mois === 4 && jour >=22) || (mois === 5 && jour <= 21))
+{
+    signeAstrologique = 'Gémeaux'
+}
+else if((mois === 5 && jour >=22) || (mois === 6 && jour <= 22))
+{
+    signeAstrologique = 'Cancer'
+}
+else if((mois === 6 && jour >=23) || (mois === 7 && jour <= 22))
+{
+    signeAstrologique = 'Lion'
+}
+else if((mois === 7 && jour >=23) || (mois === 8 && jour <= 22))
+{
+    signeAstrologique = 'Vierge'
+}
+else if((mois === 8 && jour >=23) || (mois === 9 && jour <= 22))
+{
+    signeAstrologique = 'Balance'
+}
+else if((mois === 9 && jour >=23) || (mois === 10 && jour <= 22))
+{
+    signeAstrologique = 'Scorpion'
+}
+else if((mois === 10 && jour >=23) || (mois === 11 && jour <= 21))
+{
+    signeAstrologique = 'Sagittaire'
+}
+else((mois === 11 && jour >=22) || (mois === 0 && jour <= 20))
+{
+    signeAstrologique = 'Capricorne'
+}
