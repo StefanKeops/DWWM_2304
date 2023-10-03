@@ -227,6 +227,29 @@ document.getElementById('valider').addEventListener('click', function()
     window.location.href = "accueil.html";
 })
 
+// funtia pentru recuperarea cookie
+
+/*function getCookieValue(cookieName)
+{
+    var name = cookieName + "=";
+    var rCookie = decodeURIComponent(document.cookie)
+    var cookieArray = rCookie.split(':');
+
+    for (var i = 0; cookieArray.length; i++)
+    {
+        var cookie = cookieArray[i].trim();
+
+        if (cookie.indexOf(name) === 0)
+        {
+            return cookie.substring(name.length, cookie.length);
+        }
+    }
+
+    return "";
+}
+
+//functia pentru recuperarea restului de zile pana la aniversare
+
 function joursAvantAnniversaire(mois, jour, annee)
 {
     var dateCourante = new Date();
@@ -246,7 +269,7 @@ function joursAvantAnniversaire(mois, jour, annee)
 
 // Funcția pentru stocarea datelor în localStorage
 
-/*function storeFormData() 
+function storeFormData() 
 {
     var formData = 
     {
