@@ -1,13 +1,14 @@
 function getCookieValue(cookieName) {
     var name = cookieName + "=";
-    var rCookie = document.cookie.split("|")
+    var rCookie = document.cookie.split(";")
     
-    for (var i = 0; rCookie.length; i++) {
+    for (var i = 0; rCookie.length; i++) 
+    {
         var cookie = rCookie[i].trim();
-        var partCookie = cookie.split("|");
-
-        if (partCookie[0] == cookieName) {
-            return partCookie[1];
+       
+        if (cookie.startsWith(name)) 
+        {
+            return cookie.substring(name.length, cookie.length);
         }
     }
 
@@ -20,9 +21,9 @@ var dateNaissance = getCookieValue("jour") + "/" + getCookieValue("mois") + "/" 
 var pseudo = getCookieValue("pseudo");
 
 document.getElementById("nom").textContent = nom;
-document.getElementById("prenom").textContent = prenomnom;
+document.getElementById("prenom").textContent = prenom;
 document.getElementById("dateNaissance").textContent = dateNaissance;
-document.getElementById("psudo").textContent = pseudo;
+document.getElementById("pseudo").textContent = pseudo;
 
 var mois = getCookieValue("mois");
 var jour = getCookieValue("jour")
@@ -37,7 +38,15 @@ function joursAvantAnniversaire(mois, jour, annee)
     {
         dateAnniv.setFullYear(dateCourante.getFullYear() + 1);
     }
-
+    
+    var difference = dateAnniv - dateCourante;
     var joursRestante = Math.ceil(difference / (1000 * 60 * 60 * 24));
     return joursRestante;
  }
+
+var moisAnniversaire = parseInt(getCookieValue("mois"));
+var jourAnniversaire = parseInt(getCookieValue("jour"));
+var anneeAnniversaire = parseInt(getCookieValue("annee"));
+var joursRestants = joursAvantAnniversaire(moisAnniversaire, jourAnniversaire, anneeAnniversaire);
+
+document.getElementById("joursRestants").textContent = joursRestants + " jours";
