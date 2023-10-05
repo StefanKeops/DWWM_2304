@@ -71,7 +71,7 @@ function afficheMois()
         uneOption = document.createElement('option');
         uneOption.value = i;
         const monthNames = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
-        uneOption.text = monthNames[i];
+        uneOption.text = monthNames[i-1];
         document.querySelector("#mois").options[i] = uneOption;
     }
 }
@@ -104,37 +104,37 @@ function generatePseudo2()
 
     let signeAstrologique = '';
 
-    if ((mois == 0 && jour >= 21) || (mois == 1 && jour <= 19)) {
+    if ((mois == 1 && jour >= 21) || (mois == 2 && jour <= 19)) {
         signeAstrologique = 'Verseau'
     }
-    else if ((mois == 1 && jour >= 20) || (mois == 2 && jour <= 20)) {
+    else if ((mois == 2 && jour >= 20) || (mois == 3 && jour <= 20)) {
         signeAstrologique = 'Poissons'
     }
-    else if ((mois == 2 && jour >= 21) || (mois == 3 && jour <= 20)) {
+    else if ((mois == 3 && jour >= 21) || (mois == 4 && jour <= 20)) {
         signeAstrologique = 'Bélier'
     }
-    else if ((mois == 3 && jour >= 21) || (mois == 4 && jour <= 20)) {
+    else if ((mois == 4 && jour >= 21) || (mois == 5 && jour <= 20)) {
         signeAstrologique = 'Taureau'
     }
-    else if ((mois == 4 && jour >= 22) || (mois == 5 && jour <= 21)) {
+    else if ((mois == 5 && jour >= 22) || (mois == 6 && jour <= 21)) {
         signeAstrologique = 'Gémeaux'
     }
-    else if ((mois == 5 && jour >= 22) || (mois == 6 && jour <= 22)) {
+    else if ((mois == 6 && jour >= 22) || (mois == 7 && jour <= 22)) {
         signeAstrologique = 'Cancer'
     }
-    else if ((mois == 6 && jour >= 23) || (mois == 7 && jour <= 22)) {
+    else if ((mois == 7 && jour >= 23) || (mois == 8 && jour <= 22)) {
         signeAstrologique = 'Lion'
     }
-    else if ((mois == 7 && jour >= 23) || (mois == 8 && jour <= 22)) {
+    else if ((mois == 8 && jour >= 23) || (mois == 9 && jour <= 22)) {
         signeAstrologique = 'Vierge'
     }
-    else if ((mois == 8 && jour >= 23) || (mois == 9 && jour <= 22)) {
+    else if ((mois == 9 && jour >= 23) || (mois == 10 && jour <= 22)) {
         signeAstrologique = 'Balance'
     }
-    else if ((mois == 9 && jour >= 23) || (mois == 10 && jour <= 22)) {
+    else if ((mois == 10 && jour >= 23) || (mois == 11 && jour <= 22)) {
         signeAstrologique = 'Scorpion'
     }
-    else if ((mois == 10 && jour >= 23) || (mois == 11 && jour <= 21)) {
+    else if ((mois == 11 && jour >= 23) || (mois == 12 && jour <= 21)) {
         signeAstrologique = 'Sagittaire'
     }
     else

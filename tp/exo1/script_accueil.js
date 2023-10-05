@@ -36,7 +36,7 @@ function joursAvantAnniversaire(mois, jour, annee)
 
     if (dateAnniv < dateCourante)
     {
-        dateAnniv.setFullYear(dateCourante.getFullYear() + 1);
+        dateAnniv.setFullYear(dateCourante.getFullYear());
     }
     
     var difference = dateAnniv - dateCourante;
