@@ -1,18 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () 
-{
+document.addEventListener("DOMContentLoaded", function () {
     fetch("json/cardgame.json")
         .then(response => {
-            if (!response.ok) 
-            {
+            if (!response.ok) {
                 throw new Error("Réponse HTTP non valide");
             }
             return response.json();
         })
-        .then(data => 
-            {
+        .then(data => {
             const tableBody = document.querySelector("#jeu tbody");
-            data.forEach(item => 
-                {
+            data.forEach(item => {
                 const row = tableBody.insertRow();
                 row.insertCell().textContent = item.id;
                 row.insertCell().textContent = item.name;
@@ -31,3 +27,38 @@ document.addEventListener("DOMContentLoaded", function ()
         })
         .catch(error => console.error("Erreur lors du chargement des données JSON", error));
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("json/cardgame.json")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Réponse HTTP non valide");
+            }
+            return response.json();
+        })
+        .then(data => {
+            let cardAttack = null;
+            let attackValue = 0;
+
+            data.forEach(item => {
+                if (item.attack > attackValue) {
+                    attackValue = item.attack;
+                    cardAttack = item;
+                }
+            });
+            if (cardAttack !== null) {
+                document.getElementById("card-id").textContent = 'ID: $(cardAttack.id)';
+                document.querySelector("two1").textContent = 'Nom: $(cardAttack.name)';
+                document.querySelector("two2").textContent = 'Played: $(cardAttack.played)';
+                document.querySelector("two3").textContent = 'Victories: $(cardAttack.victory)';
+                document.querySelector("four").textContent = 'Power: $(cardAttack.power)';
+                document.querySelector("five").textContent = 'Attack: $(cardAttack.attack)';
+                document.querySelector("six").textContent = 'Defense: $(cardAttack.armor)';
+            }
+            else
+            {
+                console.log("Aucune carte trouvée.");
+            }
+        })
+        .catch(error => console.error("Erreur lors du chargement des données JSON", error));
+    })
