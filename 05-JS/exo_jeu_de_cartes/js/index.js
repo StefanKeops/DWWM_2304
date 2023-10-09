@@ -47,13 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
             if (cardAttack !== null) {
-                document.getElementById("card-id").textContent = 'ID: $(cardAttack.id)';
-                document.querySelector("two1").textContent = 'Nom: $(cardAttack.name)';
-                document.querySelector("two2").textContent = 'Played: $(cardAttack.played)';
-                document.querySelector("two3").textContent = 'Victories: $(cardAttack.victory)';
-                document.querySelector("four").textContent = 'Power: $(cardAttack.power)';
-                document.querySelector("five").textContent = 'Attack: $(cardAttack.attack)';
-                document.querySelector("six").textContent = 'Defense: $(cardAttack.armor)';
+                document.getElementById("card-id").textContent = cardAttack.id;
+                document.getElementById("nom").textContent = cardAttack.name;
+                document.querySelector(".two2").textContent = 'Played: ' + cardAttack.played +'|  ';
+                document.querySelector(".two3").textContent = '  Victories: ' + cardAttack.victory;
+                document.querySelector(".four").textContent = 'Power ' + cardAttack.power;
+                document.querySelector(".five").textContent = 'Attack ' + cardAttack.attack;
+                document.querySelector(".six").textContent = 'Defense ' + cardAttack.armor;
             }
             else
             {

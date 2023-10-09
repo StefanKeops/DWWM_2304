@@ -48,5 +48,3 @@ var moisAnniversaire = parseInt(getCookieValue("mois"));
 var jourAnniversaire = parseInt(getCookieValue("jour"));
 var anneeAnniversaire = parseInt(getCookieValue("annee"));
 var joursRestants = joursAvantAnniversaire(moisAnniversaire, jourAnniversaire, anneeAnniversaire);
-
-document.getElementById("joursRestants").textContent = joursRestants + " jours";
