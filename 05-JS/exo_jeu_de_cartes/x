@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="card-id" id="card-id"></div>
+    <div class="card-antet">
+        <div class="card2">
+            <div class="card-nom" id="card-nom"></div>
+            <div class="card-played"></div>
+            <div class="card-victory"></div>
+        </div>
+    </div>
+    <div class="card-image"></div>
+    <div class="card3">
+        <div class="power-name">Power</div>
+        <div class="power-value"></div>
+    </div>
+    <div class="card4">
+        <div class="attack-name">Attack</div>
+        <div class="attack-value"></div>
+    </div>
+    <div class="card5">
+        <div class="defense-name">Défense</div>
+        <div class="defense-value"></div>
+    <div class="card6"></div>
+  </div>

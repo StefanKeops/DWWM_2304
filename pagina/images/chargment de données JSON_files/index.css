@@ -49,6 +49,57 @@ th {
     ;
 }
 
+.card3 {
+    grid-column: 4;
+    grid-row: 2;
+    background-color: black;
+    color: white;
+    font-size: 19px;
+    text-align: center;
+}
+
+body > div > div.card3 > div.power-name {
+    color: White;
+}
+
+body > div > div.card3 > div.power-value {
+    color : purple; 
+    font-size: 25px;
+}
+
+.card4 {
+    grid-column: 4;
+    grid-row: 3;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+body > div > div.card4 > div.attack-name {
+    color: White;
+}
+
+body > div > div.card4 > div.attack-value {
+    color : red; 
+    font-size: 25px;
+}
+
+.six {
+    grid-column: 4;
+    grid-row: 4;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.seven {
+    grid-column: 1 / 5;
+    grid-row: 5;
+    background-color: black;
+}
+
 .card2 {
     display: grid;
     grid-auto-columns: minmax(75px, 75px);
@@ -80,62 +131,6 @@ th {
     font-size: 10px;
 }
 
-.card3 {
-    grid-column: 4;
-    grid-row: 2;
-    background-color: black;
-    color: white;
-    font-size: 19px;
-    text-align: center;
-}
 
-.power-name {
-    color: White;
-}
 
-.power-value {
-    color : purple; 
-    font-size: 25px;
-}
 
-.card4 {
-    grid-column: 4;
-    grid-row: 3;
-    background-color: black;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-}
-
-.attack-name {
-    color: White;
-}
-
-.attack-value {
-    color : red; 
-    font-size: 25px;
-}
-
-.card5 {
-    grid-column: 4;
-    grid-row: 4;
-    background-color: black;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-}
-
-.defense-name {
-    color: White;
-}
-
-.defense-value {
-    color : blue; 
-    font-size: 25px;
-}
-
-.seven {
-    grid-column: 1 / 5;
-    grid-row: 5;
-    background-color: black;
-}
