@@ -6,7 +6,7 @@ function afficher(_prenom, _age) {
     let res = document.querySelector('#resultat');
 
     if (_prenom !== ' ' && _age >= 18) {
-        res.innerHTML = 'Bonjour ' + _prenom + ' votre âge est ' + _age;
+        res.innerHTML = 'Bonjour <span>' + _prenom + '</span>, votre âge est <span>' + _age + '</span>';
     }
     else {
         res.innerHTML = 'Compléter/corriger le formulaire';
@@ -26,10 +26,10 @@ function majorite(_age) {
     let res = document.querySelector('#majoritate');
 
     if(_age >= 18){
-        res.innerHTML = "Vous êtes majeur";
+        res.innerHTML = "Vous êtes <span>majeur</span>";
     }
     else if (_age < 18 ){
-        res.innerHTML = "Vous êtes mineur";
+        res.innerHTML = "Vous êtes <span>mineur</span>";
     }
     else {
         res.innerHTML = 'Compléter/corriger le formulaire';
@@ -49,11 +49,11 @@ function retraite(_age) {
 
     if (_age < 64){
         let x = 64 - _age;
-        res.innerHTML = "Il vous reste " + x + " année(s) avant la retraite.";
+        res.innerHTML = "Il vous reste <span>" + x + "</span> année(s) avant la retraite.";
     }
     else if (_age > 64){
         let x = _age - 64;
-        res.innerHTML = "Vous êtes à la retraite depuis " + x + "année(s)."
+        res.innerHTML = "Vous êtes à la retraite depuis <span>" + x + "</span>année(s)."
     }
     else{
         res.innerHTML = "Vous prenez votre retraite cette année !"
