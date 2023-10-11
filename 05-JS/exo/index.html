@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <h1><b>Saisissez un prénom et un âge</b></h1>
+        <form id="registrationForm" onsubmit="storeFormData()" method="post" action="index.html">  
+            <fieldset>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" min="0" max="100"/>
+                <label for="age">Age :</label>
+                <input type="number" id="age" name="age" min="0" max="125"/>
+                <button type="button" id="valider">Valider</button>
+                <button type="reset">Vider</button>
+                <p><hr size="3" color="black"></p>
+                <p id="resultat"></p>
+                <p id="majoritate"></p>
+                <p id="pensie"></p>
+            </fieldset>
+        </div>
+</body>
+</html>

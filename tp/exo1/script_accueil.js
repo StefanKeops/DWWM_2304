@@ -36,7 +36,7 @@ function joursAvantAnniversaire(mois, jour, annee)
 
     if (dateAnniv < dateCourante)
     {
-        dateAnniv.setFullYear(dateCourante.getFullYear() + 1);
+        dateAnniv.setFullYear(dateCourante.getFullYear());
     }
     
     var difference = dateAnniv - dateCourante;
@@ -48,5 +48,3 @@ var moisAnniversaire = parseInt(getCookieValue("mois"));
 var jourAnniversaire = parseInt(getCookieValue("jour"));
 var anneeAnniversaire = parseInt(getCookieValue("annee"));
 var joursRestants = joursAvantAnniversaire(moisAnniversaire, jourAnniversaire, anneeAnniversaire);
-
-document.getElementById("joursRestants").textContent = joursRestants + " jours";
