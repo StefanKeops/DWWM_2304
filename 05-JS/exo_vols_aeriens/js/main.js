@@ -24,3 +24,13 @@ fetch("json/flights.json")
       });
     })
     .catch(error => console.error("Error loading JSON data", error));
+
+    const companySearchInput = document.getElementById("companySearch")
+
+    companySearchInput.addEventListener("input", function() {
+        searchTerm = companySearchInput.value;
+    })
+
+    function filterFlightsByCompany(searcTerm) {
+        const tableBody = document.querySelector("#vols tbody");
+    }
