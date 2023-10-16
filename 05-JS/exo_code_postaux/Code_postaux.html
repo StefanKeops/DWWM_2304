@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codes postal</title>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
         <label for="zipCodesSearch">Search for zip code</label>
-        <input type="search" id="zipCodesSearch" placeholder="Search for zip code">
+        <input list="citySuggestions" type="search" id="zipCodesSearch" placeholder="Search for zip code">
         <datalist id="citySuggestions"></datalist>
         <button type="button" id="searchButton">Search for zip code</button>
-        <div id="CityInfo"></div>
+        <div id="cityInfo"></div>
     </header>
+    <li id="li">
+
+    </li>
+
 </body>
 </html>

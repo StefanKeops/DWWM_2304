@@ -1,3 +1,9 @@
+const zipCodeSearchInput = document.getElementById("zipCodesSearch")
+const li = document.querySelector("#list");
+const ZipCodeFilter = document.getElementById("zipCodeFilter")
+let data = [];
+
+
 fetch("json/zipcodes.json")
     .then(response => {
         if (!response.ok) {
@@ -5,31 +11,60 @@ fetch("json/zipcodes.json")
         }
         return response.json();
     })
+
     .then(zipCodesData => {
         data = zipCodesData;
-        updateTable(data);
+        li(data);
     })
     .catch(error => console.error("Error loading JSON data", error));
 
-zipCodesSearchInput.addEventListener("input", function () {
-    const searchTerm = zipCodesSearchInput.value;
-    filterZipCodes(searchTerm);
-});
-
-function filterZipCodes(searchTerm) {
-    const filteredZipCodes = data.filter(item => {
-        const codePostal = item.codePostal.toLowerCase();
-        return codePostal.includes(searchTerm.toLowerCase());
+    zipCodeSearchInput.addEventListener("input", function () {
+        const searchTerm = zipCodeSearchInput.value;
+        filterZipCodes(searchTerm);
     });
-    updateTable(filteredZipCodes);
-}
 
-zipCodesFilter.addEventListener("change", function () {
-    const selectedZipCodes = zipCodesFilter.value;
-    if (selectedZipCodes === "") {
-        updateTable(data);
-    } else {
-        const filteredZipCodes = data.filter(item => item.codePostal === selectedZipCodes);
-        updateTable(filteredZipCodes);
-    }
-});
+    ZipCodeFilter.addEventListener("change", function () {
+        const selectedZipCode = ZipCodeFilter.value;
+        if (selectedZipCode === "") {
+            li(data);
+        } else {
+            const filteredZipCodes = data.filter(item => item.airline_name === selectedZipCode);
+            li(filteredZipCodes);
+        }
+    });
+
+
+    /*.then(zipCodesData => {
+        const data = zipCodesData;
+        const zipCodesSearch = document.getElementById("zipCodesSearch");
+        const citySuggestion = document.getElementById("citySuggestions")
+
+        zipCodesSearch.addEventListener("input", function () {
+            const searchTerm = zipCodesSearch.value.trim();
+            if (searchTerm.lenght >=2) {
+                const filteredCities = data.filter (item => item.codePostal.include(searchTerm));
+                citySuggestion.innerHTML = "";
+                filteredCities.forEach(city => {
+                    const option = document.createElement("option");
+                    option.value = city.codePostal + "-" + city.ville;
+                    citySuggestion.appendChild(option);
+                });
+            } else {
+                citySuggestion.innerHTML = "";
+            }
+        });
+
+        const searchButton = document.getElementById("searchButton");
+        const cityInfo = document.getElementById("cityInfo");
+        searchButton.addEventListener("click", function () {
+            const selectedValue = zipCodesSearch.value;
+            const selectedCity = data.find(item => (item.codePostal + "-" + item.ville === selectedValue));
+            if (selectedCity) {
+                cityInfo.innerHTML = '<p>Code Postale: ${selectedCity.codePostal}</p><p>Ville: ${selectedCity.ville}</p>';
+            } else {
+                cityInfo.innerHTML = "Ville non trouve.";
+            }
+        })
+    })
+    .catch(error => console.error("Error loading JSON data", error));*/
+
