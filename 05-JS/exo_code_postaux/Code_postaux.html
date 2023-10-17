@@ -7,16 +7,12 @@
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <label for="zipCodesSearch">Search for zip code</label>
-        <input list="citySuggestions" type="search" id="zipCodesSearch" placeholder="Search for zip code">
-        <datalist id="citySuggestions"></datalist>
-        <button type="button" id="searchButton">Search for zip code</button>
-        <div id="cityInfo"></div>
-    </header>
-    <li id="li">
-
-    </li>
+    <h1>Recherche de Villes par Code Postal</h1>
+    <label for="zipCodeSearch">Code Postal :</label>
+    <input type="search" id="zipCodeSearch" list="citySuggestions" placeholder="Entrez le code postal">
+    <datalist id="citySuggestions"></datalist>
+    <button type="button" id="searchButton">Rechercher</button>
+    <div id="cityInfo"></div>
 
 </body>
 </html>
