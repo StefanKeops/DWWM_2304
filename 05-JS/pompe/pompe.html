@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../exo_employes/js/vue.global.js"></script>
+    <script src="js/main.js" type="module"></script>
+</head>
+<body id="app">
+    <h1>La pompe à essence</h1>
+    <div>
+        <label>Prix/litre</label>
+        <input type="number" v-model="prixLitre">
+        <p {{ quantiteDistribueeArondie }}>Quantite: </p>
+        <p>Total a payer: {{ prixAPayer }}</p>
+    </div>
+    <div>
+        <button {{ Button }}>Coule</button>
+    </div>
+    
+</body>
+</html>

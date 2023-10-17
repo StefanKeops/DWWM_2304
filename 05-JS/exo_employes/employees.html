@@ -8,14 +8,34 @@
     <script src="js/vue.global.js" ></script>
     <script src="js/main.js" type="module"></script>
 </head>
-<body id="app">
-    <header>
+<body>
+    <div id="app">
         <h1>Employees</h1>
         <h2>This is the current list of employees</h2>
-    </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>EID</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Monthly salary</th>
+                    <th>Year of Birth</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="employee of employees">
+                    <td>{{ employee.id }}</td>
+                    <td>{{ employee.employee_name }}</td>
+                    <td>{{ email }}</td>
+                    <td>{{ montlySalary }}</td>
+                    <td>{{ yearOfBird }}</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <main>
-        <table></table>
-    </main>
+    
 </body>
 </html>
