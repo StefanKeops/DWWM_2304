@@ -27,9 +27,9 @@
                 <tr v-for="employee of employees">
                     <td>{{ employee.id }}</td>
                     <td>{{ employee.employee_name }}</td>
-                    <td>{{ email }}</td>
-                    <td>{{ montlySalary }}</td>
-                    <td>{{ yearOfBird }}</td>
+                    <td>{{ employee.email }}</td>
+                    <td>{{ monthlySalary(employee) }}</td>
+                    <td>{{ yearOfBirth(employee) }}</td>
                     <td></td>
                 </tr>
             </tbody>

@@ -7,6 +7,4 @@ class Db
     }
 }
 
-//let result = Db.fetchJson('http://...')
-
 export { Db }
