@@ -31,8 +31,8 @@
                     <td>{{ monthlySalary(employee) }} €</td>
                     <td>{{ yearOfBirth(employee) }}</td>
                     <td>
-                        <button @click="duplicateEmployee(employee)">Duplicate</button>
-                        <button @click="deleteEmployee(employee)">Delete</button>
+                        <button @click="duplicateEmployee(employee)" id="duplicate"> Duplicate</button>
+                        <button @click="deleteEmployee(employee)"id="delete">🗑 Delete</button>
                       </td>
                 </tr>
                 <tfoot>
