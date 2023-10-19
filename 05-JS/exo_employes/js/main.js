@@ -13,6 +13,7 @@ const employeesApp = {
             employeeCount: 0,
             totalMonthlySalary: 0,
             sortBy: 'asc',
+            lastEmployeeId: 0,
         }
     },
     async mounted() {
@@ -22,10 +23,14 @@ const employeesApp = {
             let c = new Employee(item);
 
             c.email = createEmail(c.employee_name);
-        
-            this.employees.push(c);
 
             this.totalMonthlySalary += parseFloat(this.monthlySalary(c));
+
+            if (c.id > this.lastEmployeeId) {
+                this.lastEmployeeId = c.id;
+            }
+        
+            this.employees.push(c);
         }
 
         this.employeeCount = this.employees.lenght
@@ -53,7 +58,8 @@ const employeesApp = {
 
         duplicateEmployee(employee) {
             const duplicate = Object.assign({}, employee);
-            duplicate.id = duplicate.id + ".1";
+            this.lastEmployeeId++;
+            duplicate.id = this.lastEmployeeId;
             this.employees.push(duplicate);
         },
 

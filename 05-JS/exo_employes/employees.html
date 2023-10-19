@@ -12,7 +12,7 @@
     <div id="app">
         <h1>Employees</h1>
         <h2>This is the current list of employees</h2>
-        <table>
+        <table v-if="employees.length > 0">
             <thead>
                 <tr>
                     <th>EID</th>
@@ -45,6 +45,7 @@
                 </tfoot>
             </tbody>
         </table>
+        <p v-else>Absence d'informations dans le tableau.</p>
     </div>
 
     
