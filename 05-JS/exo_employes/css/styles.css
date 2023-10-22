@@ -23,6 +23,7 @@ button {
 }
 
 button#duplicate {
+    width: auto;
     background-color: #3298DC;
 }
 
