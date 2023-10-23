@@ -2,8 +2,8 @@
 
 const imputDateNaissance = document.getElementById("dateNaissance");
 const buttonCalculer = document.getElementById("calculer");
-const divResultatDate = document.getElementById("resuldatDate");
-const divResultatIntervalle = document.getElementById("resultatIntervalle")
+const divResultatDate = document.getElementById("divResultatDate");
+const divResultatIntervalle = document.getElementById("resultatIntervalle");
 
 // FUNCTIONS
 
@@ -29,7 +29,7 @@ function estDansLePasse(_date) {
  * @param {Date} dateAEvaluer la date à évaluer
  * @returns {Number} l'intervalle en année entre la date fournie en parametre et la date du jour
  */
-function intervalleDate (dateAEvaluer) {
+function intervalleDate(dateAEvaluer) {
     if(!(dateAEvaluer instanceof Date))
     {
 
@@ -50,13 +50,8 @@ buttonCalculer.addEventListener("click", () => {
 
     if (estDansLePasse(dateNaissance)) {
 
-        divResultatDate.innerHTML = "Vous êtes né le ";
-        divResultatDate.innerHTML += dateNaissance.toLocaleDateString("fr");
-        divResultatDate.innerHTML += "à";
-        divResultatDate.innerHTML += dateNaissance.toLocaleDateString("fr");
-        divResultatIntervalle.innerHTML += "Ils'est écoulé";
-                                        +intervalleDates(dateNaissance.getDate)
-                                        +"année depuis votre naissance";
+        divResultatDate.innerHTML = "Vous êtes né le: " + dateNaissance.toLocaleDateString("fr") + "à" + dateNaissance.toLocaleDateString("fr");
+        divResultatIntervalle.innerHTML = "Ils'est écoulé" + intervalleDate(dateNaissance.getDate) + "année depuis votre naissance";
     } else {
         divResultatDate.innerHTML = "Veuillez saisie une date dans le passé";
     }

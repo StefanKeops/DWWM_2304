@@ -1,0 +1,171 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "description": "Frais de déchetterie",
+            "unité": "Unité",
+            "prix": 350
+        },
+        {
+            "id": 2,
+            "description": "Frais,de déplacement et d'evacuation des déchets",
+            "unité": "M³",
+            "prix": 78
+        },
+        {
+            "id": 3,
+            "description": "Masquage et protection des ouvertures",
+            "unité": "M²",
+            "prix": 5
+        },
+        {
+            "id": 4,
+            "description": "Mise en plage d'un monte matériaux",
+            "unité": "",
+            "prix": "Forfait"
+        },
+        {
+            "id": 5,
+            "description": "Montage de l'echafaudage",
+            "unité": "M²",
+            "prix": 45
+        },
+        {
+            "id": 6,
+            "description": "Rangement et nettoyage du chantier",
+            "unité": "",
+            "prix":""
+        },
+        {
+            "id": 7,
+            "description": "Travaux préliminaires - Préparation du matériel (organisation du chantier)",
+            "unité": "",
+            "prix":""
+        },
+        {
+            "id": 8,
+            "description": "Casser la dalle existante compresant l'évacuation des gravats",
+            "unité": "M²",
+            "prix": 35
+        },
+        {
+            "id": 9,
+            "description": "Casser les surfaces des terrasses et évacuation des déchets en déchetterie",
+            "unité": "M²",
+            "prix": 90
+        },
+        {
+            "id": 10,
+            "description": "Démolition beton",
+            "unité": "ML",
+            "prix": "35"
+        },
+        {
+            "id": 11,
+            "description": "Démolition cheminée",
+            "unité":"ML",
+            "prix": 445
+        },
+        {
+            "id": 12,
+            "description": "Démolition du toiture (tuiles, liteaux, chevrons, poutres)",
+            "unité": "M²",
+            "prix": 50
+        },
+        {
+            "id": 13,
+            "description":"Démolition du mur cloison",
+            "unité":"M²",
+            "prix": 40
+        },
+        {
+            "id":14,
+            "description":"Démolition de plafond",
+            "unité":"M²",
+            "prix": 26
+        },
+        {
+            "id": 15,
+            "description": "Démolition des mur de soutènement, recuperation des pierres à batir",
+            "unité":"M²",
+            "prix": 63
+        },
+        {
+            "id": 16,
+            "description": "Démontage de la toiture, compris les tuiles et tous le materiaux dégradés",
+            "unité":"M²",
+            "prix": 35
+        },
+        {
+            "id": 17,
+            "description": "Démontage de la toiture supérieure comprenant les poutres, les litos, les tuiles et les piliers de bois",
+            "unité":"M²",
+            "prix":45
+        },
+        {
+            "id": 18,
+            "description": "Demontage divers",
+            "unité": "Heure",
+            "prix": 78
+        }
+        {
+            "id": 19,
+            "description": "Retirer l'ensemble du carrelage, y compris l'évacuation des gravats",
+            "unité": "M²",
+            "prix":38
+        },
+        {
+            "id": 20,
+            "description": "Retrait du moquette",
+            "unité":"M²",
+            "prix":39
+        },
+        {
+            "id": 20,
+            "description": "Retrait du sanitares",
+            "unité": "Unité",
+            "prix": 78
+        },
+        {
+            "id": 21,
+            "description": "Application d'une couche de enduit",
+            "unité": "M²",
+            "prix":48
+        },
+        {
+            "id": 22,
+            "description": "Construction mur parpaing",
+            "unité":"M²",
+            "prix": 60
+        },
+        {
+            "id": 23,
+            "description": "Création des murs en BA13",
+            "unité":"M²",
+            "prix": 95
+        },
+        {
+            "id": 24,
+            "description": "Création des murs en BA13 + isolation 10cm",
+            "unité":"M²",
+            "prix": 95
+        },
+        {
+            "id": 25,
+            "description": "Création d'un chainage de maison - Ferraillage, coffrage ainsi  que la coulage du béton",
+            "unité":"ML",
+            "prix":150
+        },
+        {
+            "id": 26,
+            "description": "Fourniture et pose de bloc porte",
+            "unité": "Unité",
+            "prix": 250
+        },
+        {
+            "id": 27,
+            "description": "Fourniture et pose de bloc porte"
+        }
+    ]
+}
