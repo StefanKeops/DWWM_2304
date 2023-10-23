@@ -20,13 +20,16 @@ button {
     height: 40px;
     margin: 3px;
     font-size: 110%;
+    cursor: pointer;
 }
 
 button#duplicate {
     width: auto;
     background-color: #3298DC;
+    color: white;
 }
 
 button#delete {
     background-color: #F14668;
+    color: white;
 }

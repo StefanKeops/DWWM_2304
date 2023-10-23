@@ -4,168 +4,260 @@
         {
             "id": 1,
             "description": "Frais de déchetterie",
-            "unité": "Unité",
+            "unite": "Unité",
             "prix": 350
         },
         {
             "id": 2,
             "description": "Frais,de déplacement et d'evacuation des déchets",
-            "unité": "M³",
+            "unite": "M³",
             "prix": 78
         },
         {
             "id": 3,
             "description": "Masquage et protection des ouvertures",
-            "unité": "M²",
+            "unite": "M²",
             "prix": 5
         },
         {
             "id": 4,
             "description": "Mise en plage d'un monte matériaux",
-            "unité": "",
+            "unite": "",
             "prix": "Forfait"
         },
         {
             "id": 5,
             "description": "Montage de l'echafaudage",
-            "unité": "M²",
+            "unite": "M²",
             "prix": 45
         },
         {
             "id": 6,
             "description": "Rangement et nettoyage du chantier",
-            "unité": "",
+            "unite": "",
             "prix":""
         },
         {
             "id": 7,
             "description": "Travaux préliminaires - Préparation du matériel (organisation du chantier)",
-            "unité": "",
+            "unite": "",
             "prix":""
         },
         {
             "id": 8,
             "description": "Casser la dalle existante compresant l'évacuation des gravats",
-            "unité": "M²",
+            "unite": "M²",
             "prix": 35
         },
         {
             "id": 9,
             "description": "Casser les surfaces des terrasses et évacuation des déchets en déchetterie",
-            "unité": "M²",
+            "unite": "M²",
             "prix": 90
         },
         {
             "id": 10,
             "description": "Démolition beton",
-            "unité": "ML",
+            "unite": "ML",
             "prix": "35"
         },
         {
             "id": 11,
             "description": "Démolition cheminée",
-            "unité":"ML",
+            "unite":"ML",
             "prix": 445
         },
         {
             "id": 12,
             "description": "Démolition du toiture (tuiles, liteaux, chevrons, poutres)",
-            "unité": "M²",
+            "unite": "M²",
             "prix": 50
         },
         {
             "id": 13,
             "description":"Démolition du mur cloison",
-            "unité":"M²",
+            "unite":"M²",
             "prix": 40
         },
         {
             "id":14,
             "description":"Démolition de plafond",
-            "unité":"M²",
+            "unite":"M²",
             "prix": 26
         },
         {
             "id": 15,
             "description": "Démolition des mur de soutènement, recuperation des pierres à batir",
-            "unité":"M²",
+            "unite":"M²",
             "prix": 63
         },
         {
             "id": 16,
             "description": "Démontage de la toiture, compris les tuiles et tous le materiaux dégradés",
-            "unité":"M²",
+            "unite":"M²",
             "prix": 35
         },
         {
             "id": 17,
             "description": "Démontage de la toiture supérieure comprenant les poutres, les litos, les tuiles et les piliers de bois",
-            "unité":"M²",
+            "unite":"M²",
             "prix":45
         },
         {
             "id": 18,
             "description": "Demontage divers",
-            "unité": "Heure",
+            "unite": "Heure",
             "prix": 78
-        }
+        },
         {
             "id": 19,
             "description": "Retirer l'ensemble du carrelage, y compris l'évacuation des gravats",
-            "unité": "M²",
+            "unite": "M²",
             "prix":38
         },
         {
             "id": 20,
             "description": "Retrait du moquette",
-            "unité":"M²",
+            "unite":"M²",
             "prix":39
         },
         {
             "id": 20,
             "description": "Retrait du sanitares",
-            "unité": "Unité",
+            "unite": "Unité",
             "prix": 78
         },
         {
             "id": 21,
             "description": "Application d'une couche de enduit",
-            "unité": "M²",
+            "unite": "M²",
             "prix":48
         },
         {
             "id": 22,
             "description": "Construction mur parpaing",
-            "unité":"M²",
+            "unite":"M²",
             "prix": 60
         },
         {
             "id": 23,
             "description": "Création des murs en BA13",
-            "unité":"M²",
+            "unite":"M²",
             "prix": 95
         },
         {
             "id": 24,
             "description": "Création des murs en BA13 + isolation 10cm",
-            "unité":"M²",
+            "unite":"M²",
             "prix": 95
         },
         {
             "id": 25,
             "description": "Création d'un chainage de maison - Ferraillage, coffrage ainsi  que la coulage du béton",
-            "unité":"ML",
+            "unite":"ML",
             "prix":150
         },
         {
             "id": 26,
             "description": "Fourniture et pose de bloc porte",
-            "unité": "Unité",
+            "unite": "Unité",
             "prix": 250
         },
         {
             "id": 27,
-            "description": "Fourniture et pose de bloc porte"
+            "description": "Fourniture et pose de carrelage",
+            "unite": "M²",
+            "prix": 65
+        },
+        {
+            "id": 28,
+            "description": "Fourniture et pose de faiance (salle de bain)",
+            "unite": "M²",
+            "prix": 90
+        },
+        {
+            "id": 29,
+            "description": "Fourniture et pose de persienne",
+            "unite": "Unité",
+            "prix": 360
+        },
+        {
+            "id": 30,
+            "description": "Fourniture et pose de plinthe",
+            "unite":"M²",
+            "prix": 28
+        },
+        {
+            "id": 31,
+            "description": "Mise en place de l'etanchéité (rouleau chape bitume)",
+            "unite":"M²",
+            "prix": 75
+        },
+        {
+            "id": 32,
+            "description": "Pose de carrelage (fourniture non comprise)",
+            "unite": "M²",
+            "prix":60
+        },
+        {
+            "id": 33,
+            "description": "Pose de carrelage escalier",
+            "unite": "M²",
+            "prix": 95
+        },
+        {
+            "id": 34,
+            "description": "Pose de plinthes",
+            "unite": "ML",
+            "prix": 15
+        },
+        {
+            "id": 35,
+            "description": "Pose de poutrelle hourdis pour plancher + coffrage, ferraillage, béton pour plancher",
+            "unite": "M²",
+            "prix":175
+        },
+        {
+            "id":36,
+            "description": "Pose d'un sol PVC (fourniture non comprise)",
+            "unite":"M²",
+            "prix": 22
+        },
+        {
+            "id": 37,
+            "description": "Réalisation de l'etanchéité avec la mise en place d'un goudron sur lequel sera posé la calandrite",
+            "unite": "M²",
+            "prix":38
+        },
+        {
+            "id": 38,
+            "description": "Réalisation d'une chape afin de ratraper les niveaux et d'avoir un support adéquat pour le nouveau revêtement  - Carrelage",
+            "unite": "M²",
+            "prix": 75
+        },
+        {
+            "id": 39,
+            "description": "Réalisation d'une chape afin de ratraper les niveaux et d'avoir un support adéquat pour le nouveau revêtement - Sol PVC",
+            "unite": "M²",
+            "prix": 80
+        },
+        {
+            "id": 40,
+            "description": "Réalisation d'une chape semi-mouillé (sable noir lavé)",
+            "unite": "M²",
+            "prix": 106
+        },
+        {
+            "id": 41,
+            "description": "Réalisation d'une chape semi-mouillé (sable/ciment) - Carrelage",
+            "unite": "M²",
+            "prix": 75
+        },
+        {
+            "id": 42,
+            "description": "Application de deux couche de peinture mate",
+            "unite":"M²",
+            "prix": 17
         }
     ]
 }
