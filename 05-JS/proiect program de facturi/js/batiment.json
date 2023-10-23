@@ -258,6 +258,348 @@
             "description": "Application de deux couche de peinture mate",
             "unite":"M²",
             "prix": 17
+        },
+        {
+            "id": 43,
+            "description": "Application de deux couche de peinture Zolpan",
+            "unite": "M²",
+            "prix": 24
+        },
+        {
+            "id": 44,
+            "description": "Création d'ne structure métallique (support des plaques)",
+            "unite": "ML",
+            "prix": 39
+        },
+        {
+            "id": 45,
+            "description": "Création d'un faux-plafond en ba13",
+            "unite": "M²",
+            "prix": 65
+        },
+        {
+            "id": 46,
+            "description": "Création plafond en plaque OSB avec structure bois",
+            "unite": "M²",
+            "prix": 46
+        },
+        {
+            "id": 47,
+            "description": "Jointure des plaques plâtres avec bande en papier",
+            "unite": "M²",
+            "prix": 38
+        },
+        {
+            "id": 48,
+            "description": "Mise en place de l'isolaton en laine de verre de 10 cm d'épaisseur",
+            "unite": "M²",
+            "prix": 30
+        },
+        {
+            "id": 49,
+            "description": "Mise en place de rails et pose de plaques de BA13",
+            "unite": "M²",
+            "prix": 60
+        },
+        {
+            "id": 50,
+            "description": "Mise en place de tole de fibre de verre",
+            "unite": "M²",
+            "prix": 30
+        },
+        {
+            "id": 51,
+            "description": "Passer deux couche de peinture blanche sur le plafond",
+            "unite": "M²",
+            "prix": 49
+        },
+        {
+            "id": 52,
+            "description": "Passer deux couche de peinture sur les murs",
+            "unite": "M²",
+            "prix": 46
+        },
+        {
+            "id": 53,
+            "description": "Ponçage des joints de plaques",
+            "unite": "Heure",
+            "prix": 78
+        },
+        {
+            "id": 54,
+            "description": "Pose de 2 couches de plâtres",
+            "unite": "M²",
+            "prix": 39
+        },
+        {
+            "id": 55,
+            "description": "Pose de parquet",
+            "unite": "M²",
+            "prix": 35
+        },
+        {
+            "id": 56,
+            "description": "Pose de plaque plâtres",
+            "unite": "M²",
+            "prix": 52
+        },
+        {
+            "id": 57,
+            "description": "Pose d'un isolant (100 à 120 mm)",
+            "unite": "M²",
+            "prix": 15
+        },
+        {
+            "id": 58,
+            "description": "Réalisation d'un cloison en ba13",
+            "unite": "M²",
+            "prix": 20
+        },
+        {
+            "id": 59,
+            "description": "Rénovation de porte (peinture + ponçage)",
+            "unite": "Unité",
+            "prix": 88
+        },
+        {
+            "id": 60,
+            "description": "Reouvrir et réparer les fissoures existents",
+            "unite": "M²",
+            "prix": 8
+        },
+        {
+            "id": 61,
+            "description": "Retrait du papier-peint",
+            "unite": "M²",
+            "prix": 25
+        },
+        {
+            "id": 62,
+            "description": "Applcation d'une première couche: gobetis",
+            "unite": "M²",
+            "prix": 10
+        },
+        {
+            "id": 63,
+            "description": "Application d'une couche de mortier",
+            "unite": "M²",
+            "prix": 19
+        },
+        {
+            "id": 64,
+            "description": "Application d'une couche de mortier fin de finition",
+            "unite": "M²",
+            "prix": 19
+        },
+        {
+            "id": 65,
+            "description": "Construction du mur avec coffrage",
+            "unite": "M²",
+            "prix": 100
+        },
+        {
+            "id": 66,
+            "description": "Construction d'un mur en bloc banché (ferraillage)",
+            "unite": "M²",
+            "prix": 163
+        },
+        {
+            "id": 67,
+            "description": "Couche d'enduit",
+            "unite": "M²",
+            "prix": 27
+        },
+        {
+            "id": 68,
+            "description": "Couler la dalle béton pour réaliser la circulation",
+            "unite": "M²",
+            "prix": 85
+        },
+        {
+            "id": 69,
+            "description": "Création d'une semelle de fondation",
+            "unite": "ML",
+            "prix": 43
+        },
+        {
+            "id": 70,
+            "description": "Fourniture et pose d'une cuve de récuperation des eaux",
+            "unite": "Unité",
+            "prix": 1200
+        },
+        {
+            "id": 71,
+            "description": "Mise en place d'un PVC Ø 60 pour évacuer l'eau pluvial",
+            "unite": "ML",
+            "prix": 17
+        },
+        {
+            "id": 72,
+            "description": "Mise en place d'une couche de ballastre (support dalle)",
+            "unite": "M²",
+            "prix": 19
+        },
+        {
+            "id": 73,
+            "description": "Pose de carrelage 50/50 cm y compris jointure (fourniture non comprise)",
+            "unite": "M²",
+            "prix": 70
+        },
+        {
+            "id": 74,
+            "description": "Préparation mecanique du terrain",
+            "unite": "M²",
+            "prix": 12
+        },
+        {
+            "id": 75,
+            "description": "Réalisation d'un mur de soutènement comprenant la semelle",
+            "unite": "M²",
+            "prix": 175
+        },
+        {
+            "id": 76,
+            "description": "Réalisation d'un muret (semelle+bloc banché)pour délimiter la circulation du coté du talus",
+            "unite": "ML",
+            "prix": 45
+        },
+        {
+            "id": 77,
+            "description": "Réalisation d'un ragréage",
+            "unite": "M²",
+            "prix": 34
+        },
+        {
+            "id": 78,
+            "description": "Réalisation d'une chape semi mouillé avec adjuvant permettant une meilleure dilatation",
+            "unite": "M²",
+            "prix": 55
+        },
+        {
+            "id": 77,
+            "description": "Réalisation d'une dale en béton - support",
+            "unite": "M²",
+            "prix": 183
+        },
+        {
+            "id": 78,
+            "description": "Rénovation dallage en opus incertum y compris la pose des pierres",
+            "unite": "ML",
+            "prix": 130
+        },
+        {
+            "id": 79,
+            "description": "Rognage du mur de la maison",
+            "unite": "ML",
+            "prix": 99
+        },
+        {
+            "id": 80,
+            "description": "Terrassement de la surface de la future dalle",
+            "unite": "M²",
+            "prix": 28
+        },
+        {
+            "id": 81,
+            "description": "Création de faitière",
+            "unite": "ML",
+            "prix": 39
+        },
+        {
+            "id": 82,
+            "description": "Création de la toiture supérieure comprenant la pose de putres, litos et tuiles",
+            "unite": "M²",
+            "prix": 136
+        },
+        {
+            "id": 83,
+            "description": "Création de rives",
+            "unite": "ML",
+            "prix": 54
+        },
+        {
+            "id": 84,
+            "description": "",
+            "unite": "",
+            "prix": 
+        },
+        {
+            "id": ,
+            "description": "",
+            "unite": "",
+            "prix": 
+        },
+        {
+            "id": ,
+            "description": "",
+            "unite": "",
+            "prix": 
+        },
+        {
+            "id": ,
+            "description": "",
+            "unite": "",
+            "prix": 
+        },
+        {
+            "id": ,
+            "description": "",
+            "unite": "",
+            "prix": 
+        },
+        {
+            "id": ,
+            "description": "",
+            "unite": "",
+            "prix": 
+        },
+        {
+            "id": ,
+            "description": "",
+            "unite": "",
+            "prix": 
+        },
+        {
+            "id": ,
+            "description": "",
+            "unite": "",
+            "prix": 
+        },
+        {
+            "id": ,
+            "description": "",
+            "unite": "",
+            "prix": 
+        },
+        {
+            "id": ,
+            "description": "",
+            "unite": "",
+            "prix": 
+        },
+        {
+            "id": ,
+            "description": "",
+            "unite": "",
+            "prix": 
+        },
+        {
+            "id": ,
+            "description": "",
+            "unite": "",
+            "prix": 
+        },
+        {
+            "id": ,
+            "description": "",
+            "unite": "",
+            "prix": 
+        },
+        {
+            "id": ,
+            "description": "",
+            "unite": "",
+            "prix": 
         }
     ]
 }
