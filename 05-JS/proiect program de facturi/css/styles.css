@@ -1,0 +1,23 @@
+h2 {
+    font-style:italic ; 
+}
+
+h1, h2 {
+    color: black;
+}
+
+table {
+    margin: auto;
+    width:auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+#app {
+
+    margin: auto;
+    text-align: center;
+}

@@ -17,7 +17,8 @@ fetch("zipcodes.json")
                         citySuggestions.innerHTML = "";
                         filteredCities.forEach(city => {
                             const option = document.createElement("option");
-                            option.value = city.codePostal + " - " + city.nomCommune;
+                            option.value = city.codePostal 
+                            option.innerText = city.nomCommune
                             citySuggestions.appendChild(option);
                         });
                     } else {
