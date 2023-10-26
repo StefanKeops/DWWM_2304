@@ -10,6 +10,7 @@ const produitsApp = {
     data() {
       return {
         produits: [],
+        sortBy: 'asc',
       };
     },
     async mounted() {
