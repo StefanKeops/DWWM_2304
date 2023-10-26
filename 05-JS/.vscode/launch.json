@@ -5,11 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Lancer debugger",
             "type": "chrome",
             "request": "launch",
-            "webRoot": "http://localhost:5502/f001.html",
-            "file": "${workspaceFolder}"
+            "name": "Lancer Chrome en utilisant localhost",
+            "url": "http://localhost:5502",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }

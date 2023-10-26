@@ -31,7 +31,7 @@ const produitsApp = {
 
       ajouterLigne(nouveauProduit) {
         const dernierId = this.produits.length > 0 ?
-        Math.max(...this.produits.map(ID)): 0;
+        Math.max(...this.produits.map(prod => prod.id)) : 0;
         const produit = new Produit({
           id: dernierId + 1,
           description: nouveauProduit.description,
@@ -47,7 +47,20 @@ const produitsApp = {
         event.preventDefault(); /* nu se trimite implicit formularul*/
         this.ajouterLigne(this.nouveauProduit); /* adauga noul produs*/
         this.nouveauProduit = { description: '', unite: '', prix: 0 } /* reinitializeaza formularul */
-      }
+      },
+
+      facture() {
+        window.location.href = "facture.html";
+    },
+    liste1() {
+        window.location.href = "liste_factures.html";
+    },
+    devis() {
+        window.location.href = "devis.html";
+    },
+    liste2() {
+        window.location.href = "liste_devises.html";
+    },
     }
 }
  
