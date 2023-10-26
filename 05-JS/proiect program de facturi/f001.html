@@ -30,7 +30,12 @@
                 </tr>
             </tbody>
         </table>
-        <button @click="ajouterLigne(produit)">Ajouter un produit ou un service</button>
+        <form @submit="submitForm">
+            <input type="text" v-model="nouveauProduit.description" placeholder="Description">
+            <input type="text" v-model="nouveauProduit.unite" placeholder="Unité">
+            <input type="number" v-model="nouveauProduit.prix" placeholder="Prix">
+            <button type="submit">Ajouter</button>
+          </form>
     </div>
 </body>
 </html>
