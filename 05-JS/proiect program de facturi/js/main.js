@@ -51,16 +51,16 @@ const produitsApp = {
 
       facture() {
         window.location.href = "facture.html";
-    },
-    liste1() {
+      },
+      liste1() {
         window.location.href = "liste_factures.html";
-    },
-    devis() {
+      },
+      devis() {
         window.location.href = "devis.html";
-    },
-    liste2() {
+      },
+      liste2() {
         window.location.href = "liste_devises.html";
-    },
+      },
     }
 }
  

@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Facture</title>
+    <link rel="stylesheet" href="css/styles_facture.css">
+    <script src="../exo_employes/js/vue.global.js" ></script>
+    <script src="js/main_factures.js" type="module"></script>
 </head>
 <body>
-    
+    <div id="app">
+        <button @click="main">Retour à la page principale</button>
+        <button @click="facture">Créer une Facture</button>
+        <button @click="liste1">Liste des Factures</button><br>
+        <button @click="devis">Créer une Devis</button>
+        <button @click="liste2">Liste des Devises</button>
+        <h1>Facture</h1>
+    </div>
 </body>
 </html>
