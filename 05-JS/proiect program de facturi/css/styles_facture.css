@@ -1,0 +1,50 @@
+.antet {
+    display: grid;
+    grid-auto-columns: 30% 40% 30%;
+    grid-gap: 0px;
+    grid-auto-rows: minmax(60px, 60px);
+}
+
+.item-a {
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+
+.item-b {
+    grid-column: 2;
+    grid-row: 1;
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.item-c {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+
+.item-d {
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+}
+
+.item-e {
+    grid-column: 3;
+    grid-row: 1 / 4;
+    text-align: right;
+}
+
+table {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}

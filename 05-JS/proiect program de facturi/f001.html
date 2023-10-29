@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="../exo_employes/js/vue.global.js" ></script>
+    <script src="../exo_employes/js/vue.global.js"></script>
     <script src="js/main.js" type="module"></script>
 </head>
+
 <body>
     <div id="app">
         <button @click="facture">Créer une Facture</button>
+        <button @click="factureTVA">Créer une Facture (TVA)</button><br>
         <button @click="liste1">Liste des Factures</button><br>
         <button @click="devis">Créer une Devis</button>
+        <button @click="devisTVA">Créer une Devis (TVA)</button><br>
         <button @click="liste2">Liste des Devises</button>
         <h1>Produits</h1>
         <h2>La liste de produits et services</h2>
@@ -39,7 +43,8 @@
             <input type="text" v-model="nouveauProduit.unite" placeholder="Unité">
             <input type="number" v-model="nouveauProduit.prix" placeholder="Prix">
             <button type="submit">Ajouter</button>
-          </form>
+        </form>
     </div>
 </body>
+
 </html>
