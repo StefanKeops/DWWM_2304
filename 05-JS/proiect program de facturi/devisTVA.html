@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devis</title>
+    <title>Devis (TVA)</title>
     <link rel="stylesheet" href="css/styles_facture.css">
     <script src="../exo_employes/js/vue.global.js"></script>
     <script src="js/main_factures.js" type="module"></script>
@@ -22,7 +18,7 @@
         <button @click="liste1">Liste des Factures</button><br>
         <button @click="devis">Créer une Devis</button>
         <button @click="devisTVA">Créer une Devis (TVA)</button><br>
-        <button @click="liste2">Liste des Devises</button>        
+        <button @click="liste2">Liste des Devises</button>
     </div>
     <br>
     <br>
@@ -41,6 +37,7 @@
                 <th>Unité</th>
                 <th>Quantité</th>
                 <th>Prix unitaire</th>
+                <th>TVA</th>
                 <th>TTC</th>
             </tr>
         </thead>
@@ -50,11 +47,14 @@
                 <td>{{ prod.unite }}</td>
                 <td>{{ prod.quantite }}</td>
                 <td>{{ prod.prix }}</td>
+                <td>{{ prod.tva }}</td>
                 <td>{{ prod.ttc }}</td>
             </tr>
             <tr>
-                <td colspan="4"></td>
-                <td>Total: {{ total }}</td>
+                <td colspan="3"></td>
+                <td>Total HT: {{ total.ht }}</td>
+                <td>Total TVA: {{ total.tva }}</td>
+                <td>Total TTC: {{ total.ttc }}</td>
             </tr>
         </tbody>
     </table>
@@ -64,14 +64,15 @@
         <input type="number" v-model="produit.quantite" placeholder="Quantité">
         <button type="submit">Ajouter</button>
     </form>
-    <p>Nous nous réservons la propriété des matériels et fournitures jusqu’au paiement complet du prix par l’acheteur.</p>
-    <p>Notre réserve de propriété porte aussi bien sur les marchandises que sur leur prix si elles ont déjà été revendues (Loi
-    N° 80.335 du 12 Mai 1980)</p>
-    <p>TVA non applicable - art. 293B du CGI</p>
+    <p>Nous nous réservons la propriété des matériels et fournitures jusqu’au paiement complet du prix par l’acheteur.
+    </p>
+    <p>Notre réserve de propriété porte aussi bien sur les marchandises que sur leur prix si elles ont déjà été
+        revendues (Loi
+        N° 80.335 du 12 Mai 1980)</p>
     <p>Valabilité 30 jours</p>
     <div style="text-align: left; float: left;">Bon pour accord</div>
     <div style="text-align: right; float: right;">Signature du devis</div>
     <div style="clear: both;"></div>
-</body>
-
-</html>
+    </body>
+    
+    </html>
