@@ -4,6 +4,7 @@ class Etudiant
     {
         Object.assign(this, _etudiantFromJson);
     }
+    
 }
 
 export { Etudiant }

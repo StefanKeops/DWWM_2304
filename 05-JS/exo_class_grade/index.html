@@ -12,7 +12,7 @@
     <header class="container">
     <div id="app">
         <h1>Résultat de l'évaluation</h1>
-        <table v-if="evaluations.length > 0">
+        <table v-if="etudiants.length > 0">
             <thead>
                 <tr>
                     <th>Nom</th>
@@ -21,16 +21,16 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="evaluations of evals">
-                    <td>{{ evaluations.nom }}</td>
-                    <td>{{ evaluations.prenom }}</td>
-                    <td>{{ evaluations.grade }}</td>
+                <tr v-for="etudiant of etudiants">
+                    <td>{{ etudiant.nom }}</td>
+                    <td>{{ etudiant.prenom }}</td>
+                    <td>{{ etudiant.grade }}</td>
                 </tr>
             </tbody>
         </table>
-        <li>Nombre d'etudiants:</li>
-        <li>Moyenne de la classe:</li>
-        <li>Nombre d'etudiants au dessus de la moyenne:</li>
+        <li>Nombre d'etudiants: {{ etudiantCount }}</li>
+        <li>Moyenne de la classe: {{ moyenneClasse }}</li>
+        <li>Nombre d'etudiants au dessus de la moyenne: {{ countEtudiantsAuDessusMoyenne() }}</li>
     </div>
 </header>
 </body>

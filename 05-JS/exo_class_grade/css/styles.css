@@ -25,6 +25,12 @@
       table {
         color: var(--color2);
         border: 2px solid var(--color5);
+        background-color: var(--color4);
+        border-collapse: collapse;
+      }
+
+      th, td {
+        border: 2px solid var(--color5);
       }
 
       li {
