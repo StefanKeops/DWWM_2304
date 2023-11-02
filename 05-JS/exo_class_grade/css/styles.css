@@ -1,0 +1,32 @@
+:root {
+    --color1: #30343F;
+    --color2: #FAFAFF;
+    --color3: #E4D9FF;
+    --color4: #374479;
+    --color5: #6E7799;
+    --color6: #C490D1;
+    }
+
+    body {
+        background-color: var(--color1);
+    }
+
+    .container {
+        background-color: var(--color1);
+        width: 80%;
+        max-width: 600px;
+        margin: 1%;
+        padding: 2%;
+        border: 2px solid var(--color3);
+        border-radius: 5px;
+        color: var(--color3);
+      }
+
+      table {
+        color: var(--color2);
+        border: 2px solid var(--color5);
+      }
+
+      li {
+        color: var(--color2);
+      }

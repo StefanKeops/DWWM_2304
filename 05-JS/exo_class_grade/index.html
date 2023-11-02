@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat de l'évaluation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="../exo_employes/js/vue.global.js"></script>
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+    <header class="container">
+    <div id="app">
+        <h1>Résultat de l'évaluation</h1>
+        <table v-if="evaluations.length > 0">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="evaluations of evals">
+                    <td>{{ evaluations.nom }}</td>
+                    <td>{{ evaluations.prenom }}</td>
+                    <td>{{ evaluations.grade }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <li>Nombre d'etudiants:</li>
+        <li>Moyenne de la classe:</li>
+        <li>Nombre d'etudiants au dessus de la moyenne:</li>
+    </div>
+</header>
+</body>
+</html>

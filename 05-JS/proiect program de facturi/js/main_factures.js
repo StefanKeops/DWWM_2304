@@ -1,3 +1,7 @@
+import { Db } from "./db.js";
+import { Produit } from "./produit.js";
+
+const apiUrl = "js/batiment.json"
 
 const { createApp } = Vue;
 
@@ -8,7 +12,7 @@ const factureApp = {
         };
     },
     async mounted() {
-
+       this.produits = await loadJsonData();
     },
     methods: {
         main() {
@@ -36,3 +40,14 @@ const factureApp = {
 }
 
 createApp(factureApp).mount('#app')
+
+async function loadJsonData() {
+    try {
+        let reponse = db.fethJson(apiUrl);
+    let data = await reponse.json();
+    return data.data;
+} catch (error) {
+    console.console.error("Error loading JSON data", error);
+    return [];
+    }
+}
