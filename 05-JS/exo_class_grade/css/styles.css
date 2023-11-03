@@ -22,6 +22,11 @@
         color: var(--color3);
       }
 
+      .container2 {
+        border:  2px dotted var(--color5);
+        align-items: center;
+      }
+
       table {
         color: var(--color2);
         border: 2px solid var(--color5);

@@ -9,7 +9,12 @@ const etudiantsApp = {
     data() {
         return {
             etudiants: [],
+            nouveauEtudiant: {
+                fullname: '',
+                grade: 0,
+            },
             etudiantCount: 0,
+            noteEliminatoare: 12,
         }
     },
     async mounted() {
@@ -19,14 +24,27 @@ const etudiantsApp = {
             return { nom, prenom, grade: item.grade };
         });
 
-        this.etudiantCount = this.etudiants.length;
+        console.log(this.etudiants)
 
-        this.sortTable();
+        this.etudiantCount = this.etudiants.length;
 
         const totalNotes = this.etudiants.reduce((total, etudiant) => total + etudiant.grade, 0);
         this.moyenneClasse = (totalNotes / this.etudiants.length).toFixed(2);
     },
     methods: {
+
+        ajouterEtudiant() {
+            if (this.nouveauEtudiant.fullname && this.nouveauEtudiant.grade) {
+                this.etudiants.push({
+                    nom: this.nouveauEtudiant.fullname.split(' ')[0],
+                    prenom: this.nouveauEtudiant.fullname.split(' ')[1],
+                    grade: parseInt(this.nouveauEtudiant.grade)
+                })
+            }
+
+            this.sortTable()
+        },
+
         sortTable() {
             this.etudiants.sort((a, b) => {
                 return b.grade - a.grade;
@@ -36,9 +54,9 @@ const etudiantsApp = {
         countEtudiantsAuDessusMoyenne() {
             const auDessusMoyenne = this.etudiants.filter(etudiant => etudiant.grade < this.moyenneClasse);
             return auDessusMoyenne.length;
-        }
-    },
+        },
 
-};
+        }
+    };
 
 createApp(etudiantsApp).mount('#app');
