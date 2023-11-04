@@ -1,43 +1,48 @@
 :root {
-    --color1: #30343F;
-    --color2: #FAFAFF;
-    --color3: #E4D9FF;
-    --color4: #374479;
-    --color5: #6E7799;
-    --color6: #C490D1;
-    }
+  --color1: #30343F;
+  --color2: #FAFAFF;
+  --color3: #E4D9FF;
+  --color4: #374479;
+  --color5: #6E7799;
+  --color6: #C490D1;
+}
 
-    body {
-        background-color: var(--color1);
-    }
+body {
+  background-color: var(--color1);
+}
 
-    .container {
-        background-color: var(--color1);
-        width: 80%;
-        max-width: 600px;
-        margin: 1%;
-        padding: 2%;
-        border: 2px solid var(--color3);
-        border-radius: 5px;
-        color: var(--color3);
-      }
+.container {
+  background-color: var(--color1);
+  width: 80%;
+  max-width: 600px;
+  margin: 1%;
+  padding: 2%;
+  border: 2px solid var(--color3);
+  border-radius: 5px;
+  color: var(--color3);
+}
 
-      .container2 {
-        border:  2px dotted var(--color5);
-        align-items: center;
-      }
+.container2 {
+  border: 2px dotted var(--color5);
+}
 
-      table {
-        color: var(--color2);
-        border: 2px solid var(--color5);
-        background-color: var(--color4);
-        border-collapse: collapse;
-      }
+table {
+  color: var(--color2);
+  border: 2px solid var(--color5);
+  background-color: var(--color4);
+  border-collapse: collapse;
+  margin: 2%;
+}
 
-      th, td {
-        border: 2px solid var(--color5);
-      }
+th,
+td {
+  border: 2px solid var(--color5);
+}
 
-      li {
-        color: var(--color2);
-      }
+li {
+  color: var(--color2);
+}
+
+h4 {
+  margin: 1%;
+}
