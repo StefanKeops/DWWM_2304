@@ -23,7 +23,7 @@ body {
 }
 
 .container2 {
-  border: 2px dotted var(--color5);
+  border: 2px dashed var(--color5);
 }
 
 table {
