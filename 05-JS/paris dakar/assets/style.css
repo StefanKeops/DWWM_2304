@@ -1,0 +1,55 @@
+:root {
+    --base-1: #E9FFF9;
+    --base-2: #1D3354;
+    --base-3: #467599;
+    --base-4: #467599;
+    --base-5: #9ED8DB;
+    --base-6: #E9FFF9;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--base-2);
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+    width: 150px;
+}
+
+form div:hover {
+    transform: scale(1.05);
+}
+
+form button {
+    margin-top: 10px;
+    padding: 8px 16px;
+}
+
+body {
+    background-color: var(--base-1);
+}
+
+main {
+    background-color: var(--base-5);
+}

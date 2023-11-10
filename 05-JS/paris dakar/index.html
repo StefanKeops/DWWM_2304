@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./assets/main.js" type="module"></script>
+</head>
+
+<body>
+    <main id="app">
+        <h1>Résultat de la course</h1>
+        <p> {{ participantCount }} participants</p>
+        <div>
+            <p>Gagnant:</p>
+            <p v-if="bestParticipant">{{ bestParticipant.pays }} | {{ bestParticipant.numero }} | {{ bestParticipant.nom }} | {{ bestParticipant.prenom }} | {{ bestParticipant.equipe }} | {{ bestParticipant.tempsFinal.formatted }}</p>
+            <p v-else>N/A</p>
+        </div>
+        <div class="form-container">
+      <h2>Selected Countries</h2>
+      <form>
+        <div v-for="country in uniqueCountries" :key="country">
+          <input type="checkbox" v-model="selectedCountries" :value="country">
+          <label>{{ country }}</label>
+        </div>
+      </form>
+    <button @click="filterByCountries" style="margin: 10px;">Filter</button>
+    </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pays</th>
+                    <th>Numero</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Equipe</th>
+                    <th>Temps final</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="participant of participants">
+                    <td>{{ participant.pays }}</td>
+                    <td>{{ participant.numero }}</td>
+                    <td>{{ participant.prenom }}</td>
+                    <td>{{ participant.nom }}</td>
+                    <td>{{ participant.equipe }}</td>
+                    <td>{{ participant.tempsFinal.formatted }}</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</main>
+
+</html>

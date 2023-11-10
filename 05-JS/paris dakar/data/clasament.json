@@ -1,0 +1,632 @@
+[
+    { 
+        "numero": 47,
+        "nom": "KEVIN BENAVIDES",
+        "team": "RED BULL KTM FACTORY RACING",
+        "pays": "Argentine",
+        "temp": 160040
+    },
+    { 
+        "numero": 8,
+        "nom": "TOBY PRICE",
+        "team": "RED BULL KTM FACTORY RACING",
+        "pays": "Australie",
+        "temp": 160083
+    },
+    { 
+        "numero": 10,
+        "nom": "SKYLER HOWES",
+        "team": "HUSQVARNA FACTORY RACING",
+        "pays": "États-Unis",
+        "temp": 160344
+    },
+    { 
+        "numero": 7,
+        "nom": "PABLO QUINTANILLA",
+        "team": "MONSTER ENERGY HONDA TEAM",
+        "pays": "Chile",
+        "temp": 161182
+    },
+    { 
+        "numero": 42,
+        "nom": "ADRIEN VAN_BEVEREN",
+        "team": "MONSTER ENERGY HONDA TEAM",
+        "pays": "France",
+        "temp": 161270
+    },
+    { 
+        "numero": 77,
+        "nom": "LUCIANO BENAVIDES",
+        "team": "HUSQVARNA FACTORY RACING",
+        "pays": "Argentine",
+        "temp": 161402
+    },
+    { 
+        "numero": 18,
+        "nom": "DANIEL SANDERS",
+        "team": "RED BULL GASGAS FACTORY RACING",
+        "pays": "Australie",
+        "temp": 161597
+    },
+    { 
+        "numero": 11,
+        "nom": "JOSE_IGNACIO CORNEJO_FLORIMO",
+        "team": "MONSTER ENERGY HONDA TEAM",
+        "pays": "Chile",
+        "temp": 163121
+    },
+    { 
+        "numero": 15,
+        "nom": "LORENZO SANTOLINO",
+        "team": "SHERCO FACTORY",
+        "pays": "Espagne",
+        "temp": 164713
+    },
+    { 
+        "numero": 33,
+        "nom": "FRANCO CAIMI",
+        "team": "HERO MOTOSPORTS TEAM RALLY",
+        "pays": "Argentine",
+        "temp": 165924
+    },
+    { 
+        "numero": 12,
+        "nom": "MARTIN MICHEK",
+        "team": "ORION - MOTO RACING GROUP",
+        "pays": "République Tchèque",
+        "temp": 166184
+    },
+    { 
+        "numero": 142,
+        "nom": "STEFAN SVITKO",
+        "team": "SLOVNAFT RALLY TEAM",
+        "pays": "Slovaquie",
+        "temp": 166682
+    },
+    { 
+        "numero": 68,
+        "nom": "TOSHA SCHAREINA",
+        "team": "BAS WORLD KTM RACING TEAM",
+        "pays": "Espagne",
+        "temp": 166926
+    },
+    { 
+        "numero": 17,
+        "nom": "ROMAIN DUMONTIER",
+        "team": "HT RALLY RAID HUSQVARNA RACING",
+        "pays": "France",
+        "temp": 167504
+    },
+    { 
+        "numero": 46,
+        "nom": "PAOLO LUCCI",
+        "team": "BAS WORLD KTM RACING TEAM",
+        "pays": "Italie",
+        "temp": 169438
+    },
+    { 
+        "numero": 111,
+        "nom": "MICHAEL DOCHERTY",
+        "team": "HT RALLY RAID HUSQVARNA RACING",
+        "pays": "Afrique du Sud",
+        "temp": 172107
+    },
+    { 
+        "numero": 76,
+        "nom": "JEANLOUP LEPAN",
+        "team": "NOMADE RACING",
+        "pays": "France",
+        "temp": 173071
+    },
+    { 
+        "numero": 114,
+        "nom": "NEELS THERIC",
+        "team": "RS COMCEPT",
+        "pays": "France",
+        "temp": 175025
+    },
+    { 
+        "numero": 83,
+        "nom": "JULIEN JAGU",
+        "team": "DRAG'ON RALLY TEAM",
+        "pays": "France",
+        "temp": 175096
+    },
+    { 
+        "numero": 14,
+        "nom": "SEBASTIAN BÜHLER",
+        "team": "HERO MOTOSPORTS TEAM RALLY",
+        "pays": "Allemagne",
+        "temp": 175353
+    },
+    { 
+        "numero": 31,
+        "nom": "MATHIEU DOVEZE",
+        "team": "NOMADE RACING",
+        "pays": "France",
+        "temp": 175541
+    },
+    { 
+        "numero": 96,
+        "nom": "JACOB ARGUBRIGHT",
+        "team": "DUUST RALLY TEAM",
+        "pays": "États-Unis",
+        "temp": 175756
+    },
+    { 
+        "numero": 48,
+        "nom": "JOAN PEDRERO_GARCIA",
+        "team": "TEAM LS2 SHAD",
+        "pays": "Espagne",
+        "temp": 176191
+    },
+    { 
+        "numero": 53,
+        "nom": "TONI MULEC",
+        "team": "HT RALLY RAID HUSQVARNA RACING",
+        "pays": "Slovénie",
+        "temp": 179269
+    },
+    { 
+        "numero": 37,
+        "nom": "STEFANO CAIMI",
+        "team": "BAS WORLD KTM RACING TEAM",
+        "pays": "Argentine",
+        "temp": 182663
+    },
+    { 
+        "numero": 16,
+        "nom": "ROSS BRANCH",
+        "team": "HERO MOTOSPORTS TEAM RALLY",
+        "pays": "Botswana",
+        "temp": 185193
+    },
+    { 
+        "numero": 34,
+        "nom": "EMANUEL GYENES",
+        "team": "AUTONET MOTORCYCLE TEAM",
+        "pays": "Roumanie",
+        "temp": 188455
+    },
+    { 
+        "numero": 40,
+        "nom": "CHARAN MOORE",
+        "team": "HT RALLY RAID HUSQVARNA RACING",
+        "pays": "Afrique du Sud",
+        "temp": 188682
+    },
+    { 
+        "numero": 39,
+        "nom": "BENJAMIN MELOT",
+        "team": "TEAM ESPRIT KTM",
+        "pays": "France",
+        "temp": 188735
+    },
+    { 
+        "numero": 99,
+        "nom": "JAVI VEGA",
+        "team": "PONT GRUP YAMAHA",
+        "pays": "Espagne",
+        "temp": 189943
+    },
+    { 
+        "numero": 24,
+        "nom": "JAN BRABEC",
+        "team": "STROJRENT RACING",
+        "pays": "République Tchèque",
+        "temp": 190998
+    },
+    { 
+        "numero": 36,
+        "nom": "JEROME MARTINY",
+        "team": "HT RALLY RAID HUSQVARNA RACING",
+        "pays": "Belgique",
+        "temp": 192320
+    },
+    { 
+        "numero": 86,
+        "nom": "CHARLIE HERBST",
+        "team": "TEAM ALL TRACKS",
+        "pays": "France",
+        "temp": 193318
+    },
+    { 
+        "numero": 43,
+        "nom": "MARIO PATRAO",
+        "team": "CREDIT AGRICOLA - MARIO PATRAO MOTOSPORT",
+        "pays": "Portugal",
+        "temp": 194124
+    },
+    { 
+        "numero": 25,
+        "nom": "MOHAMMED BALOOSHI",
+        "team": "MX RIDE DUBAI",
+        "pays": "Émirats arabes unis",
+        "temp": 195698
+    },
+    { 
+        "numero": 45,
+        "nom": "DAVID PABISKA",
+        "team": "SP MOTO BOHEMIA RACING TEAM",
+        "pays": "République Tchèque",
+        "temp": 200696
+    },
+    { 
+        "numero": 35,
+        "nom": "PATRICIO CABRERA",
+        "team": "RIEJU TEAM",
+        "pays": "Chile",
+        "temp": 200844
+    },
+    { 
+        "numero": 95,
+        "nom": "NICOLAS_ALBERTO CARDONA_VAGNONI",
+        "team": "PEDREGA TEAM",
+        "pays": "Venezuela",
+        "temp": 203064
+    },
+    { 
+        "numero": 151,
+        "nom": "ALEXANDRE GIROUD",
+        "team": "YAMAHA RACING - SMX - DRAG'ON",
+        "pays": "France",
+        "temp": 204270
+    },
+    { 
+        "numero": 93,
+        "nom": "JOYRIDE RACE SERVICE",
+        "team": "THOMAS KONGSHOJ",
+        "pays": "Danemark",
+        "temp": 205317
+    },
+    { 
+        "numero": 120,
+        "nom": "WESLEY AALDERING",
+        "team": "HT RALLY RAID HUSQVARNA RACING",
+        "pays": "Pays-Bas",
+        "temp": 206140
+    },
+    { 
+        "numero": 129,
+        "nom": "DAVID GAITS",
+        "team": "HAPPYNESS RACING IGOA MOTO",
+        "pays": "France",
+        "temp": 206309
+    },
+    { 
+        "numero": 137,
+        "nom": "MATHIEU TROQUIER",
+        "team": "NOMADE RACING",
+        "pays": "France",
+        "temp": 206526
+    },
+    { 
+        "numero": 106,
+        "nom": "BERTRAND GAVARD",
+        "team": "TEAM RS CONCEPT",
+        "pays": "France",
+        "temp": 206563
+    },
+    { 
+        "numero": 154,
+        "nom": "FRANCISCO MORENO_FLORES",
+        "team": "DRAGON",
+        "pays": "Argentine",
+        "temp": 206861
+    },
+    { 
+        "numero": 89,
+        "nom": "SUNIER SUNIER",
+        "team": "KOVE RALLY TEAM",
+        "pays": "Chine",
+        "temp": 207690
+    },
+    { 
+        "numero": 87,
+        "nom": "LORENZO_MARIA FANOTTOLI",
+        "team": "TECNOSPORT",
+        "pays": "Italie",
+        "temp": 208686
+    },
+    { 
+        "numero": 163,
+        "nom": "PABLO COPETTI",
+        "team": "DEL AMO MOTORSPORTS BY MOTUL",
+        "pays": "États-Unis",
+        "temp": 211045
+    },
+    { 
+        "numero": 44,
+        "nom": "MIRJAM POL",
+        "team": "HT RALLY RAID HUSQVARNA RACING",
+        "pays": "Pays-Bas",
+        "temp": 211345
+    },
+    { 
+        "numero": 50,
+        "nom": "SIMON MARCIC",
+        "team": "MARCIC",
+        "pays": "Slovénie",
+        "temp": 211578
+    },
+        { 
+        "numero": 57,
+        "nom": "MAKIS_DEWI REES-STAVROS",
+        "team": "STAVROS",
+        "pays": "Royaume-Uni",
+        "temp": 213243
+    },
+    { 
+        "numero": 88,
+        "nom": "CÉDRIC JACQUES",
+        "team": "RS COMCEPT",
+        "pays": "France",
+        "temp": 213506
+    },
+    { 
+        "numero": 153,
+        "nom": "JURAJ VARGA",
+        "team": "VARGA MOTORSPORT TEAM",
+        "pays": "Slovaquie",
+        "temp": 214552
+    },
+    { 
+        "numero": 41,
+        "nom": "TOMAS DE_GAVARDO",
+        "team": "BAS WORLD KTM RACING TEAM",
+        "pays": "Chile",
+        "temp": 215016
+    },
+    { 
+        "numero": 55,
+        "nom": "ZAKEER YAKEFU",
+        "team": "WU PU DA HAI DAO RALLY TEAM",
+        "pays": "Chine",
+        "temp": 215622
+    },
+    { 
+        "numero": 71,
+        "nom": "ABDULLAH AL_SHATTI",
+        "team": "MX RIDE DUBAI",
+        "pays": "Koweït",
+        "temp": 218300
+    },
+    { 
+        "numero": 166,
+        "nom": "GIOVANNI ENRICO",
+        "team": "ENRICO RACING TEAM",
+        "pays": "Chile",
+        "temp": 222101
+    },
+    { 
+        "numero": 60,
+        "nom": "FRANCISCO ARREDONDO",
+        "team": "BAS WORLD KTM RACING TEAM",
+        "pays": "Guatemala",
+        "temp": 222236
+    },
+    { 
+        "numero": 63,
+        "nom": "PETR VLCEK",
+        "team": "DETYENS RACING",
+        "pays": "États-Unis",
+        "temp": 222317
+    },
+    { 
+        "numero": 74,
+        "nom": "MICHAEL JACOBI",
+        "team": "COMAS MOTO VTA",
+        "pays": "France",
+        "temp": 225138
+    },
+    { 
+        "numero": 100,
+        "nom": "STUART GREGORY",
+        "team": "STUART GREGORY",
+        "pays": "Afrique du Sud",
+        "temp": 227741
+    },
+    { 
+        "numero": 110,
+        "nom": "PIERRE PEYRARD",
+        "team": "NOMADE RACING TEAM",
+        "pays": "France",
+        "temp": 228537
+    },
+    { 
+        "numero": 128,
+        "nom": "CLÉMENT RAZY",
+        "team": "RAZY CLEMENT",
+        "pays": "France",
+        "temp": 228716
+    },
+    { 
+        "numero": 49,
+        "nom": "CESARE ZACCHETTI",
+        "team": "TEAM LUCKY EXPLORER",
+        "pays": "Italie",
+        "temp": 231498
+    },
+    { 
+        "numero": 131,
+        "nom": "SERGIO VAQUERO",
+        "team": "KTM NAMURA BIKES",
+        "pays": "Espagne",
+        "temp": 233706
+    },
+    { 
+        "numero": 164,
+        "nom": "TONI VINGUT",
+        "team": "VISIT SANT ANTONI - IBIZA",
+        "pays": "Espagne",
+        "temp": 235352
+    },
+    { 
+        "numero": 85,
+        "nom": "DENG LIANSONG",
+        "team": "KOVE RALLY TEAM",
+        "pays": "Chine",
+        "temp": 236171
+    },
+    { 
+        "numero": 61,
+        "nom": "ZHAO HONGYI",
+        "team": "WU PU DA HAI DAO RALLY TEAM",
+        "pays": "Chine",
+        "temp": 237551
+    },
+    { 
+        "numero": 132,
+        "nom": "JAVIER SAN_JOSE_YETOR",
+        "team": "PEDREGA TEAM",
+        "pays": "Espagne",
+        "temp": 240360
+    },
+    { 
+        "numero": 117,
+        "nom": "OTTAVIO MISSONI",
+        "team": "RS MOTO RACING",
+        "pays": "Italie",
+        "temp": 240408
+    },
+    { 
+        "numero": 90,
+        "nom": "KIRSTEN LANDMAN",
+        "team": "ASP ROPE ACCESS INTERNATIONAL",
+        "pays": "Afrique du Sud",
+        "temp": 243428
+    },
+    { 
+        "numero": 67,
+        "nom": "FRANCO PICCO",
+        "team": "FANTIC RALLY TEAM",
+        "pays": "Italie",
+        "temp": 245252
+    },
+    { 
+        "numero": 122,
+        "nom": "GARETH JONES",
+        "team": "HT RALLY RAID HUSQVARNA RACING",
+        "pays": "Canada",
+        "temp": 248504
+    },
+    { 
+        "numero": 121,
+        "nom": "STEVAN WILKEN",
+        "team": "HT RALLY RAID HUSQVARNA RACING",
+        "pays": "Afrique du Sud",
+        "temp": 249890
+    },
+    { 
+        "numero": 118,
+        "nom": "BENJAMIN LEPELLEY",
+        "team": "HT RALLY RAID HUSQVARNA RACING",
+        "pays": "France",
+        "temp": 251628
+    },
+    { 
+        "numero": 80,
+        "nom": "JAMES_MARTYN HILLIER",
+        "team": "RICH ENERGY OMG RACING LTD",
+        "pays": "Royaume-Uni",
+        "temp": 252340
+    },
+    { 
+        "numero": 81,
+        "nom": "FANG MINGJI",
+        "team": "KOVE RALLY TEAM",
+        "pays": "Chine",
+        "temp": 261802
+    },
+    { 
+        "numero": 125,
+        "nom": "IADER GIRALDI",
+        "team": "SOLARYS RACING",
+        "pays": "Italie",
+        "temp": 268948
+    },
+    { 
+        "numero": 162,
+        "nom": "LAISVYDAS KANCIUS",
+        "team": "STORY RACING S.R.O.",
+        "pays": "Lituanie",
+        "temp": 273623
+    },
+    { 
+        "numero": 109,
+        "nom": "KÉVIN DURAND",
+        "team": "RS MOTO RACING TEAM",
+        "pays": "France",
+        "temp": 274264
+    },
+    { 
+        "numero": 29,
+        "nom": "DIEGO_GAMALIEL LLANOS",
+        "team": "RIEJU-XRAIDSEXPERIENCE",
+        "pays": "Argentine",
+        "temp": 281330
+    },
+    { 
+        "numero": 51,
+        "nom": "RACHID AL-LAL_LAHADIL",
+        "team": "MELILLA SPORT CAPITAL",
+        "pays": "Espagne",
+        "temp": 281990
+    },
+    { 
+        "numero": 116,
+        "nom": "FERNANDO DOMINGUEZ",
+        "team": "DIPUTACION DE CUENCA",
+        "pays": "Espagne",
+        "temp": 292246
+    },
+    { 
+        "numero": 158,
+        "nom": "CARLOS_ALEJANDRO VERZA",
+        "team": "VERZA RALLY TEAM",
+        "pays": "Argentine",
+        "temp": 293700
+    },
+    { 
+        "numero": 105,
+        "nom": "MORRISON HART",
+        "team": "AMERICAN RALLY ORIGINALS",
+        "pays": "États-Unis",
+        "temp": 308715
+    },
+    { 
+        "numero": 159,
+        "nom": "MARCELO MEDEIROS",
+        "team": "TAGUATUR RACING TEAM",
+        "pays": "Brésil",
+        "temp": 312475
+    },
+    { 
+        "numero": 169,
+        "nom": "ALEJANDRO FANTONI",
+        "team": "DRAG'ON",
+        "pays": "Argentine",
+        "temp": 341236
+    },
+    { 
+        "numero": 58,
+        "nom": "ZHANG MIN",
+        "team": "WU PU DA HAI DAO RALLY TEAM",
+        "pays": "Chine",
+        "temp": 383013
+    },
+    { 
+        "numero": 130,
+        "nom": "EUFRASIO ANGHILERI",
+        "team": "RS MOTO RACING",
+        "pays": "Italie",
+        "temp": 437214
+    },
+    { 
+        "numero": 133,
+        "nom": "RUBEN SALDAÑA_GOÑI",
+        "team": "PEDREGA TEAM",
+        "pays": "Espagne",
+        "temp": 720073
+    }
+]
