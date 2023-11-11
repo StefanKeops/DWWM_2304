@@ -19,7 +19,7 @@
 
         <!-- Adaugă meniul derulant -->
         <select v-model="selectedCountry" @change="filterByCountry">
-            <option value="all">Toate țările</option>
+            <option value="all">All the countries</option>
             <option v-for="country in uniqueCountries" :value="country">{{ country }}</option>
         </select>
 
