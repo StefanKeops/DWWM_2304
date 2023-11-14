@@ -1,25 +1,24 @@
-class Cereal{
+class Cereal {
+    static nutriscore;
 
-        constructor(_cereal){
-            Object.assign(this,_cereal);
-            this.ns = this.nutriScores(_cereal.rating);
-          
-        }
-    
-        nutriScores(_rating){
-            const rating =  parseInt(_rating);
-            console.log(rating)
-            if(rating < 35 ){
-                return  "E";
-            }else if(rating >= 35 && rating < 55){
-                return 'D';
-            }else if(rating >= 55 && rating < 70){
-                return 'C';
-            }else if(rating >= 70 && rating < 80){
-                return 'B';
-            }else {
-                return 'A';
-            }
+    constructor(_cerealFromJson) {
+        Object.assign(this, _cerealFromJson);
+        this.nutriscore = this.calcNutriscore();
+    }
+
+    calcNutriscore() {
+        if (this.rating > 80) {
+            return 'A';
+        } else if (this.rating > 70) {
+            return 'B';
+        } else if (this.rating > 55) {
+            return 'C';
+        } else if (this.rating > 35) {
+            return 'D';
+        } else {
+            return 'E';
         }
     }
-    export { Cereal }
+}
+
+export { Cereal }
