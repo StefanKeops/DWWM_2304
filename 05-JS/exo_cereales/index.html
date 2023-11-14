@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="module" src="./assets/main.js"></script>
+    <title>Cereales</title>
+</head>
+<body>
+    <main id="app">
+        <section id="filter">
+            <h1>Cereals</h1>
+            <article>
+                <form>
+                    <fieldset>
+                        <legend>Rechercher</legend>
+                        <input type="search" v-model="searchCereals" @change="searchEvent" placeholder="Nom du céréale">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Filter</legend>
+                    
+                        <fieldset>
+                            <legend>nutri Score</legend>
+                            <label>A</label>
+                            <input @change="nutriScore" type="checkbox" value="A" v-model="checked">
+                    
+                            <label>B</label>
+                            <input @change="nutriScore" type="checkbox" value="B" v-model="checked">
+                    
+                            <label>C</label>
+                            <input @change="nutriScore" type="checkbox" value="C" v-model="checked">
+                    
+                            <label>D</label>
+                            <input @change="nutriScore" type="checkbox" value="D" v-model="checked">
+                    
+                            <label>E</label>
+                            <input @change="nutriScore" type="checkbox" value="E" v-model="checked">
+                        </fieldset>
+                    </fieldset>
+                    
+                    
+                    
+                    
+                    <fieldset>
+                        <legend>Catégorie</legend>
+                        <select name="" @change="selectMultiCriter" id="categories" v-model="categories">
+                            <option value="all">Tous</option>
+                            <option value="noSugar">Sans sucre</option>
+                            <option value="poorSalt">Pauvre en sel</option>
+                            <option value="boost">Boost</option>
+                        </select>
+                    </fieldset>
+                </form>
+            </article>
+
+        </section>
+    <table>
+        <thead>
+            <tr>
+                <th id="id" @click="sortCol">ID</th>
+                <th id="name" @click="sortCol">Name</th>
+                <th id="calories" @click="sortCol">Calories</th>
+                <th id="protein" @click="sortCol">Proteines</th>
+                <th id="sodium" @click="sortCol">Sel</th>
+                <th id="fiber" @click="sortCol">Fibres</th>
+                <th id="carbo" @click="sortCol">Glucides</th>
+                <th id="sugars" @click="sortCol">Sucre</th>
+                <th id="potass" @click="sortCol">Potassium</th>
+                <th id="vitamins" @click="sortCol">Vitamines</th>
+                <th id="rating" @click="sortCol">Evaluation</th>
+                <th id="ns" @click="sortCol">NS</th>
+                <th>DEL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="cereal of cereals">
+                <td>{{ cereal.id }}</td>
+                <td>{{ cereal.name }}</td>
+                <td>{{ cereal.calories }}</td>
+                <td>{{ cereal.protein }}</td>
+                <td>{{ cereal.sodium }}</td>
+                <td>{{ cereal.fiber }}</td>
+                <td>{{ cereal.carbo }}</td>
+                <td>{{ cereal.sugars }}</td>
+                <td>{{ cereal.potass }}</td>
+                <td>{{ cereal.vitamins }}</td>
+                <td>{{ cereal.rating }}</td>
+                <td>
+                    <span :class="cereal.ns">{{cereal.ns}}</span>
+                </td>
+                <td>
+                    <a href="#" :data-id="cereal.id" @click="deleteElement"> X </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </main>
+</body>
+</html>

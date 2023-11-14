@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champions League</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./assets/main.js" type="module"></script>
+</head>
+<body>
+    <main id="app">
+    <table>
+        <thead>
+            <tr>
+                <th>Numero du match</th>
+                <th>Numéro d'étape</th>
+                <th>Date et l'heure</th>
+                <th>Lieu du match</th>
+                <th>Équipe à domicile</th>
+                <th>L'équipe visiteuse</th>
+                <th>Groupe</th>
+                <th>HT score</th>
+                <th>AT score</th>
+                <th>Différence de buts</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="match of matchs">
+                <td> {{ match.matchNumber }} </td>
+                <td> {{ match.roundNumber }} </td>
+                <td> {{ match.dateUtc }} </td>
+                <td> {{ match.location }} </td>
+                <td> {{ match.homeTeam }} </td>
+                <td> {{ match.awayTeam }} </td>
+                <td> {{ match.group }} </td>
+                <td> {{ match.homeTeamScore }} </td>
+                <td> {{ match.awayTeamScore }} </td>
+                <td> {{ match.difference }} </td>
+            </tr>
+        </tbody>
+    </table>
+    </main>
+</body>
+</html>
