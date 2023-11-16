@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr-be">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Légumes</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./assets/main.js" type="module"></script>
+</head>
+<body>
+    <div id="app">
+        <img src="./data/legumos.jpg" alt="Légumes">
+        <div class="band">
+            <div v-for="box in boxes" class="box">{{ box }}</div>
+        </div>
+    </div>
+</body>
+</html>
