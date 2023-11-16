@@ -10,10 +10,14 @@
 </head>
 <body>
     <div id="appFootball">
-        <h1>Turnoi de Football</h1>
-        <p>{{ equipeCount }} équipes</p>
-        <p>{{ matchsCount }} match joués</p>
+        <h1>Tournoi de Football</h1>
+        <fieldset id="equipe-count">{{ equipeCount }} équipes</fieldset>
+        <fieldset id="match-count">{{ matchsCount }} match joués</fieldset>
     <h2>Matchs joués</h2>
+    <div class="filtrer">
+        <label for="equipeSearch">Filter</label>
+        <input type="search" id="equipeSearch" placeholder="Nom d'equipe">
+    </div>
     <table v-if="matchs.length > 0">
         <thead>
             <tr>
