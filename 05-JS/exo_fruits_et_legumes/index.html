@@ -1,20 +1,50 @@
 <!DOCTYPE html>
-<html lang="fr-be">
+<html lang="fr-fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Légumes</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/styles.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./assets/main.js" type="module"></script>
 </head>
 <body>
     <div id="app">
         <img src="./data/legumos.jpg" alt="Légumes">
-        <div class="band">
-            <div v-for="box in boxes" class="box">{{ box }}</div>
-        </div>
+    <div class="band">
+        <a href="sales.html">{{ boxes[0] }}</a>
+        <a href="nouvelle-vente.html">{{ boxes[1] }}</a>
+        <a href="index.html">{{ boxes[2] }}</a>
+        <a href="nouveau-legume.html">{{ boxes[3] }}</a>
+    </div>
+        <h1>Liste des légumes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th @click="sortBy('Name')">Nom</th>
+                    <th @click="sortBy('Variety')">Variété</th>
+                    <th @click="sortBy('PrimaryColor')">Couleur</th>
+                    <th @click="sortBy('LifeTime')">Durée Conservation</th>
+                    <th @click="sortBy('Fresh')">Frais</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="legume of legumes">
+                    <td>{{ legume.Name }}</td>
+                    <td>{{ legume.Variety }}</td>
+                    <td>{{ legume.PrimaryColor }}</td>
+                    <td>{{ legume.LifeTime }}</td>
+                    <td>{{ legume.Fresh === 1 ? 'oui' : 'non' }}</td>
+                    <td>
+                        <a href="#" @click="editLegume(legume)">Editer</a>
+                        <span> • </span>
+                        <a href="#" @click="deleteLegume(legume)">Suprimer</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>

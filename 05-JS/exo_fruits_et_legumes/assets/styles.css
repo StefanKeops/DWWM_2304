@@ -8,10 +8,28 @@ body {
     padding: 10px;
 }
 
+table {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: green;
+    color: yellow;
+}
+
 .band {
     display: flex;
     justify-content: space-around;
     background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+.band a {
+    color: white;
+    text-decoration: none;
 }
 
 .box {
