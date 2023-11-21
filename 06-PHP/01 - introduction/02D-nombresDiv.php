@@ -1,7 +1,7 @@
 <?php
 function getDiv($a, $b) {
     if ($b!=0) {
-        return $a / $b;
+        $result = $a / $b;
         return number_format($result, 2, '.', '');
     }
     else {
