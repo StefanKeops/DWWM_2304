@@ -1,13 +1,14 @@
 <?php
-function firstItem($array) {
+function sortItem($array) {
     if (!empty($array)) {
-        return $array[0];
+        rsort($array);
+        return implode(',',  $array);
     } else {
         return null;
     }
 }
  
 $names = ['Joe', 'Jack', 'Léa', 'Zoé', 'Néo'];
-$resultat = firstItem($names);
+$resultat = sortItem($names);
 echo $resultat; 
 ?>

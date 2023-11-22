@@ -1,13 +1,14 @@
 <?php
-function firstItem($array) {
+function lastItem($array) {
     if (!empty($array)) {
-        return $array[0];
+        $dernier = end($array);
+        return $dernier;
     } else {
         return null;
     }
 }
  
 $names = ['Joe', 'Jack', 'Léa', 'Zoé', 'Néo'];
-$resultat = firstItem($names);
+$resultat = lastItem($names);
 echo $resultat; 
 ?>
