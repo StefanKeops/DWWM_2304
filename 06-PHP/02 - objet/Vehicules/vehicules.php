@@ -3,13 +3,15 @@
 class Moteur {
     protected $marque;
     protected $vitesseMax;
-
+ 
     public function __construct($marque, $vitesseMax) {
         $this->marque = $marque;
         $this->vitesseMax = $vitesseMax;
     }
-
-    // Getters and setters for marque and vitesseMax
+ 
+    public function getVitesseMax() {
+        return $this->vitesseMax;
+    }
 }
 
 class Voiture {
@@ -48,12 +50,12 @@ class VoitureDeCourse extends Voiture {
 }
 
 
-$moteurVoiture = new Moteur("Citroën", 745);
-$voiture = new Voiture("Citroën", "Visa");
+$moteurVoiture = new Moteur("Citroën", 125);
+$voiture = new Voiture("Citroën", "Visa", 745);
 $voiture->setMoteur($moteurVoiture);
 
 $voitureDeCourse = new VoitureDeCourse("Renault", "F1", 450);
 $voitureDeCourse->setMoteur($moteurVoiture);
 
-echo $voiture->getInfos();  
-echo $voitureDeCourse->getInfos();  
+echo $voiture->getInfos();  echo'<br>';
+echo $voitureDeCourse->getInfos();  echo'<br>';
