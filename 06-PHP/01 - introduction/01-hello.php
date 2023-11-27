@@ -9,3 +9,4 @@ function hello(string $name) : string
 }
 // test de la fonction (la fonction n'affiche rien. "echo" affichera la valeur retournée par la fonction)
 echo hello("Mike");
+?>
