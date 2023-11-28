@@ -1,6 +1,6 @@
 <?php
 
-class Persones {
+class Personne {
     private $dateNaissance;
     private $prenom;
     private $nom;
@@ -87,7 +87,7 @@ class Intervenant extends Personne {
         $this->autresRevenus = $autresRevenus;
     }
 
-    public function getSalaires() {
+    public function getSalaire() {
         return $this->salaire;
     }
 
@@ -95,8 +95,83 @@ class Intervenant extends Personne {
         return $this->autresRevenus;
     }
 
-    
+    public function setSalaire($nouveauSalaire) {
+        $this->salaire = $nouveauSalaire;
+    }
+
+    public function setAutresRevenus($nouveauxRevenus) {
+        $this->autresRevenus = $nouveauxRevenus;
+    }
+
+    public function calculerCharges() {
+        $taxeSalaire = ($this->getSalaire() * 0.2);
+        $taxeAutresRevenus = ($this->getAutresRevenus() * 0.15);
+        
+        $curentDate = new DateTime();
+        $interval = new DateInterval('P55Y');
+        $olderDate = $curentDate->sub($interval);
+
+        if ($this->getDateNaissance() < $olderDate) {
+            return $taxeSalaire /= 2;
+            return $taxeAutresRevenus /= 2;
+        }
+        
+        return $taxeSalaire + $taxeAutresRevenus;
+    }
 }
 
+class Intervention {
+    private $client;
+    private $dateHeure;
+    private $description;
+    private $intervenant;
 
+    public function __construct($dateHeure, $intervenant, $client, $description) {
+        $this->dateHeure = $dateHeure;
+        $this->intervenant = $intervenant;
+        $this->client = $client;
+        $this->dscription = $description;
+    }
+
+    public function getDateHeure() {
+        return $this->dateHeure;
+    }
+
+    public function getDescription() {
+        return $this->description; 
+    }
+
+    public function getIntervenant() {
+        return $this->intervenant;
+    }
+
+    public function getClient() {
+        return $this->intervenant;
+    }
+}
+
+$adresse = new Adresse(27, 'Rue des maçons', '68200', 'Mulhouse');
+$client = new Client('C1', 'Csaszar', 'Stefan', '1979-11-08', $adresse);
+
+echo 'Client Name: ' . $client->getNom() . ' ' . $client->getPrenom() . PHP_EOL;  echo'<br>';
+echo 'Date of Birth: ' . $client->getDateNaissance() . PHP_EOL; echo'<br>';
+echo 'Client Address: ' . $client->getAdresse()->getNumeroRue() . ' ' . $client->getAdresse()->getNomRue() . ', ' . $client->getAdresse()->getCodePostal() . ' ' . $client->getAdresse()->getNomCommune() . PHP_EOL; echo'<br>';
+
+$intervener = new Intervenant('Csaszar', 'Stefan', '1979-10-08', 8400, 11800);
+
+echo PHP_EOL . 'Intervener Name: ' . $intervener->getNom() . ' ' . $intervener->getPrenom() . PHP_EOL; echo'<br>';
+echo 'Date of Birth: ' . $intervener->getDateNaissance() . PHP_EOL; echo'<br>';
+echo 'Salaire: $' . $intervener->getSalaire() . PHP_EOL; echo'<br>';
+echo 'Autres Revenus: $' . $intervener->getAutresRevenus() . PHP_EOL; echo'<br>';
+
+$charges = $intervener->calculerCharges();
+
+echo 'Total Charges: $' . $charges . PHP_EOL; echo'<br>';
+
+$intervention = new Intervention('2023-12-01 14:30', $intervener, $client, 'Fixing plumbing issue');
+
+echo PHP_EOL . 'Intervention Date and Time: ' . $intervention->getDateHeure() . PHP_EOL; echo'<br>';
+echo 'Intervener: ' . $intervention->getIntervenant()->getNom() . ' ' . $intervention->getIntervenant()->getPrenom() . PHP_EOL; echo'<br>';
+echo 'Client: ' . $intervention->getClient()->getNom() . ' ' . $intervention->getClient()->getPrenom() . PHP_EOL; echo'<br>';
+echo 'Description: ' . $intervention->getDescription() . PHP_EOL;
 ?>
