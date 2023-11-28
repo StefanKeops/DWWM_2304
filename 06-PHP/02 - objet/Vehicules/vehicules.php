@@ -59,3 +59,4 @@ $voitureDeCourse->setMoteur($moteurVoiture);
 
 echo $voiture->getInfos();  echo'<br>';
 echo $voitureDeCourse->getInfos();  echo'<br>';
+?>
