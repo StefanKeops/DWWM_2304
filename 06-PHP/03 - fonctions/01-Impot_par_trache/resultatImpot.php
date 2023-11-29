@@ -1,6 +1,6 @@
 <?php
 
-include ('functions.php');
+include ('fonctions.php');
 
 // recuperarea datelor din formular
 $nom = $_POST['nom'];

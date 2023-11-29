@@ -6,7 +6,7 @@
     <title>Calcul de Mensualité</title>
 </head>
 <body>
-    <form action="calculMensualite.php" method="post">
+    <form action="calculMensualite.php" method="POST">
         <label for="capital">Capital emprumuté (€): </label>
         <input type="number" name="capital" required><br>
 
@@ -14,7 +14,7 @@
         <input type="number" name="taux" required><br>
 
         <label for="annees">Nombre d'années de remboursement: </label>
-        <input type="number" names="annees" required><br>
+        <input type="number" name="annees" required><br>
 
         <input type="submit" value="Valider">
     </form>
