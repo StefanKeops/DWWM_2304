@@ -73,7 +73,7 @@ class Client extends Personne {
     }
 
     public function getCodeClient() {
-        return $this->codeClient;
+        return $this->numeroClient;
     }
 }
 
@@ -130,7 +130,7 @@ class Intervention {
         $this->dateHeure = $dateHeure;
         $this->intervenant = $intervenant;
         $this->client = $client;
-        $this->dscription = $description;
+        $this->description = $description;
     }
 
     public function getDateHeure() {
