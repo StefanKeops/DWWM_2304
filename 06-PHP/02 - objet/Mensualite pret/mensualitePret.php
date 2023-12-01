@@ -1,73 +1,44 @@
 <?php
+include 'Mensualite.php';
 
-class Mensualite
-{
-    private $capital;
-    private $annees;
-    private $taux;
+$capital = isset($_POST['capital']) ? $_POST['capital'] : 0;
+$taux = isset($_POST['taux']) ? $_POST['taux'] : 0;
+$annees = isset($_POST['annees']) ? $_POST['annees'] : 0;
 
-    public function __construct($capital, $annees, $taux)
-    {
-        $this->capital = $capital;
-        $this->annees = $annees;
-        $this->taux = $taux;
-    }
-
-    public function getCapital()
-    {
-        return $this->capital;
-    }
-
-    public function getAnnees()
-    {
-        return $this->annees;
-    }
-
-    public function getTaux()
-    {
-        return $this->taux;
-    }
-
-    public function CalculerMensualite($capital, $taux, $annees)
-    {
-
-        $tauxMensuel = $taux / 1200;
-        $nombreMois = $annees * 12;
-        $q = pow((1 + $tauxMensuel), -$nombreMois);
-        $mensualite = ($capital * $tauxMensuel) / (1 - $q);
-
-        return $mensualite;
-    }
-
-    public function CalculerAmortissement(float $capital, float $taux, float $annees)
-    {
-        $tauxMensuel = $taux / 1200;
-        $nombreMois = $annees * 12;
-        $mensualite = CalculerMensualite($capital, $taux, $annees);
-    
-        $tableauAmortissement = array();
-    
-        $capitalRestant = $capital;
-    
-        for($mois = 1; $mois <= $nombreMois; $mois++) {
-            $interets = $capitalRestant * $tauxMensuel;
-            $partAmortissement = $mensualite - $interets;
-            $capitalRestant -= $partAmortissement;
-    
-            $tableauAmortissement[] = array (
-                'mois' => $mois,
-                'interets' => $interets,
-                'partAmortissement' => $partAmortissement,
-                'capitalRestant' => abs($capitalRestant)
-            );
-    
-        }
-    
-        return $tableauAmortissement;
-    }
+// Validarea datelor
+if (!is_numeric($capital) || !is_numeric($taux) || !is_numeric($annees) || $capital <= 0 || $taux <= 0 || $annees <= 0) {
+    die("Invalid input. Please enter valid numeric values.");
 }
 
 $somme = new Mensualite($capital, $taux, $annees);
-$mensualite = $somme->CalculerMensualite($capital, $taux, $annees);
-echo 'Vous avez à paye une mensualité de' . $mensualite . ' .;'
+$result = $somme->CalculerAmortissement();
+
+$mensualite = $result['mensualite'];
+$tableauAmortissement = $result['tableauAmortissement'];
+
+echo 'Vous avez à payer une mensualité de ' . number_format($mensualite, 2, ',', ' ') . ' €.';
+
+if (is_array($tableauAmortissement)) {
+    echo '<h2>Tableau d\'amortissement:</h2>';
+    echo '<table border="1">
+            <tr>
+                <th>Mois</th>
+                <th>Intérêts</th>
+                <th>Part Amortissement</th>
+                <th>Capital Restant</th>
+            </tr>';
+
+    foreach ($tableauAmortissement as $row) {
+    echo '<tr>
+            <td>' . $row['mois'] . '</td>
+            <td>' . round($row['interets'], 2) . ' €</td>
+            <td>' . round($row['partAmortissement'], 2) . ' €</td>
+            <td>' . round($row['capitalRestant'], 2) . ' €</td>
+          </tr>';
+}
+
+    echo '</table>';
+} else {
+    echo '<p>No amortization table data available.</p>';
+}
 ?>

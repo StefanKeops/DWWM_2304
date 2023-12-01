@@ -19,7 +19,7 @@ function htmlList($listName, $elements) {
 }
 
 $names1 = ['Joe', 'Jack', 'Léa', 'Zoé', 'Néo'];
-echo htmlList("Liste des personnes", $names1);
+echo htmlList("Liste des personnes", $names1);  
 
 $names2 = []; // tabel gol
 echo htmlList("Liste des personnes", $names2);

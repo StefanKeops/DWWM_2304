@@ -7,7 +7,7 @@
 </head>
 <body>
     <form action="mensualitePret.php" method="POST">
-        <label for="capital">Capital emprumuté (€): </label>
+        <label for="capital">Capital emprunté (€): </label>
         <input type="number" name="capital" required><br>
 
         <label for="taux">Taux d'intérêt annuel (%): </label>
