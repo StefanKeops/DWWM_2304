@@ -48,5 +48,5 @@ class Impot {
 
 $impot = new Impot('Csaszar Stefan', '08-10-1979', 15000);
 $impotAPaye = $impot->calculImpot();
-echo $impot->getNom() . ' vous avez à payé ' . $impotAPaye . ' .';
+echo $impot->getNom() . ' vous avez à payé ' . round($impotAPaye, 2) . ' .';
 ?>

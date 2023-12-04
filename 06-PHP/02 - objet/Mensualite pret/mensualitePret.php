@@ -1,5 +1,5 @@
 <?php
-include 'Mensualite.php';
+include 'mensualite.php';
 
 $capital = isset($_POST['capital']) ? $_POST['capital'] : 0;
 $taux = isset($_POST['taux']) ? $_POST['taux'] : 0;
