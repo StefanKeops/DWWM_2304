@@ -1,9 +1,11 @@
 <?php
 
-class MyTable {
+class MyTable
+{
     private $connexion;
 
-    public function __construct($servername, $username, $password, $dbname) {
+    public function __construct($servername, $username, $password, $dbname)
+    {
         $this->connexion = new mysqli($servername, $username, $password, $dbname);
 
         if ($this->connexion->connect_error) {
@@ -13,7 +15,8 @@ class MyTable {
         $result = $this->connexion->query("SELECT * FROM restaurants");
     }
 
-    public function selectData() {
+    public function selectData()
+    {
         $result = $this->connexion->query("SELECT * FROM restaurants");
 
         if ($result->num_rows > 0) {
@@ -40,14 +43,30 @@ class MyTable {
                 </tr>";
             }
             echo "</table>";
-    }else{
-        echo "Aucun restaurant trouvé.";
-    } 
+        } else {
+            echo "Aucun restaurant trouvé.";
         }
+    }
 
-    public function __destruct() {
+    private function infoTable($tableName) {
+        $columns = array();
+ 
+        $query = "SHOW COLUMNS FROM $tableName";
+        $result = $this->connexion->query($query);
+ 
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                $columns[] = $row['Field'];
+            }
+        }
+ 
+        return $columns;
+    }
+
+    public function __destruct()
+    {
         if ($this->connexion) {
-            $this->connexion->close();    
+            $this->connexion->close();
         }
     }
 }
@@ -59,6 +78,6 @@ $dbname = "guide";
 
 $myTable = new MyTable($servername, $username, $password, $dbname);
 
-$myTable->selectData();
-
-?>
+$myTable->selectData(); echo "<br>";
+$tableColumns = $this->infoTable("restaurants");
+print_r($tableColumns);
