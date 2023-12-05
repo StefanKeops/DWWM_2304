@@ -11,9 +11,11 @@
  <input type="submit" value="Submit Name">
  </form>
 <?php
-//Preluați numele și il stocați într-o variabilă locală
-$name = $_POST['name'];
+//Preluați numele dupa ce verificati și il stocați într-o variabilă locală
+if (isset($_POST['name'])){
+    $name = $_POST['name'];
 echo "<h3> Salut $name </h3>";
+}
 ?>
 </body>
 </html>
