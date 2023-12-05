@@ -48,7 +48,7 @@ class MyTable
         }
     }
 
-    private function infoTable($tableName) {
+    public function infoTable($tableName) {
         $columns = array();
  
         $query = "SHOW COLUMNS FROM $tableName";
@@ -76,8 +76,7 @@ $username = "root";
 $password = "";
 $dbname = "guide";
 
-$myTable = new MyTable($servername, $username, $password, $dbname);
+$myTable = new MyTable($servername, $username, $password, $dbname); echo "<br>";
 
-$myTable->selectData(); echo "<br>";
-$tableColumns = $this->infoTable("restaurants");
+$tableColumns = $myTable->infoTable("restaurants");
 print_r($tableColumns);
