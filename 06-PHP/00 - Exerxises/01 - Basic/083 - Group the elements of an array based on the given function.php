@@ -1,5 +1,4 @@
 <?php
-// License: https://bit.ly/2CFA5XY
 function groupBy($items, $func)
 {
     $group = [];
