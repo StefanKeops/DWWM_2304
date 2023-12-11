@@ -21,7 +21,7 @@
 			"nume": "Greenday_1989",
 			"tara": "Lithuania",
 			"medalii": 26,
-			"zile": 10
+			"zile": 11
 		},
 		{
 			"id": 7490643,
@@ -35,7 +35,7 @@
 			"nume": "Mithridatis",
 			"tara": "Greece",
 			"medalii": 22,
-			"zile": 22
+			"zile": 23
 		},
 		{
 			"id": 1889736,
@@ -90,8 +90,8 @@
 			"id": 6951363,
 			"nume": "decong79",
 			"tara": "Italy",
-			"medalii": 15,
-			"zile": 29
+			"medalii": 16,
+			"zile": 0
 		},
 		{
 			"id": 1714685,
@@ -122,16 +122,16 @@
 			"zile": 20
 		},
 		{
-			"id": 2031283,
-			"nume": "UfoDriver",
-			"tara": "Croatia",
-			"medalii": 15,
-			"zile": 15
-		},
-		{
 			"id": 8549926,
 			"nume": "Barriga Verde",
 			"tara": "Spain",
+			"medalii": 15,
+			"zile": 16
+		},
+		{
+			"id": 2031283,
+			"nume": "UfoDriver",
+			"tara": "Croatia",
 			"medalii": 15,
 			"zile": 15
 		},
@@ -147,14 +147,14 @@
 			"nume": "TCordis",
 			"tara": "Poland",
 			"medalii": 15,
-			"zile": 11
+			"zile": 12
 		},
 		{
 			"id": 8761086,
 			"nume": "R E F O R M E D",
 			"tara": "Croatia",
 			"medalii": 15,
-			"zile": 10
+			"zile": 11
 		},
 		{
 			"id": 1224333,
@@ -231,7 +231,7 @@
 			"nume": "Stephan Condurachis",
 			"tara": "Republic of Moldova",
 			"medalii": 12,
-			"zile": 16
+			"zile": 17
 		},
 		{
 			"id": 1927651,
@@ -245,7 +245,7 @@
 			"nume": "B0B ROCK",
 			"tara": "Serbia",
 			"medalii": 12,
-			"zile": 10
+			"zile": 11
 		},
 		{
 			"id": 4757146,
@@ -497,7 +497,7 @@
 			"nume": "Dzvin",
 			"tara": "Ukraine",
 			"medalii": 8,
-			"zile": 21
+			"zile": 22
 		},
 		{
 			"id": 2863620,
@@ -570,16 +570,16 @@
 			"zile": 0
 		},
 		{
-			"id": 1248126,
-			"nume": "Louis Tikas",
-			"tara": "Greece",
-			"medalii": 7,
-			"zile": 29
-		},
-		{
 			"id": 9049098,
 			"nume": "D I V O",
 			"tara": "Cuba",
+			"medalii": 8,
+			"zile": 0
+		},
+		{
+			"id": 1248126,
+			"nume": "Louis Tikas",
+			"tara": "Greece",
 			"medalii": 7,
 			"zile": 29
 		},
@@ -696,6 +696,13 @@
 			"zile": 3
 		},
 		{
+			"id": 1859225,
+			"nume": "FAF Babieca",
+			"tara": "Spain",
+			"medalii": 7,
+			"zile": 2
+		},
+		{
 			"id": 2542859,
 			"nume": "AlI Might",
 			"tara": "France",
@@ -708,13 +715,6 @@
 			"tara": "Croatia",
 			"medalii": 7,
 			"zile": 2
-		},
-		{
-			"id": 1859225,
-			"nume": "FAF Babieca",
-			"tara": "Spain",
-			"medalii": 7,
-			"zile": 1
 		},
 		{
 			"id": 9528846,
@@ -770,7 +770,7 @@
 			"nume": "11ue",
 			"tara": "United Kingdom",
 			"medalii": 6,
-			"zile": 20
+			"zile": 21
 		},
 		{
 			"id": 2700079,
@@ -801,18 +801,18 @@
 			"zile": 16
 		},
 		{
+			"id": 2603588,
+			"nume": "viktyma",
+			"tara": "Poland",
+			"medalii": 6,
+			"zile": 13
+		},
+		{
 			"id": 4726253,
 			"nume": "Seppo Ilmarinen",
 			"tara": "Finland",
 			"medalii": 6,
 			"zile": 13
-		},
-		{
-			"id": 2603588,
-			"nume": "viktyma",
-			"tara": "Poland",
-			"medalii": 6,
-			"zile": 12
 		},
 		{
 			"id": 4982066,
@@ -892,6 +892,13 @@
 			"zile": 4
 		},
 		{
+			"id": 6021720,
+			"nume": "joseph14",
+			"tara": "Portugal",
+			"medalii": 6,
+			"zile": 4
+		},
+		{
 			"id": 9088735,
 			"nume": "GoblinTerror",
 			"tara": "Colombia",
@@ -906,9 +913,9 @@
 			"zile": 3
 		},
 		{
-			"id": 6021720,
-			"nume": "joseph14",
-			"tara": "Portugal",
+			"id": 1921912,
+			"nume": "shefutzu",
+			"tara": "USA",
 			"medalii": 6,
 			"zile": 3
 		},
@@ -918,13 +925,6 @@
 			"tara": "Republic of Moldova",
 			"medalii": 6,
 			"zile": 3
-		},
-		{
-			"id": 1921912,
-			"nume": "shefutzu",
-			"tara": "USA",
-			"medalii": 6,
-			"zile": 2
 		},
 		{
 			"id": 1228906,
@@ -1015,7 +1015,7 @@
 			"nume": "LazePfc",
 			"tara": "North Macedonia",
 			"medalii": 5,
-			"zile": 23
+			"zile": 24
 		},
 		{
 			"id": 210402,
@@ -1025,18 +1025,18 @@
 			"zile": 21
 		},
 		{
+			"id": 1771136,
+			"nume": "Ddraig Goch",
+			"tara": "Spain",
+			"medalii": 5,
+			"zile": 21
+		},
+		{
 			"id": 6395008,
 			"nume": "KikoElite",
 			"tara": "Netherlands",
 			"medalii": 5,
 			"zile": 21
-		},
-		{
-			"id": 1771136,
-			"nume": "Ddraig Goch",
-			"tara": "Spain",
-			"medalii": 5,
-			"zile": 20
 		},
 		{
 			"id": 5526926,
@@ -1162,7 +1162,7 @@
 			"nume": "Mycenaean",
 			"tara": "Serbia",
 			"medalii": 5,
-			"zile": 7
+			"zile": 8
 		},
 		{
 			"id": 9343157,
@@ -1179,18 +1179,18 @@
 			"zile": 6
 		},
 		{
+			"id": 5303040,
+			"nume": "DJMiMi",
+			"tara": "Serbia",
+			"medalii": 5,
+			"zile": 4
+		},
+		{
 			"id": 6224837,
 			"nume": "Alerodri",
 			"tara": "Argentina",
 			"medalii": 5,
 			"zile": 4
-		},
-		{
-			"id": 5303040,
-			"nume": "DJMiMi",
-			"tara": "Serbia",
-			"medalii": 5,
-			"zile": 3
 		},
 		{
 			"id": 1304205,
@@ -1305,6 +1305,13 @@
 			"zile": 20
 		},
 		{
+			"id": 4990027,
+			"nume": "Drakoveca",
+			"tara": "Bulgaria",
+			"medalii": 4,
+			"zile": 18
+		},
+		{
 			"id": 723232,
 			"nume": "Jeunny",
 			"tara": "Chile",
@@ -1312,9 +1319,9 @@
 			"zile": 17
 		},
 		{
-			"id": 4990027,
-			"nume": "Drakoveca",
-			"tara": "Bulgaria",
+			"id": 5131465,
+			"nume": "DOBRSbanovani",
+			"tara": "New Zealand",
 			"medalii": 4,
 			"zile": 17
 		},
@@ -1322,13 +1329,6 @@
 			"id": 4803291,
 			"nume": "Karatekid8",
 			"tara": "Serbia",
-			"medalii": 4,
-			"zile": 16
-		},
-		{
-			"id": 5131465,
-			"nume": "DOBRSbanovani",
-			"tara": "New Zealand",
 			"medalii": 4,
 			"zile": 16
 		},
@@ -1739,6 +1739,13 @@
 			"zile": 19
 		},
 		{
+			"id": 1844547,
+			"nume": "Wigol",
+			"tara": "Spain",
+			"medalii": 3,
+			"zile": 18
+		},
+		{
 			"id": 4370931,
 			"nume": "Pargalatsos II",
 			"tara": "Greece",
@@ -1774,16 +1781,16 @@
 			"zile": 17
 		},
 		{
-			"id": 1844547,
-			"nume": "Wigol",
-			"tara": "Spain",
+			"id": 2064778,
+			"nume": "The Last Aviator",
+			"tara": "Argentina",
 			"medalii": 3,
 			"zile": 17
 		},
 		{
-			"id": 2064778,
-			"nume": "The Last Aviator",
-			"tara": "Argentina",
+			"id": 2187619,
+			"nume": "Andres Alkaraz",
+			"tara": "Spain",
 			"medalii": 3,
 			"zile": 17
 		},
@@ -1823,16 +1830,16 @@
 			"zile": 16
 		},
 		{
-			"id": 2187619,
-			"nume": "Andres Alkaraz",
-			"tara": "Spain",
-			"medalii": 3,
-			"zile": 16
-		},
-		{
 			"id": 1399939,
 			"nume": "Zoleeka",
 			"tara": "Hungary",
+			"medalii": 3,
+			"zile": 15
+		},
+		{
+			"id": 2234874,
+			"nume": "Alito Papucho",
+			"tara": "Uruguay",
 			"medalii": 3,
 			"zile": 15
 		},
@@ -1842,13 +1849,6 @@
 			"tara": "Netherlands",
 			"medalii": 3,
 			"zile": 15
-		},
-		{
-			"id": 2234874,
-			"nume": "Alito Papucho",
-			"tara": "Uruguay",
-			"medalii": 3,
-			"zile": 14
 		},
 		{
 			"id": 2644403,
@@ -1879,18 +1879,18 @@
 			"zile": 11
 		},
 		{
+			"id": 1449545,
+			"nume": "Natural603",
+			"tara": "Serbia",
+			"medalii": 3,
+			"zile": 11
+		},
+		{
 			"id": 4624438,
 			"nume": "VEN0M.",
 			"tara": "Turkey",
 			"medalii": 3,
 			"zile": 11
-		},
-		{
-			"id": 1449545,
-			"nume": "Natural603",
-			"tara": "Serbia",
-			"medalii": 3,
-			"zile": 10
 		},
 		{
 			"id": 2405925,
@@ -2040,6 +2040,13 @@
 			"zile": 5
 		},
 		{
+			"id": 1703271,
+			"nume": "MollyMock",
+			"tara": "USA",
+			"medalii": 3,
+			"zile": 4
+		},
+		{
 			"id": 2006112,
 			"nume": "TheNorm",
 			"tara": "USA",
@@ -2054,16 +2061,16 @@
 			"zile": 4
 		},
 		{
-			"id": 1515392,
-			"nume": "Cristian Olar",
-			"tara": "Romania",
+			"id": 1001462,
+			"nume": "Equilibrium",
+			"tara": "Portugal",
 			"medalii": 3,
 			"zile": 3
 		},
 		{
-			"id": 1703271,
-			"nume": "MollyMock",
-			"tara": "USA",
+			"id": 1515392,
+			"nume": "Cristian Olar",
+			"tara": "Romania",
 			"medalii": 3,
 			"zile": 3
 		},
@@ -2087,13 +2094,6 @@
 			"tara": "Indonesia",
 			"medalii": 3,
 			"zile": 3
-		},
-		{
-			"id": 1001462,
-			"nume": "Equilibrium",
-			"tara": "Portugal",
-			"medalii": 3,
-			"zile": 2
 		},
 		{
 			"id": 8379649,
@@ -2201,18 +2201,18 @@
 			"zile": 28
 		},
 		{
+			"id": 1714203,
+			"nume": "Nuclear Child",
+			"tara": "Thailand",
+			"medalii": 2,
+			"zile": 28
+		},
+		{
 			"id": 2130068,
 			"nume": "Nathan5",
 			"tara": "Slovakia",
 			"medalii": 2,
 			"zile": 28
-		},
-		{
-			"id": 1714203,
-			"nume": "Nuclear Child",
-			"tara": "Thailand",
-			"medalii": 2,
-			"zile": 27
 		},
 		{
 			"id": 2930437,
@@ -2250,6 +2250,13 @@
 			"zile": 26
 		},
 		{
+			"id": 8669325,
+			"nume": "Vacakacc",
+			"tara": "Slovakia",
+			"medalii": 2,
+			"zile": 26
+		},
+		{
 			"id": 1558736,
 			"nume": "vezku",
 			"tara": "Finland",
@@ -2267,13 +2274,6 @@
 			"id": 2497782,
 			"nume": "Novi Hemis",
 			"tara": "Serbia",
-			"medalii": 2,
-			"zile": 25
-		},
-		{
-			"id": 8669325,
-			"nume": "Vacakacc",
-			"tara": "Slovakia",
 			"medalii": 2,
 			"zile": 25
 		},
@@ -2446,6 +2446,13 @@
 			"zile": 17
 		},
 		{
+			"id": 3118486,
+			"nume": "Mauos",
+			"tara": "Spain",
+			"medalii": 2,
+			"zile": 17
+		},
+		{
 			"id": 3492377,
 			"nume": "S E R H A T",
 			"tara": "South Africa",
@@ -2453,16 +2460,16 @@
 			"zile": 17
 		},
 		{
-			"id": 2645390,
-			"nume": "SzasZiii",
-			"tara": "Hungary",
+			"id": 1879201,
+			"nume": "AlexWoodman",
+			"tara": "Russia",
 			"medalii": 2,
 			"zile": 16
 		},
 		{
-			"id": 3118486,
-			"nume": "Mauos",
-			"tara": "Spain",
+			"id": 2645390,
+			"nume": "SzasZiii",
+			"tara": "Hungary",
 			"medalii": 2,
 			"zile": 16
 		},
@@ -2484,13 +2491,6 @@
 			"id": 1533987,
 			"nume": "pun1sher",
 			"tara": "Latvia",
-			"medalii": 2,
-			"zile": 15
-		},
-		{
-			"id": 1879201,
-			"nume": "AlexWoodman",
-			"tara": "Russia",
 			"medalii": 2,
 			"zile": 15
 		},
@@ -2635,6 +2635,13 @@
 			"zile": 11
 		},
 		{
+			"id": 4437391,
+			"nume": "DRAGon De Elite",
+			"tara": "Ukraine",
+			"medalii": 2,
+			"zile": 11
+		},
+		{
 			"id": 8272749,
 			"nume": "The Black Tulip",
 			"tara": "Romania",
@@ -2645,13 +2652,6 @@
 			"id": 1198979,
 			"nume": "little_bee",
 			"tara": "Poland",
-			"medalii": 2,
-			"zile": 10
-		},
-		{
-			"id": 4437391,
-			"nume": "DRAGon De Elite",
-			"tara": "Ukraine",
 			"medalii": 2,
 			"zile": 10
 		},
@@ -2929,6 +2929,13 @@
 			"zile": 5
 		},
 		{
+			"id": 4915650,
+			"nume": "Kasia59",
+			"tara": "Poland",
+			"medalii": 2,
+			"zile": 5
+		},
+		{
 			"id": 6204790,
 			"nume": "NeodoljivNeumoIjiv",
 			"tara": "Serbia",
@@ -2985,13 +2992,6 @@
 			"zile": 4
 		},
 		{
-			"id": 4915650,
-			"nume": "Kasia59",
-			"tara": "Poland",
-			"medalii": 2,
-			"zile": 4
-		},
-		{
 			"id": 5340816,
 			"nume": "Slagter",
 			"tara": "Sweden",
@@ -3037,6 +3037,13 @@
 			"id": 3342060,
 			"nume": "Oleks76",
 			"tara": "Ukraine",
+			"medalii": 2,
+			"zile": 3
+		},
+		{
+			"id": 3575302,
+			"nume": "Tsar.",
+			"tara": "United Arab Emirates",
 			"medalii": 2,
 			"zile": 3
 		},
@@ -3104,13 +3111,6 @@
 			"zile": 2
 		},
 		{
-			"id": 3575302,
-			"nume": "Tsar.",
-			"tara": "United Arab Emirates",
-			"medalii": 2,
-			"zile": 2
-		},
-		{
 			"id": 5411123,
 			"nume": "TheCanadianPunk",
 			"tara": "Canada",
@@ -3160,6 +3160,13 @@
 			"zile": 1
 		},
 		{
+			"id": 4076015,
+			"nume": "Animan2",
+			"tara": "Latvia",
+			"medalii": 2,
+			"zile": 1
+		},
+		{
 			"id": 4100750,
 			"nume": "AyDiN.",
 			"tara": "Iran",
@@ -3170,6 +3177,13 @@
 			"id": 4103222,
 			"nume": "Edelmann",
 			"tara": "Germany",
+			"medalii": 2,
+			"zile": 1
+		},
+		{
+			"id": 5114117,
+			"nume": "Sinan Legenda",
+			"tara": "United Arab Emirates",
 			"medalii": 2,
 			"zile": 1
 		},
@@ -3237,23 +3251,9 @@
 			"zile": 0
 		},
 		{
-			"id": 4076015,
-			"nume": "Animan2",
-			"tara": "Latvia",
-			"medalii": 2,
-			"zile": 0
-		},
-		{
 			"id": 4236796,
 			"nume": "d1m1tr1os",
 			"tara": "Greece",
-			"medalii": 2,
-			"zile": 0
-		},
-		{
-			"id": 5114117,
-			"nume": "Sinan Legenda",
-			"tara": "United Arab Emirates",
 			"medalii": 2,
 			"zile": 0
 		},
@@ -3363,6 +3363,13 @@
 			"zile": 28
 		},
 		{
+			"id": 1514020,
+			"nume": "bralek",
+			"tara": "Serbia",
+			"medalii": 1,
+			"zile": 28
+		},
+		{
 			"id": 2530424,
 			"nume": "Hitman79",
 			"tara": "Peru",
@@ -3387,6 +3394,13 @@
 			"id": 4607333,
 			"nume": "Prince of Austria",
 			"tara": "Austria",
+			"medalii": 1,
+			"zile": 28
+		},
+		{
+			"id": 5339903,
+			"nume": "MihicaZG",
+			"tara": "North Korea",
 			"medalii": 1,
 			"zile": 28
 		},
@@ -3433,16 +3447,16 @@
 			"zile": 28
 		},
 		{
-			"id": 1514020,
-			"nume": "bralek",
-			"tara": "Serbia",
+			"id": 1816857,
+			"nume": "Timoleon",
+			"tara": "Spain",
 			"medalii": 1,
 			"zile": 27
 		},
 		{
-			"id": 1816857,
-			"nume": "Timoleon",
-			"tara": "Spain",
+			"id": 1823184,
+			"nume": "AmanecerBuho",
+			"tara": "Uruguay",
 			"medalii": 1,
 			"zile": 27
 		},
@@ -3489,9 +3503,9 @@
 			"zile": 27
 		},
 		{
-			"id": 5339903,
-			"nume": "MihicaZG",
-			"tara": "North Korea",
+			"id": 6389994,
+			"nume": "Askold111188",
+			"tara": "Ukraine",
 			"medalii": 1,
 			"zile": 27
 		},
@@ -3531,9 +3545,9 @@
 			"zile": 27
 		},
 		{
-			"id": 1823184,
-			"nume": "AmanecerBuho",
-			"tara": "Uruguay",
+			"id": 1579431,
+			"nume": "NENODS Jr.",
+			"tara": "North Macedonia",
 			"medalii": 1,
 			"zile": 26
 		},
@@ -3576,13 +3590,6 @@
 			"id": 1232031,
 			"nume": "Citizen 1232031",
 			"tara": "Indonesia",
-			"medalii": 1,
-			"zile": 25
-		},
-		{
-			"id": 1579431,
-			"nume": "NENODS Jr.",
-			"tara": "North Macedonia",
 			"medalii": 1,
 			"zile": 25
 		},
@@ -3646,13 +3653,6 @@
 			"id": 4358814,
 			"nume": "Jazzymen",
 			"tara": "Lithuania",
-			"medalii": 1,
-			"zile": 25
-		},
-		{
-			"id": 6389994,
-			"nume": "Askold111188",
-			"tara": "Ukraine",
 			"medalii": 1,
 			"zile": 25
 		},
@@ -3832,9 +3832,23 @@
 			"zile": 23
 		},
 		{
+			"id": 4764817,
+			"nume": "Beny.",
+			"tara": "Poland",
+			"medalii": 1,
+			"zile": 23
+		},
+		{
 			"id": 5826953,
 			"nume": "Juan Carlos Morales",
 			"tara": "Chile",
+			"medalii": 1,
+			"zile": 23
+		},
+		{
+			"id": 9423000,
+			"nume": "ti4go2",
+			"tara": "Portugal",
 			"medalii": 1,
 			"zile": 23
 		},
@@ -3916,13 +3930,6 @@
 			"zile": 22
 		},
 		{
-			"id": 4764817,
-			"nume": "Beny.",
-			"tara": "Poland",
-			"medalii": 1,
-			"zile": 22
-		},
-		{
 			"id": 5997476,
 			"nume": "King Filip",
 			"tara": "Serbia",
@@ -3940,13 +3947,6 @@
 			"id": 7906389,
 			"nume": "J0rdi",
 			"tara": "Greece",
-			"medalii": 1,
-			"zile": 22
-		},
-		{
-			"id": 9423000,
-			"nume": "ti4go2",
-			"tara": "Portugal",
 			"medalii": 1,
 			"zile": 22
 		},
@@ -4203,6 +4203,13 @@
 			"zile": 18
 		},
 		{
+			"id": 1624718,
+			"nume": "AIRNewbie",
+			"tara": "Latvia",
+			"medalii": 1,
+			"zile": 18
+		},
+		{
 			"id": 1751583,
 			"nume": "Paon",
 			"tara": "France",
@@ -4269,13 +4276,6 @@
 			"id": 1359901,
 			"nume": "SaiN",
 			"tara": "Portugal",
-			"medalii": 1,
-			"zile": 17
-		},
-		{
-			"id": 1624718,
-			"nume": "AIRNewbie",
-			"tara": "Latvia",
 			"medalii": 1,
 			"zile": 17
 		},
@@ -4395,6 +4395,13 @@
 			"id": 1499920,
 			"nume": "thegoose003",
 			"tara": "Croatia",
+			"medalii": 1,
+			"zile": 16
+		},
+		{
+			"id": 1925978,
+			"nume": "Floatees",
+			"tara": "Netherlands",
 			"medalii": 1,
 			"zile": 16
 		},
@@ -4553,6 +4560,13 @@
 			"zile": 15
 		},
 		{
+			"id": 9534403,
+			"nume": "Democr1tus",
+			"tara": "Netherlands",
+			"medalii": 1,
+			"zile": 15
+		},
+		{
 			"id": 9587309,
 			"nume": "Noel de Never 12",
 			"tara": "United Kingdom",
@@ -4598,13 +4612,6 @@
 			"id": 1825976,
 			"nume": "Vasco Wormrider",
 			"tara": "Spain",
-			"medalii": 1,
-			"zile": 14
-		},
-		{
-			"id": 1925978,
-			"nume": "Floatees",
-			"tara": "Netherlands",
 			"medalii": 1,
 			"zile": 14
 		},
@@ -4661,13 +4668,6 @@
 			"id": 9372184,
 			"nume": "Pope Emeritus",
 			"tara": "USA",
-			"medalii": 1,
-			"zile": 14
-		},
-		{
-			"id": 9534403,
-			"nume": "Democr1tus",
-			"tara": "Netherlands",
 			"medalii": 1,
 			"zile": 14
 		},
@@ -4735,6 +4735,13 @@
 			"zile": 13
 		},
 		{
+			"id": 4639717,
+			"nume": "CalvoSotelo",
+			"tara": "Spain",
+			"medalii": 1,
+			"zile": 13
+		},
+		{
 			"id": 4671041,
 			"nume": "stormce",
 			"tara": "North Macedonia",
@@ -4745,6 +4752,13 @@
 			"id": 4882701,
 			"nume": "Anchoboy",
 			"tara": "Bulgaria",
+			"medalii": 1,
+			"zile": 13
+		},
+		{
+			"id": 5032522,
+			"nume": "pokacz87",
+			"tara": "Poland",
 			"medalii": 1,
 			"zile": 13
 		},
@@ -4805,6 +4819,13 @@
 			"zile": 12
 		},
 		{
+			"id": 1316125,
+			"nume": "George Barker",
+			"tara": "USA",
+			"medalii": 1,
+			"zile": 12
+		},
+		{
 			"id": 1673017,
 			"nume": "kba3ap",
 			"tara": "Russia",
@@ -4828,20 +4849,6 @@
 		{
 			"id": 2759762,
 			"nume": "marcinpako",
-			"tara": "Poland",
-			"medalii": 1,
-			"zile": 12
-		},
-		{
-			"id": 4639717,
-			"nume": "CalvoSotelo",
-			"tara": "Spain",
-			"medalii": 1,
-			"zile": 12
-		},
-		{
-			"id": 5032522,
-			"nume": "pokacz87",
 			"tara": "Poland",
 			"medalii": 1,
 			"zile": 12
@@ -4901,13 +4908,6 @@
 			"tara": "Argentina",
 			"medalii": 1,
 			"zile": 12
-		},
-		{
-			"id": 1316125,
-			"nume": "George Barker",
-			"tara": "USA",
-			"medalii": 1,
-			"zile": 11
 		},
 		{
 			"id": 1354135,
@@ -5015,6 +5015,13 @@
 			"zile": 10
 		},
 		{
+			"id": 1266499,
+			"nume": "ShieldWall",
+			"tara": "USA",
+			"medalii": 1,
+			"zile": 10
+		},
+		{
 			"id": 1484881,
 			"nume": "Stojadin Jr.",
 			"tara": "North Macedonia",
@@ -5029,8 +5036,22 @@
 			"zile": 10
 		},
 		{
+			"id": 2132781,
+			"nume": "Krancan",
+			"tara": "Slovenia",
+			"medalii": 1,
+			"zile": 10
+		},
+		{
 			"id": 3034146,
 			"nume": "Hajduk SpIit",
+			"tara": "Croatia",
+			"medalii": 1,
+			"zile": 10
+		},
+		{
+			"id": 3399524,
+			"nume": "karosa 93",
 			"tara": "Croatia",
 			"medalii": 1,
 			"zile": 10
@@ -5053,6 +5074,13 @@
 			"id": 4984046,
 			"nume": "Darkonije",
 			"tara": "New Zealand",
+			"medalii": 1,
+			"zile": 10
+		},
+		{
+			"id": 5005080,
+			"nume": "JoeLLL",
+			"tara": "North Korea",
 			"medalii": 1,
 			"zile": 10
 		},
@@ -5081,6 +5109,20 @@
 			"id": 6871207,
 			"nume": "Volodymyr91",
 			"tara": "Ukraine",
+			"medalii": 1,
+			"zile": 10
+		},
+		{
+			"id": 7003936,
+			"nume": "Ahsan",
+			"tara": "Pakistan",
+			"medalii": 1,
+			"zile": 10
+		},
+		{
+			"id": 8366514,
+			"nume": "mo green",
+			"tara": "Albania",
 			"medalii": 1,
 			"zile": 10
 		},
@@ -5120,13 +5162,6 @@
 			"zile": 9
 		},
 		{
-			"id": 1266499,
-			"nume": "ShieldWall",
-			"tara": "USA",
-			"medalii": 1,
-			"zile": 9
-		},
-		{
 			"id": 1600284,
 			"nume": "eltales13",
 			"tara": "Colombia",
@@ -5148,13 +5183,6 @@
 			"zile": 9
 		},
 		{
-			"id": 2132781,
-			"nume": "Krancan",
-			"tara": "Slovenia",
-			"medalii": 1,
-			"zile": 9
-		},
-		{
 			"id": 2194772,
 			"nume": "HAJVANIX",
 			"tara": "Croatia",
@@ -5162,9 +5190,9 @@
 			"zile": 9
 		},
 		{
-			"id": 3399524,
-			"nume": "karosa 93",
-			"tara": "Croatia",
+			"id": 2463107,
+			"nume": "Duke09",
+			"tara": "Spain",
 			"medalii": 1,
 			"zile": 9
 		},
@@ -5204,13 +5232,6 @@
 			"zile": 9
 		},
 		{
-			"id": 5005080,
-			"nume": "JoeLLL",
-			"tara": "North Korea",
-			"medalii": 1,
-			"zile": 9
-		},
-		{
 			"id": 5728511,
 			"nume": "Nicolas Cristian Alex Popa",
 			"tara": "Romania",
@@ -5221,20 +5242,6 @@
 			"id": 6483720,
 			"nume": "H3LL b0Y",
 			"tara": "USA",
-			"medalii": 1,
-			"zile": 9
-		},
-		{
-			"id": 7003936,
-			"nume": "Ahsan",
-			"tara": "Pakistan",
-			"medalii": 1,
-			"zile": 9
-		},
-		{
-			"id": 8366514,
-			"nume": "mo green",
-			"tara": "Albania",
 			"medalii": 1,
 			"zile": 9
 		},
@@ -5309,9 +5316,9 @@
 			"zile": 8
 		},
 		{
-			"id": 2463107,
-			"nume": "Duke09",
-			"tara": "Spain",
+			"id": 2347415,
+			"nume": "aiver3",
+			"tara": "Poland",
 			"medalii": 1,
 			"zile": 8
 		},
@@ -5333,6 +5340,13 @@
 			"id": 3639415,
 			"nume": "TAF Power",
 			"tara": "France",
+			"medalii": 1,
+			"zile": 8
+		},
+		{
+			"id": 4158234,
+			"nume": "psihopaticno detence.",
+			"tara": "United Arab Emirates",
 			"medalii": 1,
 			"zile": 8
 		},
@@ -5428,13 +5442,6 @@
 			"zile": 7
 		},
 		{
-			"id": 2347415,
-			"nume": "aiver3",
-			"tara": "Poland",
-			"medalii": 1,
-			"zile": 7
-		},
-		{
 			"id": 2601253,
 			"nume": "Colonel Bruce",
 			"tara": "Slovenia",
@@ -5484,9 +5491,9 @@
 			"zile": 7
 		},
 		{
-			"id": 4158234,
-			"nume": "psihopaticno detence.",
-			"tara": "United Arab Emirates",
+			"id": 4095765,
+			"nume": "B A Z E",
+			"tara": "North Macedonia",
 			"medalii": 1,
 			"zile": 7
 		},
@@ -5501,6 +5508,13 @@
 			"id": 5185096,
 			"nume": "Arlind",
 			"tara": "USA",
+			"medalii": 1,
+			"zile": 7
+		},
+		{
+			"id": 5833273,
+			"nume": "Cimke",
+			"tara": "Serbia",
 			"medalii": 1,
 			"zile": 7
 		},
@@ -5599,13 +5613,6 @@
 			"id": 2588326,
 			"nume": "Imoenbg1",
 			"tara": "Bulgaria",
-			"medalii": 1,
-			"zile": 6
-		},
-		{
-			"id": 4095765,
-			"nume": "B A Z E",
-			"tara": "North Macedonia",
 			"medalii": 1,
 			"zile": 6
 		},
@@ -5823,13 +5830,6 @@
 			"id": 5567742,
 			"nume": "eToretto",
 			"tara": "Bulgaria",
-			"medalii": 1,
-			"zile": 5
-		},
-		{
-			"id": 5833273,
-			"nume": "Cimke",
-			"tara": "Serbia",
 			"medalii": 1,
 			"zile": 5
 		},
@@ -6555,6 +6555,13 @@
 			"zile": 0
 		},
 		{
+			"id": 1305532,
+			"nume": "MC Mark",
+			"tara": "Hungary",
+			"medalii": 1,
+			"zile": 0
+		},
+		{
 			"id": 1530055,
 			"nume": "B A R D O",
 			"tara": "Argentina",
@@ -6667,6 +6674,13 @@
 			"zile": 0
 		},
 		{
+			"id": 7277167,
+			"nume": "Shadow Hunter 2.0",
+			"tara": "Spain",
+			"medalii": 1,
+			"zile": 0
+		},
+		{
 			"id": 8236232,
 			"nume": "eShone085",
 			"tara": "Austria",
@@ -6702,9 +6716,9 @@
 			"zile": 29
 		},
 		{
-			"id": 1305532,
-			"nume": "MC Mark",
-			"tara": "Hungary",
+			"id": 1444041,
+			"nume": "AunsxOM",
+			"tara": "Latvia",
 			"medalii": 0,
 			"zile": 29
 		},
@@ -6719,6 +6733,13 @@
 			"id": 1778178,
 			"nume": "Gru.",
 			"tara": "Serbia",
+			"medalii": 0,
+			"zile": 29
+		},
+		{
+			"id": 2096555,
+			"nume": "Darko Salvatore",
+			"tara": "Portugal",
 			"medalii": 0,
 			"zile": 29
 		},
@@ -6779,13 +6800,6 @@
 			"zile": 29
 		},
 		{
-			"id": 7277167,
-			"nume": "Shadow Hunter 2.0",
-			"tara": "Spain",
-			"medalii": 0,
-			"zile": 29
-		},
-		{
 			"id": 8765044,
 			"nume": "Sunfyre De Elite",
 			"tara": "Ukraine",
@@ -6842,16 +6856,16 @@
 			"zile": 28
 		},
 		{
-			"id": 1392737,
-			"nume": "Sas Dragos",
-			"tara": "Romania",
+			"id": 1336457,
+			"nume": "Casca of Cascadia",
+			"tara": "USA",
 			"medalii": 0,
 			"zile": 28
 		},
 		{
-			"id": 1444041,
-			"nume": "AunsxOM",
-			"tara": "Latvia",
+			"id": 1392737,
+			"nume": "Sas Dragos",
+			"tara": "Romania",
 			"medalii": 0,
 			"zile": 28
 		},
@@ -6873,13 +6887,6 @@
 			"id": 1828992,
 			"nume": "JACKPOT 777",
 			"tara": "Serbia",
-			"medalii": 0,
-			"zile": 28
-		},
-		{
-			"id": 2096555,
-			"nume": "Darko Salvatore",
-			"tara": "Portugal",
 			"medalii": 0,
 			"zile": 28
 		},
@@ -6929,6 +6936,13 @@
 			"id": 3971904,
 			"nume": "Ignotus.",
 			"tara": "North Macedonia",
+			"medalii": 0,
+			"zile": 28
+		},
+		{
+			"id": 4318616,
+			"nume": "Mergen Han",
+			"tara": "USA",
 			"medalii": 0,
 			"zile": 28
 		},
@@ -7059,13 +7073,6 @@
 			"zile": 27
 		},
 		{
-			"id": 1336457,
-			"nume": "Casca of Cascadia",
-			"tara": "USA",
-			"medalii": 0,
-			"zile": 27
-		},
-		{
 			"id": 1386375,
 			"nume": "Djedpool",
 			"tara": "Hungary",
@@ -7104,6 +7111,13 @@
 			"id": 2090906,
 			"nume": "Mistiko 1972",
 			"tara": "Argentina",
+			"medalii": 0,
+			"zile": 27
+		},
+		{
+			"id": 2151191,
+			"nume": "ultimate523",
+			"tara": "Canada",
 			"medalii": 0,
 			"zile": 27
 		},
@@ -7164,6 +7178,20 @@
 			"zile": 27
 		},
 		{
+			"id": 3811567,
+			"nume": "Martin Strecha",
+			"tara": "Croatia",
+			"medalii": 0,
+			"zile": 27
+		},
+		{
+			"id": 3967041,
+			"nume": "metehan2010",
+			"tara": "Japan",
+			"medalii": 0,
+			"zile": 27
+		},
+		{
 			"id": 4095538,
 			"nume": "Szparag77",
 			"tara": "Poland",
@@ -7188,6 +7216,13 @@
 			"id": 4964460,
 			"nume": "Runge Kutta",
 			"tara": "Romania",
+			"medalii": 0,
+			"zile": 27
+		},
+		{
+			"id": 5126198,
+			"nume": "t o r i 0 1",
+			"tara": "USA",
 			"medalii": 0,
 			"zile": 27
 		},
@@ -7223,6 +7258,13 @@
 			"id": 6391925,
 			"nume": "Stelistu96",
 			"tara": "Romania",
+			"medalii": 0,
+			"zile": 27
+		},
+		{
+			"id": 7750533,
+			"nume": "Mr. Tenshibo",
+			"tara": "USA",
 			"medalii": 0,
 			"zile": 27
 		},
@@ -7304,13 +7346,6 @@
 			"zile": 26
 		},
 		{
-			"id": 2151191,
-			"nume": "ultimate523",
-			"tara": "Canada",
-			"medalii": 0,
-			"zile": 26
-		},
-		{
 			"id": 2444861,
 			"nume": "Monsieur_Dudu",
 			"tara": "France",
@@ -7325,23 +7360,9 @@
 			"zile": 26
 		},
 		{
-			"id": 3811567,
-			"nume": "Martin Strecha",
-			"tara": "Croatia",
-			"medalii": 0,
-			"zile": 26
-		},
-		{
 			"id": 3962598,
 			"nume": "C E L I M A",
 			"tara": "Indonesia",
-			"medalii": 0,
-			"zile": 26
-		},
-		{
-			"id": 3967041,
-			"nume": "metehan2010",
-			"tara": "Japan",
 			"medalii": 0,
 			"zile": 26
 		},
@@ -7356,13 +7377,6 @@
 			"id": 4180515,
 			"nume": "Aghsistratos",
 			"tara": "Greece",
-			"medalii": 0,
-			"zile": 26
-		},
-		{
-			"id": 4318616,
-			"nume": "Mergen Han",
-			"tara": "USA",
 			"medalii": 0,
 			"zile": 26
 		},
@@ -7402,13 +7416,6 @@
 			"zile": 26
 		},
 		{
-			"id": 5126198,
-			"nume": "t o r i 0 1",
-			"tara": "USA",
-			"medalii": 0,
-			"zile": 26
-		},
-		{
 			"id": 6344416,
 			"nume": "Nece Moci",
 			"tara": "Serbia",
@@ -7430,9 +7437,9 @@
 			"zile": 26
 		},
 		{
-			"id": 7750533,
-			"nume": "Mr. Tenshibo",
-			"tara": "USA",
+			"id": 7347115,
+			"nume": "mandolen",
+			"tara": "Ukraine",
 			"medalii": 0,
 			"zile": 26
 		},
@@ -7517,6 +7524,13 @@
 			"id": 2512615,
 			"nume": "TrafalgarLawBS",
 			"tara": "Serbia",
+			"medalii": 0,
+			"zile": 25
+		},
+		{
+			"id": 2781664,
+			"nume": "Bogdan-Halamydnyk",
+			"tara": "Ukraine",
 			"medalii": 0,
 			"zile": 25
 		},
@@ -7647,16 +7661,16 @@
 			"zile": 25
 		},
 		{
-			"id": 7347115,
-			"nume": "mandolen",
-			"tara": "Ukraine",
+			"id": 7486895,
+			"nume": "Toni od  Triangla",
+			"tara": "North Macedonia",
 			"medalii": 0,
 			"zile": 25
 		},
 		{
-			"id": 7486895,
-			"nume": "Toni od  Triangla",
-			"tara": "North Macedonia",
+			"id": 9077756,
+			"nume": "The last man standing",
+			"tara": "Iran",
 			"medalii": 0,
 			"zile": 25
 		},
@@ -7706,13 +7720,6 @@
 			"id": 2403865,
 			"nume": "WicherMogilno",
 			"tara": "USA",
-			"medalii": 0,
-			"zile": 24
-		},
-		{
-			"id": 2781664,
-			"nume": "Bogdan-Halamydnyk",
-			"tara": "Ukraine",
 			"medalii": 0,
 			"zile": 24
 		},
@@ -7783,13 +7790,6 @@
 			"id": 8986578,
 			"nume": "Jessica Binaii",
 			"tara": "Uruguay",
-			"medalii": 0,
-			"zile": 24
-		},
-		{
-			"id": 9077756,
-			"nume": "The last man standing",
-			"tara": "Iran",
 			"medalii": 0,
 			"zile": 24
 		},
@@ -8116,6 +8116,13 @@
 			"zile": 22
 		},
 		{
+			"id": 1452102,
+			"nume": "THE KILLER CYRAX",
+			"tara": "Brazil",
+			"medalii": 0,
+			"zile": 22
+		},
+		{
 			"id": 1534593,
 			"nume": "m 1 n i 0 n",
 			"tara": "United Arab Emirates",
@@ -8256,6 +8263,13 @@
 			"zile": 22
 		},
 		{
+			"id": 5991562,
+			"nume": "MKDMKDMKD8",
+			"tara": "North Macedonia",
+			"medalii": 0,
+			"zile": 22
+		},
+		{
 			"id": 6008316,
 			"nume": "Tifonus",
 			"tara": "South Africa",
@@ -8326,13 +8340,6 @@
 			"zile": 21
 		},
 		{
-			"id": 1452102,
-			"nume": "THE KILLER CYRAX",
-			"tara": "Brazil",
-			"medalii": 0,
-			"zile": 21
-		},
-		{
 			"id": 1510195,
 			"nume": "Clorox II",
 			"tara": "USA",
@@ -8364,6 +8371,13 @@
 			"id": 2042042,
 			"nume": "googoodoll",
 			"tara": "Romania",
+			"medalii": 0,
+			"zile": 21
+		},
+		{
+			"id": 2171872,
+			"nume": "broc",
+			"tara": "North Korea",
 			"medalii": 0,
 			"zile": 21
 		},
@@ -8515,13 +8529,6 @@
 			"zile": 21
 		},
 		{
-			"id": 5991562,
-			"nume": "MKDMKDMKD8",
-			"tara": "North Macedonia",
-			"medalii": 0,
-			"zile": 21
-		},
-		{
 			"id": 6272377,
 			"nume": "Tomas Gravesen",
 			"tara": "Spain",
@@ -8644,13 +8651,6 @@
 			"id": 2135496,
 			"nume": "The Face of Rage",
 			"tara": "Russia",
-			"medalii": 0,
-			"zile": 20
-		},
-		{
-			"id": 2171872,
-			"nume": "broc",
-			"tara": "North Korea",
 			"medalii": 0,
 			"zile": 20
 		},
@@ -9138,6 +9138,13 @@
 			"zile": 19
 		},
 		{
+			"id": 5918012,
+			"nume": "Bane Legenda",
+			"tara": "United Arab Emirates",
+			"medalii": 0,
+			"zile": 19
+		},
+		{
 			"id": 6045537,
 			"nume": "uzsolt",
 			"tara": "Hungary",
@@ -9169,6 +9176,13 @@
 			"id": 9601274,
 			"nume": "Ovelia Atkascha",
 			"tara": "Finland",
+			"medalii": 0,
+			"zile": 19
+		},
+		{
+			"id": 9667794,
+			"nume": "Mali Sefket",
+			"tara": "Serbia",
 			"medalii": 0,
 			"zile": 19
 		},
@@ -9446,13 +9460,6 @@
 			"zile": 18
 		},
 		{
-			"id": 5918012,
-			"nume": "Bane Legenda",
-			"tara": "United Arab Emirates",
-			"medalii": 0,
-			"zile": 18
-		},
-		{
 			"id": 6054312,
 			"nume": "Voltgryn",
 			"tara": "Croatia",
@@ -9533,13 +9540,6 @@
 			"id": 9634199,
 			"nume": "Pale Blue Dot",
 			"tara": "North Macedonia",
-			"medalii": 0,
-			"zile": 18
-		},
-		{
-			"id": 9667794,
-			"nume": "Mali Sefket",
-			"tara": "Serbia",
 			"medalii": 0,
 			"zile": 18
 		},
@@ -9628,6 +9628,13 @@
 			"zile": 17
 		},
 		{
+			"id": 2000501,
+			"nume": "Blbl.",
+			"tara": "Cuba",
+			"medalii": 0,
+			"zile": 17
+		},
+		{
 			"id": 2199826,
 			"nume": "Kendo Yanar",
 			"tara": "Finland",
@@ -9670,6 +9677,13 @@
 			"zile": 17
 		},
 		{
+			"id": 2917967,
+			"nume": "Meditation Mode",
+			"tara": "Spain",
+			"medalii": 0,
+			"zile": 17
+		},
+		{
 			"id": 3306495,
 			"nume": "Olgerd De Elite",
 			"tara": "Ukraine",
@@ -9687,6 +9701,13 @@
 			"id": 3471798,
 			"nume": "Mars and Cars",
 			"tara": "Croatia",
+			"medalii": 0,
+			"zile": 17
+		},
+		{
+			"id": 3476618,
+			"nume": "The Bloody Massacre",
+			"tara": "North Macedonia",
 			"medalii": 0,
 			"zile": 17
 		},
@@ -9838,6 +9859,13 @@
 			"zile": 17
 		},
 		{
+			"id": 6954983,
+			"nume": "Trio The Great",
+			"tara": "Iran",
+			"medalii": 0,
+			"zile": 17
+		},
+		{
 			"id": 7781138,
 			"nume": "Mr. Hody",
 			"tara": "Italy",
@@ -9943,13 +9971,6 @@
 			"zile": 16
 		},
 		{
-			"id": 2000501,
-			"nume": "Blbl.",
-			"tara": "Cuba",
-			"medalii": 0,
-			"zile": 16
-		},
-		{
 			"id": 2054521,
 			"nume": "Guvid",
 			"tara": "Republic of Moldova",
@@ -10009,20 +10030,6 @@
 			"id": 2847654,
 			"nume": "NarkoMyKi",
 			"tara": "Poland",
-			"medalii": 0,
-			"zile": 16
-		},
-		{
-			"id": 2917967,
-			"nume": "Meditation Mode",
-			"tara": "Spain",
-			"medalii": 0,
-			"zile": 16
-		},
-		{
-			"id": 3476618,
-			"nume": "The Bloody Massacre",
-			"tara": "North Macedonia",
 			"medalii": 0,
 			"zile": 16
 		},
@@ -10205,13 +10212,6 @@
 			"id": 6917784,
 			"nume": "Akshit1998",
 			"tara": "India",
-			"medalii": 0,
-			"zile": 16
-		},
-		{
-			"id": 6954983,
-			"nume": "Trio The Great",
-			"tara": "Iran",
 			"medalii": 0,
 			"zile": 16
 		},
@@ -10464,6 +10464,13 @@
 			"id": 3522903,
 			"nume": "Strahor 7492",
 			"tara": "Serbia",
+			"medalii": 0,
+			"zile": 15
+		},
+		{
+			"id": 3532519,
+			"nume": "ilias M",
+			"tara": "Greece",
 			"medalii": 0,
 			"zile": 15
 		},
@@ -10818,6 +10825,13 @@
 			"zile": 14
 		},
 		{
+			"id": 2071605,
+			"nume": "Shomara Shomarowic",
+			"tara": "United Arab Emirates",
+			"medalii": 0,
+			"zile": 14
+		},
+		{
 			"id": 2075402,
 			"nume": "Ponosan Bosanac",
 			"tara": "Bosnia and Herzegovina",
@@ -10919,13 +10933,6 @@
 			"id": 3445496,
 			"nume": "spundee",
 			"tara": "Finland",
-			"medalii": 0,
-			"zile": 14
-		},
-		{
-			"id": 3532519,
-			"nume": "ilias M",
-			"tara": "Greece",
 			"medalii": 0,
 			"zile": 14
 		},
@@ -11252,6 +11259,13 @@
 			"zile": 13
 		},
 		{
+			"id": 1214248,
+			"nume": "Oleg the Great",
+			"tara": "United Arab Emirates",
+			"medalii": 0,
+			"zile": 13
+		},
+		{
 			"id": 1295956,
 			"nume": "Walpole",
 			"tara": "Turkey",
@@ -11374,13 +11388,6 @@
 			"id": 2038166,
 			"nume": "LordRahl2",
 			"tara": "USA",
-			"medalii": 0,
-			"zile": 13
-		},
-		{
-			"id": 2071605,
-			"nume": "Shomara Shomarowic",
-			"tara": "United Arab Emirates",
 			"medalii": 0,
 			"zile": 13
 		},
@@ -11745,13 +11752,6 @@
 			"id": 820181,
 			"nume": "BurtLancaster",
 			"tara": "Poland",
-			"medalii": 0,
-			"zile": 12
-		},
-		{
-			"id": 1214248,
-			"nume": "Oleg the Great",
-			"tara": "United Arab Emirates",
 			"medalii": 0,
 			"zile": 12
 		},
@@ -12449,6 +12449,13 @@
 			"zile": 11
 		},
 		{
+			"id": 2352686,
+			"nume": "jacek666pl",
+			"tara": "Poland",
+			"medalii": 0,
+			"zile": 11
+		},
+		{
 			"id": 2468572,
 			"nume": "csumbe",
 			"tara": "Hungary",
@@ -12848,13 +12855,6 @@
 			"zile": 10
 		},
 		{
-			"id": 2352686,
-			"nume": "jacek666pl",
-			"tara": "Poland",
-			"medalii": 0,
-			"zile": 10
-		},
-		{
 			"id": 2403742,
 			"nume": "DoDiDoDy",
 			"tara": "Romania",
@@ -13068,6 +13068,13 @@
 			"id": 4442775,
 			"nume": "opalek",
 			"tara": "Bulgaria",
+			"medalii": 0,
+			"zile": 10
+		},
+		{
+			"id": 4568281,
+			"nume": "DoctrineDark 1907",
+			"tara": "USA",
 			"medalii": 0,
 			"zile": 10
 		},
@@ -13380,6 +13387,13 @@
 			"zile": 10
 		},
 		{
+			"id": 164501,
+			"nume": "D I A N A",
+			"tara": "Portugal",
+			"medalii": 0,
+			"zile": 9
+		},
+		{
 			"id": 978012,
 			"nume": "scarzam",
 			"tara": "Portugal",
@@ -13446,6 +13460,13 @@
 			"id": 1452156,
 			"nume": "Nerazuman Lavirint",
 			"tara": "Serbia",
+			"medalii": 0,
+			"zile": 9
+		},
+		{
+			"id": 1505974,
+			"nume": "Tomlesh",
+			"tara": "Hungary",
 			"medalii": 0,
 			"zile": 9
 		},
@@ -13555,6 +13576,13 @@
 			"zile": 9
 		},
 		{
+			"id": 2050599,
+			"nume": "thefound",
+			"tara": "Spain",
+			"medalii": 0,
+			"zile": 9
+		},
+		{
 			"id": 2063658,
 			"nume": "Arne Saknussemm 3072",
 			"tara": "Greece",
@@ -13600,6 +13628,13 @@
 			"id": 2643752,
 			"nume": "hollenboer",
 			"tara": "United Kingdom",
+			"medalii": 0,
+			"zile": 9
+		},
+		{
+			"id": 2742116,
+			"nume": "SanPetru",
+			"tara": "Romania",
 			"medalii": 0,
 			"zile": 9
 		},
@@ -13779,13 +13814,6 @@
 			"zile": 9
 		},
 		{
-			"id": 4568281,
-			"nume": "DoctrineDark 1907",
-			"tara": "Colombia",
-			"medalii": 0,
-			"zile": 9
-		},
-		{
 			"id": 4699416,
 			"nume": "danis1982",
 			"tara": "Israel",
@@ -13954,6 +13982,13 @@
 			"zile": 9
 		},
 		{
+			"id": 7844148,
+			"nume": "solrak88",
+			"tara": "Spain",
+			"medalii": 0,
+			"zile": 9
+		},
+		{
 			"id": 7923048,
 			"nume": "doxbot",
 			"tara": "North Korea",
@@ -14108,13 +14143,6 @@
 			"zile": 8
 		},
 		{
-			"id": 164501,
-			"nume": "D I A N A",
-			"tara": "Portugal",
-			"medalii": 0,
-			"zile": 8
-		},
-		{
 			"id": 196261,
 			"nume": "S P A W N",
 			"tara": "Romania",
@@ -14174,13 +14202,6 @@
 			"id": 1438363,
 			"nume": "ra666999",
 			"tara": "Bulgaria",
-			"medalii": 0,
-			"zile": 8
-		},
-		{
-			"id": 1505974,
-			"nume": "Tomlesh",
-			"tara": "Hungary",
 			"medalii": 0,
 			"zile": 8
 		},
@@ -14283,13 +14304,6 @@
 			"zile": 8
 		},
 		{
-			"id": 2050599,
-			"nume": "thefound",
-			"tara": "Spain",
-			"medalii": 0,
-			"zile": 8
-		},
-		{
 			"id": 2083903,
 			"nume": "Bdak",
 			"tara": "North Korea",
@@ -14341,13 +14355,6 @@
 		{
 			"id": 2707490,
 			"nume": "adicu",
-			"tara": "Romania",
-			"medalii": 0,
-			"zile": 8
-		},
-		{
-			"id": 2742116,
-			"nume": "SanPetru",
 			"tara": "Romania",
 			"medalii": 0,
 			"zile": 8
@@ -14734,13 +14741,6 @@
 			"id": 7374647,
 			"nume": "Znojmo",
 			"tara": "Czech Republic",
-			"medalii": 0,
-			"zile": 8
-		},
-		{
-			"id": 7844148,
-			"nume": "solrak88",
-			"tara": "Spain",
 			"medalii": 0,
 			"zile": 8
 		},
@@ -16082,6 +16082,13 @@
 			"zile": 6
 		},
 		{
+			"id": 1475289,
+			"nume": "Punisher.",
+			"tara": "Serbia",
+			"medalii": 0,
+			"zile": 6
+		},
+		{
 			"id": 1508593,
 			"nume": "Oswald.Cobblepot",
 			"tara": "Chile",
@@ -17048,13 +17055,6 @@
 			"zile": 5
 		},
 		{
-			"id": 1475289,
-			"nume": "Punisher.",
-			"tara": "Serbia",
-			"medalii": 0,
-			"zile": 5
-		},
-		{
 			"id": 1493768,
 			"nume": "lagen",
 			"tara": "Hungary",
@@ -17293,6 +17293,13 @@
 			"zile": 5
 		},
 		{
+			"id": 2475530,
+			"nume": "dzakut",
+			"tara": "Poland",
+			"medalii": 0,
+			"zile": 5
+		},
+		{
 			"id": 2502128,
 			"nume": "mikibandit",
 			"tara": "India",
@@ -17468,6 +17475,13 @@
 			"zile": 5
 		},
 		{
+			"id": 3886877,
+			"nume": "bojan851",
+			"tara": "Serbia",
+			"medalii": 0,
+			"zile": 5
+		},
+		{
 			"id": 3907301,
 			"nume": "Dryfus",
 			"tara": "Romania",
@@ -17548,6 +17562,13 @@
 			"id": 4264734,
 			"nume": "carevoselec",
 			"tara": "North Macedonia",
+			"medalii": 0,
+			"zile": 5
+		},
+		{
+			"id": 4279543,
+			"nume": "BehindTheSecret",
+			"tara": "Romania",
 			"medalii": 0,
 			"zile": 5
 		},
@@ -18420,13 +18441,6 @@
 			"zile": 4
 		},
 		{
-			"id": 2475530,
-			"nume": "dzakut",
-			"tara": "Poland",
-			"medalii": 0,
-			"zile": 4
-		},
-		{
 			"id": 2485487,
 			"nume": "Dice03",
 			"tara": "Hungary",
@@ -18588,13 +18602,6 @@
 			"zile": 4
 		},
 		{
-			"id": 3886877,
-			"nume": "bojan851",
-			"tara": "Serbia",
-			"medalii": 0,
-			"zile": 4
-		},
-		{
 			"id": 3921239,
 			"nume": "igreen",
 			"tara": "Spain",
@@ -18682,13 +18689,6 @@
 			"id": 4220968,
 			"nume": "Van Der Waal",
 			"tara": "Greece",
-			"medalii": 0,
-			"zile": 4
-		},
-		{
-			"id": 4279543,
-			"nume": "BehindTheSecret",
-			"tara": "Romania",
 			"medalii": 0,
 			"zile": 4
 		},
@@ -19284,6 +19284,13 @@
 			"id": 9595758,
 			"nume": "Eddie Munson",
 			"tara": "Colombia",
+			"medalii": 0,
+			"zile": 4
+		},
+		{
+			"id": 9602838,
+			"nume": "Pato02",
+			"tara": "Argentina",
 			"medalii": 0,
 			"zile": 4
 		},
@@ -20646,13 +20653,6 @@
 			"zile": 3
 		},
 		{
-			"id": 9602838,
-			"nume": "Pato02",
-			"tara": "Argentina",
-			"medalii": 0,
-			"zile": 3
-		},
-		{
 			"id": 9614247,
 			"nume": "Satya Kencana",
 			"tara": "Indonesia",
@@ -21503,6 +21503,13 @@
 			"id": 3123403,
 			"nume": "Gizawar",
 			"tara": "Poland",
+			"medalii": 0,
+			"zile": 2
+		},
+		{
+			"id": 3129186,
+			"nume": "Sojgu",
+			"tara": "Serbia",
 			"medalii": 0,
 			"zile": 2
 		},
@@ -24205,6 +24212,13 @@
 			"id": 5637736,
 			"nume": "Salke87",
 			"tara": "Austria",
+			"medalii": 0,
+			"zile": 1
+		},
+		{
+			"id": 5720151,
+			"nume": "EduV",
+			"tara": "Argentina",
 			"medalii": 0,
 			"zile": 1
 		},
