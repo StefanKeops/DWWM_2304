@@ -1,5 +1,8 @@
 <?php
 
+// Définir le fuseau horaire
+date_default_timezone_set('Europe/Paris');
+
 // Date au format yyyy-mm-dd
 $dateOriginale = '2012-09-12';
 
