@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gestion des apostrophes (problème)</title>
+  </head>
+  <body>
+    <div>
+
+    <?php
+    // Donnée qui pose problème.
+    $libellé = "Pomme d'api";
+    $prix = 10;
+    // Requête.
+    $requête = "INSERT INTO articles(libelle,prix) " .
+               "VALUES('$libellé',$prix)";
+    echo "$requête<br />";
+    // Exécution avec MySQL.
+    echo "<p><b>MySQL</b><br />";
+    mysqli_report(MYSQLI_REPORT_OFF); // Désactiver le rapport d'erreur
+    $connexion = mysqli_connect();
+    $ok = mysqli_select_db($connexion,'diane');
+    $résultat = mysqli_query($connexion,$requête);
+    echo mysqli_error($connexion),'<br />'; // MySQL ne génère pas d’alerte
+    // Exécution avec Oracle.
+    echo "<p><b>Oracle</b><br />";
+    $connexion = oci_connect('demeter','demeter','diane');
+    if ($curseur = oci_parse($connexion,$requête)) {
+      $résultat = oci_execute($curseur);
+    } 
+    ?>
+
+    </div>
+  </body>
+</html>
