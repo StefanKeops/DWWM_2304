@@ -1,6 +1,9 @@
 <?php
 require "Connexion.php";
 
+// Définir le fuseau horaire
+date_default_timezone_set('Europe/Paris');
+
 class MyTable
 {
     private $connexion;
@@ -8,33 +11,23 @@ class MyTable
     private $nbCol;
     private $tabNomCol;
 
-    public function __construct(string $_table)
+    public function __construct($maTable)
     {
-        $this->table = $_table;
+        $this->table = $maTable;
         $this->connexion = Connexion::getinstance();
     }
-    //propriétes
-
 
     public function readTable()
     {
         $data = array();
 
-        // rédiger la requète mySql
         $requete = "SELECT * from " . $this->table;
-        // préparer la requète
         $state = $this->connexion->prepare($requete);
-        // Exécuter la requète
         $state->execute();
 
-        // utilser la fonction de récupération des noms des champs à l'intérieur de la classe
         $this->tabNomCol = $this->getFieldsNames();
 
-
-        // associer les données récupérées au tableau 
         $data = $state->fetchAll();
-
-        // ajouter le tableau des noms de champs au début du tableau de données
         array_unshift($data, $this->tabNomCol);
 
         return $data;
@@ -42,20 +35,12 @@ class MyTable
 
     private function getFieldsNames()
     {
-        $fieldsNames = array();
-        // déterminer le nombre de champs de la table 
-        $requete = "SELECT * from " . $this->table;
-        // préparer la requète
-        $state = $this->connexion->prepare($requete);
-        // Exécuter la requète
-        $state->execute();
-        $this->nbCol = $state->columnCount();
-        echo $this->nbCol . "<br/>";
-        // PPO get column meta 
-        for ($i = 0; $i < $this->nbCol; $i++) {
-            $resultat = $state->getColumnMeta($i);
-            array_push($fieldsNames, $resultat['name']);
-        }
+        // Remove 'identifiant' from the array
+        $fieldsNames = array(
+            'Nom de l\'etablissement', 'Type', 'Nom du responsable', 'Lieu', 'Téléphone', 'E-mail'
+        );
+
+        $this->nbCol = count($fieldsNames);
 
         return $fieldsNames;
     }
@@ -63,35 +48,32 @@ class MyTable
     public function rendreHTML()
     {
         $myArray = [];
+
         $requete = "SELECT * from " . $this->table;
-        // préparer la requète
         $state = $this->connexion->prepare($requete);
-        // Exécuter la requète
         $state->execute();
 
-        // associer les données récupérées au tableau 
         $myArray = $state->fetchAll();
 
         $myString = "<table class='table table-light table-hover'>
-                    <thead><tr>";
-        $myString .= "<th>Modifier</th><th>Supprimer</th>";
+                <thead><tr>";
+
         foreach ($myArray[0] as $key => $value) {
-            $myString .= "<th>  $key </th>";
+            // Skip the 'identifiant' column when generating the header
+            if ($key != 'identifiant') {
+                $myString .= "<th>  $key </th>";
+            }
         }
         $myString .= "</tr></thead><tbody>";
+
         for ($i = 0; $i < count($myArray); $i++) {
-            $myString .=
-                "<tr><td>
-                    <a href='detail.php?id=" . $myArray[$i]['id'] . "' target='_blank' >Modifier</a>
-                </td>";
-            $myString .= "<td>
-                            <form action='" . $_SERVER['PHP_SELF'] . "' method='POST'>
-                                <input type='hidden' value='" . $myArray[$i]['id'] . "'>
-                                <input type='submit' value='supprimer' >
-                            </form></td>";
+            $myString .= "<tr>";
 
             foreach ($myArray[$i] as $key => $value) {
-                $myString .= "<td>" . $value . "</td>";
+                // Skip the 'identifiant' column when generating the table cells
+                if ($key != 'identifiant') {
+                    $myString .= "<td>" . $value . "</td>";
+                }
             }
 
             $myString .= "</tr>";
