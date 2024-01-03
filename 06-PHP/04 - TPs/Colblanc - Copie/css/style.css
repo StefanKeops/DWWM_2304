@@ -16,7 +16,7 @@ table .colonne {
     text-align: right;
 }
 
-#page {
+#page1 {
     position: relative;
     background-color: #FFF;
     height: 100%;
@@ -162,4 +162,29 @@ div#menu {
 
 .pair {
     background-color: #FFFFFF;
+}
+
+/* Adăugați această secțiune pentru stilizarea tabelului de rezultate */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.even {
+    background-color: #f9f9f9;
+}
+
+.odd {
+    background-color: #ffffff;
 }
