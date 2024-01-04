@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Europe/Paris');
-require "/models/MyTable.php";
+require "models/MyTable.php";
 
 // conexiuniea la baza de date
 $connection = Connexion::getinstance();
@@ -19,6 +19,8 @@ define('VALIDER_KEY', 'valider');
 // datele formularului
 $selectedDepartment = isset($_POST[DEPARTMENT_KEY]) ? $_POST[DEPARTMENT_KEY] : null;
 $selectedInstitutions = isset($_POST[INSTITUTIONS_KEY]) ? $_POST[INSTITUTIONS_KEY] : array();
+//var_dump($selectedInstitutions);
+
 $institutions = $form->getInstitutions($selectedDepartment, $selectedInstitutions);
 ?>
 
@@ -72,9 +74,19 @@ $institutions = $form->getInstitutions($selectedDepartment, $selectedInstitution
             <div style="display: inline-block; margin-right: 10px;">
               <label for="<?= DEPARTMENT_KEY ?>">Choisissez votre département :</label>
               <select name="<?= DEPARTMENT_KEY ?>" id="<?= DEPARTMENT_KEY ?>">
-                <?php foreach ($departments as $department) : ?>
-                  <option value="<?= $department['id_dep'] ?>"><?= $department['name_dep'] ?></option>
-                <?php endforeach; ?>
+                <?php
+                foreach ($departments as $department) {
+                  if (isset($_POST["departement"]) && $_POST["departement"] == $department['id_dep']) {
+                    echo "<option value='" . $department['id_dep'] . "' selected='true' >" . $department['name_dep'] . "</option>";
+                  } else {
+
+                    echo "<option value='" . $department['id_dep'] . "' >" . $department['name_dep'] . "</option>";
+                  }
+                }
+                ?>
+
+
+
               </select>
             </div>
 
@@ -97,22 +109,22 @@ $institutions = $form->getInstitutions($selectedDepartment, $selectedInstitution
 
               <div style="width: 48%; display: inline-block;">
                 <?php
-                $uniqueTypes = array();
-                foreach ($institutions as $institution) {
-                  if (!in_array($institution['type_etab'], $uniqueTypes)) {
-                    $uniqueTypes[] = $institution['type_etab'];
-                  }
-                }
+                // $uniqueTypes = array();
+                // foreach ($institutions as $institution) {
+                //   if (!in_array($institution['type_etab'], $uniqueTypes)) {
+                //     $uniqueTypes[] = $institution['type_etab'];
+                //   }
+                // }
 
                 // definirea ordinii
-                $order = array('TPE', 'PME', 'GE', 'CT', 'ASSOC', 'AUTRES');
+
 
                 // sortarea tipurilor 
-                usort($uniqueTypes, function ($a, $b) use ($order) {
-                  return array_search($a, $order) - array_search($b, $order);
-                });
-
-                foreach ($uniqueTypes as $type) : ?>
+                // usort($uniqueTypes, function ($a, $b) use ($order) {
+                //   return array_search($a, $order) - array_search($b, $order);
+                // });
+                $order = array('TPE', 'PME', 'GE', 'CT', 'ASSOC', 'AUTRES');
+                foreach ($order as $type) : ?>
                   <label style="display: block;">
                     <input type="checkbox" name="<?= INSTITUTIONS_KEY ?>[]" value="<?= $type ?>">
                     <?= $type ?>
@@ -135,8 +147,7 @@ $institutions = $form->getInstitutions($selectedDepartment, $selectedInstitution
           <?php
           $institutions = array();
 
-          if ($institutions = $form->getInstitutions($selectedDepartment, $selectedInstitutions)
-          ) {
+          if ($institutions = $form->getInstitutions($selectedDepartment, $selectedInstitutions)) {
             $selectedDepartmentsCount = $selectedDepartment ? 1 : 0;
             $selectedInstitutionsCount = count($selectedInstitutions);
 
