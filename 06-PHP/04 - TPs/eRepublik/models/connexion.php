@@ -11,12 +11,10 @@ class Connexion
     private function __construct()
     {
     }
-    static public  function getinstance()
+
+    static public function getInstance()
     {
-
         if (is_null(self::$connection)) {
-
-
             try {
                 self::$connection = new PDO(
                     'mysql:host=' . self::$host . ';dbname=' . self::$base,
@@ -28,7 +26,6 @@ class Connexion
                     )
                 );
             } catch (PDOException $e) {
-
                 die("Database connection failed" . $e->getMessage());
             }
         }
@@ -36,3 +33,4 @@ class Connexion
         return self::$connection;
     }
 }
+?>

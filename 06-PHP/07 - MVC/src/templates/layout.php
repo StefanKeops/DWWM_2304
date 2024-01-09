@@ -1,4 +1,14 @@
-<?php
-foreach ($comments as $comment) {
-    <p><strong><?= htmlspecialchars ($comment['author'])?> le <?=$comment['french_creation_date']</strong></p>
-}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title><?= $title ?></title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <?= $content ?>
+</body>
+
+</html>
