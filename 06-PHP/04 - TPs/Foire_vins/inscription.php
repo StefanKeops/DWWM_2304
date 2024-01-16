@@ -1,21 +1,19 @@
 <?php
 date_default_timezone_set('Europe/Paris');
-
 session_start();
-
+ 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Include the database connection class
     require "models/Connexion.php";
-
+ 
     // Function to sanitize input data
-    function sanitizeInput($data)
-    {
+    function sanitizeInput($data) {
         $data = trim($data);
         $data = stripslashes($data);
         $data = htmlspecialchars($data);
         return $data;
     }
-
+ 
     // Retrieve and sanitize form data
     $nom = sanitizeInput($_POST["nom"]);
     $prenom = sanitizeInput($_POST["prenom"]);
@@ -23,51 +21,54 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mdp = password_hash($_POST["mdp"], PASSWORD_DEFAULT); // Hash the password securely
     $departement_user = sanitizeInput($_POST["departement"]);
     $age = sanitizeInput($_POST["age"]);
-
-    // Password verification
     $verifmdp = sanitizeInput($_POST["verifmdp"]);
+ 
+    // Password verification
     if ($_POST["mdp"] !== $verifmdp) {
-        die("Error: Passwords do not match");
-    }
-
-    try {
-        // Get a PDO instance
-        $monPDO = Connexion::getinstance();
-
-        // Prepare and execute the SQL statement to insert data into the 'candidats' table
-        $stmt = $monPDO->prepare("INSERT INTO candidats (lastname_user, firstname_user, mail_user, pass_user, departement_user, age_user) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmt->execute([$nom, $prenom, $email, $mdp, $departement_user, $age]);
-
-        // Redirect or show a success message
-        header("Location: success.php"); // Redirect to a success page
-        exit();
-    } catch (PDOException $e) {
-        die("Error: " . $e->getMessage());
+        $_SESSION['error_message'] = "Erreur : Les mots de passe ne correspondent pas.";
+    } else {
+        try {
+            // Get a PDO instance
+            $monPDO = Connexion::getinstance();
+ 
+            // Prepare and execute the SQL statement to insert data into the 'candidats' table
+            $stmt = $monPDO->prepare("INSERT INTO candidats (lastname_user, firstname_user, mail_user, pass_user, departement_user, age_user) VALUES (?, ?, ?, ?, ?, ?)");
+            $stmt->execute([$nom, $prenom, $email, $mdp, $departement_user, $age]);
+ 
+            // Success message
+            $_SESSION['success_message'] = "Votre inscription a bien été validée, nous allons vous contacter prochainement.";
+ 
+            // Redirect to a success page
+            header("Location: success.php");
+            exit();
+        } catch (PDOException $e) {
+            // Error message
+            $_SESSION['error_message'] = "Opération impossible, veuillez recommencer!";
+        }
     }
 }
-
-function displayDepartmentsDropdown()
-{
+ 
+function displayDepartmentsDropdown() {
     try {
         // Include the database connection class
         require "models/Connexion.php";
-
+ 
         // Get a PDO instance
         $monPDO = Connexion::getinstance();
-
+ 
         // Prepare and execute the SQL statement to retrieve departments
         $stmt = $monPDO->prepare("SELECT id_dep, name_dep FROM departements WHERE dep_actif=1");
         $stmt->execute();
-
+ 
         // Display department dropdown
         echo '<select name="departement" id="departement">';
         echo '<option value="">Choisir un Département</option>';
-
+ 
         // Display department options
         while ($ligne = $stmt->fetch(PDO::FETCH_ASSOC)) {
             echo '<option value="' . $ligne['id_dep'] . '">' . $ligne['name_dep'] . ' </option>';
         }
-
+ 
         echo '</select>';
     } catch (PDOException $e) {
         die("Error: " . $e->getMessage());
@@ -85,6 +86,16 @@ function displayDepartmentsDropdown()
 </head>
 
 <body>
+    <!-- Display success or error messages -->
+    <?php
+    if (isset($_SESSION['success_message'])) {
+        echo '<p>' . $_SESSION['success_message'] . '</p>';
+        unset($_SESSION['success_message']); // Clear the message
+    } elseif (isset($_SESSION['error_message'])) {
+        echo '<p>' . $_SESSION['error_message'] . '</p>';
+        unset($_SESSION['error_message']); // Clear the message
+    }
+    ?>
     <form action="<?= $_SERVER["PHP_SELF"] ?>" method="POST" enctype="multipart/form-data">
 
         <section>
